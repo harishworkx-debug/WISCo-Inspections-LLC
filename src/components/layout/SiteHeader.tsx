@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { useState, useRef, useEffect, type ReactNode } from 'react';
 import { ChevronDown, House, Menu, Phone, X } from 'lucide-react';
 import { BUSINESS } from '@/data/business';
 import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
@@ -11,21 +11,72 @@ type OpenMenu = 'services' | 'areas' | null;
 const NAV_LINK = 'rounded-md px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10';
 const DROPDOWN_ITEM = 'block rounded-lg px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-brand-50 hover:text-brand';
 
-function Dropdown({ open, onToggle, label, children }: { open: boolean; onToggle: () => void; label: string; children: ReactNode }) {
+function Dropdown({
+  open,
+  onOpen,
+  onClose,
+  onToggle,
+  label,
+  children,
+}: {
+  open: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+  onToggle: () => void;
+  label: string;
+  children: ReactNode;
+}) {
+  const timeoutRef = useRef<number | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      window.clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    onOpen();
+  };
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      window.clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = window.setTimeout(() => {
+      onClose();
+    }, 150);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <button
         type="button"
         aria-expanded={open}
+        aria-haspopup="true"
         onClick={onToggle}
         className={`${NAV_LINK} inline-flex items-center gap-1`}
       >
         {label}
-        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} aria-hidden="true" />
+        <ChevronDown
+          className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          aria-hidden="true"
+        />
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-2 max-h-[75vh] w-80 overflow-y-auto rounded-xl border border-navy-100 bg-white p-2 shadow-lift">
-          {children}
+        <div className="absolute left-0 top-full z-50 pt-1.5 w-80">
+          <div className="max-h-[75vh] overflow-y-auto rounded-xl border border-navy-100 bg-white p-2 shadow-lift">
+            {children}
+          </div>
         </div>
       )}
     </div>
@@ -44,7 +95,11 @@ export default function SiteHeader() {
     setMobileOpen(false);
   }
 
-  const toggleMenu = (menu: Exclude<OpenMenu, null>) => setOpenMenu((current) => (current === menu ? null : menu));
+  const openServices = () => setOpenMenu('services');
+  const openAreas = () => setOpenMenu('areas');
+  const closeMenu = () => setOpenMenu(null);
+  const toggleMenu = (menu: Exclude<OpenMenu, null>) =>
+    setOpenMenu((current) => (current === menu ? null : menu));
 
   const serviceLinks = SERVICES.map((service) => ({
     to: `/${service.slug}-${PRIMARY_LOCATION.slug}`,
@@ -76,23 +131,43 @@ export default function SiteHeader() {
           <Link to="/about" className={NAV_LINK}>
             About Us
           </Link>
-          <Dropdown open={openMenu === 'services'} onToggle={() => toggleMenu('services')} label="Inspection Services">
+          <Dropdown
+            open={openMenu === 'services'}
+            onOpen={openServices}
+            onClose={closeMenu}
+            onToggle={() => toggleMenu('services')}
+            label="Inspection Services"
+          >
             {serviceLinks.map((item) => (
-              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM}>
+              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM} onClick={closeMenu}>
                 {item.label}
               </Link>
             ))}
-            <Link to="/services" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}>
+            <Link
+              to="/services"
+              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}
+              onClick={closeMenu}
+            >
               View all 10 inspection services →
             </Link>
           </Dropdown>
-          <Dropdown open={openMenu === 'areas'} onToggle={() => toggleMenu('areas')} label="Service Areas">
+          <Dropdown
+            open={openMenu === 'areas'}
+            onOpen={openAreas}
+            onClose={closeMenu}
+            onToggle={() => toggleMenu('areas')}
+            label="Service Areas"
+          >
             {areaLinks.map((item) => (
-              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM}>
+              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM} onClick={closeMenu}>
                 {item.label}
               </Link>
             ))}
-            <Link to="/service-areas" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}>
+            <Link
+              to="/service-areas"
+              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}
+              onClick={closeMenu}
+            >
               View all 10 service areas →
             </Link>
           </Dropdown>

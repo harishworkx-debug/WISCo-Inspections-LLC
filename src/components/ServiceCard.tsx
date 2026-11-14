@@ -38,7 +38,7 @@ export default function ServiceCard({
         <p className="mt-3 flex-1 text-base leading-relaxed text-ink/80">{service.summary}</p>
         <div className="mt-5 flex items-center justify-between gap-4">
           <span className="inline-flex items-center gap-2 text-sm font-bold text-brand transition group-hover:text-navy">
-            View details
+            {service.name}
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
           </span>
         </div>

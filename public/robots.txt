@@ -1,4 +1,47 @@
+# ==============================================================================
+# robots.txt for WISCo Inspections, LLC
+# Website: https://www.wiscoinspections.com/
+# Contact: (608) 642-1112 | Based in Edgerton, serving Southern Wisconsin
+# ==============================================================================
+
+# Default rule for all web crawlers
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /sitemap.xml
+Allow: /robots.txt
 
+# Google Search & Image Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Microsoft Bing Crawler
+User-agent: Bingbot
+Allow: /
+
+# Apple Search Crawler (Siri, Spotlight, Safari)
+User-agent: Applebot
+Allow: /
+
+# DuckDuckGo Crawler
+User-agent: DuckDuckBot
+Allow: /
+
+# Yahoo Crawler
+User-agent: Slurp
+Allow: /
+
+# Yandex Crawler
+User-agent: YandexBot
+Allow: /
+
+# Canonical Sitemap Declaration
 Sitemap: https://www.wiscoinspections.com/sitemap.xml
+
+# Primary Host
+Host: https://www.wiscoinspections.com

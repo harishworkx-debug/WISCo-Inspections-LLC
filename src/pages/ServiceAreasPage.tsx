@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ArrowRight, ChevronRight, Home, MapPin } from 'lucide-react';
 import CallCtaBand from '@/components/CallCtaBand';
 import PageHero from '@/components/PageHero';
 import { PHOTOS } from '@/data/business';
@@ -17,6 +17,18 @@ export default function ServiceAreasPage() {
 
   return (
     <>
+      {/* Breadcrumb Trail */}
+      <nav aria-label="Breadcrumb" className="border-b border-navy-100 bg-navy text-white/70">
+        <div className="mx-auto flex max-w-7xl items-center gap-2 overflow-x-auto px-4 py-3 text-xs whitespace-nowrap sm:px-6 lg:px-8">
+          <Link to="/" className="inline-flex items-center gap-1 transition hover:text-gold-400">
+            <Home className="h-3.5 w-3.5" aria-hidden="true" />
+            <span>Home</span>
+          </Link>
+          <ChevronRight className="h-3 w-3 shrink-0 text-white/40" aria-hidden="true" />
+          <span className="font-semibold text-gold-400">Service Areas</span>
+        </div>
+      </nav>
+
       <PageHero
         eyebrow="Service Areas"
         title="10 Service Areas Across Southern Wisconsin"

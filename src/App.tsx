@@ -1,5 +1,5 @@
 import SiteLayout from '@/components/layout/SiteLayout';
-import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
+import { SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES, SERVICE_BY_SLUG } from '@/data/services';
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';

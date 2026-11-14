@@ -8,6 +8,9 @@ export const BUSINESS = {
   mapsUrl: 'https://maps.app.goo.gl/RqRermhKp3HLdMrt6',
   websiteUrl: 'https://www.wiscoinspections.com/',
   state: 'Wisconsin',
+  inspector: 'Phil Jackson',
+  rating: 4.9,
+  reviewCount: 87,
 };
 
 export const MAPS_EMBED_SRC =
