@@ -7,9 +7,9 @@ import { usePageMeta } from '@/lib/seo';
 
 export default function ServicesPage() {
   usePageMeta({
-    title: 'Home Inspection Services in Wisconsin | WISCo Inspections, LLC',
+    title: '10 Professional Home Inspection Services in Wisconsin | WISCo Inspections, LLC',
     description:
-      'Explore home inspection services from WISCo Inspections, LLC, including buyer inspections, pre-listing inspections, radon testing, and mold testing.',
+      'Explore all 10 inspection services from WISCo Inspections, LLC, including buyer home inspections, pre-listing evaluations, radon testing, mold testing, electrical, basement & crawl space, attic & roof, thermal imaging, and 11-month builder warranty inspections.',
     path: '/services',
   });
 
@@ -17,8 +17,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Inspection Services"
-        title="Home inspection services built around your decision"
-        lead="Whether you are buying, selling, or simply want to understand your home, choose the service that fits and call to discuss it."
+        title="10 Inspection Services Built Around Your Needs"
+        lead="Whether you are buying a home, selling, building new, or troubleshooting moisture and energy concerns, we offer dedicated inspection scopes tailored to Wisconsin properties."
         image={{ src: PHOTOS.outdoorInspector, alt: 'Home inspector with a clipboard performing an outdoor property inspection' }}
       />
       <section className="bg-mist py-20 lg:py-28">
@@ -30,7 +30,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <CallCtaBand heading="Not Sure Which Inspection You Need?" body="Call WISCo Inspections and we will talk through your property and goals." />
+      <CallCtaBand heading="Not Sure Which Inspection You Need?" body="Call WISCo Inspections at (608) 642-1112 and we will help you choose the right inspection for your property." />
     </>
   );
 }

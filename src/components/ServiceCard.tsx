@@ -1,12 +1,19 @@
 import { ArrowRight } from 'lucide-react';
 import CallButton from '@/components/CallButton';
-import { PRIMARY_LOCATION } from '@/data/locations';
+import { PRIMARY_LOCATION, type ServiceLocation } from '@/data/locations';
 import type { ServiceContent } from '@/data/services';
 import { Link } from '@/lib/router';
 
-export default function ServiceCard({ service }: { service: ServiceContent }) {
+export default function ServiceCard({
+  service,
+  location,
+}: {
+  service: ServiceContent;
+  location?: ServiceLocation;
+}) {
+  const loc = location ?? PRIMARY_LOCATION;
   const Icon = service.icon;
-  const href = `/${service.slug}-${PRIMARY_LOCATION.slug}`;
+  const href = `/${service.slug}-${loc.slug}`;
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift focus-within:shadow-lift">
@@ -25,7 +32,7 @@ export default function ServiceCard({ service }: { service: ServiceContent }) {
       <div className="flex flex-1 flex-col p-6">
         <h3 className="text-xl font-bold text-navy transition group-hover:text-brand">
           <Link to={href} className="after:absolute after:inset-0 after:content-[''] focus:outline-none">
-            {`${service.name} in ${PRIMARY_LOCATION.city}`}
+            {`${service.name} in ${loc.city}`}
           </Link>
         </h3>
         <p className="mt-3 flex-1 text-base leading-relaxed text-ink/80">{service.summary}</p>

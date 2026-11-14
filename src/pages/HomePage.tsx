@@ -1,10 +1,10 @@
-import { MapPin, ShieldCheck, Eye, FileText } from 'lucide-react';
+import { ArrowRight, Eye, FileText, MapPin, ShieldCheck } from 'lucide-react';
 import CallButton from '@/components/CallButton';
 import CallCtaBand from '@/components/CallCtaBand';
 import FaqList from '@/components/FaqList';
 import ServiceCard from '@/components/ServiceCard';
 import { PHOTOS } from '@/data/business';
-import { PRIMARY_LOCATION } from '@/data/locations';
+import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
 import { HOME_PROCESS, SERVICES } from '@/data/services';
 import { Link } from '@/lib/router';
 import { usePageMeta } from '@/lib/seo';
@@ -12,29 +12,29 @@ import { usePageMeta } from '@/lib/seo';
 const TRUST_POINTS = [
   { icon: ShieldCheck, label: 'Independent, visual evaluation' },
   { icon: Eye, label: 'Thorough review of major systems' },
-  { icon: FileText, label: 'Clear, useful reporting' },
+  { icon: FileText, label: 'Clear, useful digital reporting' },
 ];
 
 const HOME_FAQS = [
   {
     question: 'What is a home inspection?',
     answer:
-      'A home inspection is a visual evaluation of the accessible systems and components of a residential property. It documents observed conditions so you can make informed decisions.',
+      'A home inspection is a visual evaluation of the accessible systems and components of a residential property. It documents observed conditions so you can make informed decisions before buying, selling, or remodeling.',
   },
   {
-    question: 'Is a home inspection a guarantee?',
+    question: 'Is a home inspection a guarantee or warranty?',
     answer:
-      'No. An inspection is a visual evaluation of accessible components at the time of the inspection. It is not a guarantee against future or concealed defects.',
+      'No. An inspection is an objective visual evaluation of accessible components at the time of the inspection. It is not an insurance policy or guarantee against future wear or concealed defects.',
   },
   {
     question: 'Do I need to attend the inspection?',
     answer:
-      'Attending is often helpful because the inspector can explain findings in person. Call to confirm the arrangements for your inspection.',
+      'Attending is strongly recommended because the inspector can walk you through findings in person, demonstrate emergency shut-off locations, and answer your specific questions on site.',
   },
   {
     question: 'How can I prepare my home for an inspection?',
     answer:
-      'Make sure the inspector can reach accessible areas such as the attic, garage, electrical panel, and crawl space entrance. Call to ask about any specific preparation for your property.',
+      'Ensure clear access to the attic hatch, crawl space access, electrical service panel, water heater, and furnace. Unlock any gates or exterior access doors.',
   },
 ];
 
@@ -42,7 +42,7 @@ export default function HomePage() {
   usePageMeta({
     title: 'WISCo Inspections, LLC | Professional Home Inspections in Wisconsin',
     description:
-      'WISCo Inspections, LLC provides professional home inspection services in Edgerton, Wisconsin. Call (608) 642-1112 to discuss your inspection needs.',
+      'WISCo Inspections, LLC provides professional home inspection services in Edgerton, Janesville, Madison, and across Southern Wisconsin. Call (608) 642-1112.',
     path: '/',
   });
 
@@ -60,14 +60,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-semibold text-gold-400">
             <MapPin className="h-4 w-4" aria-hidden="true" />
-            Serving {PRIMARY_LOCATION.name} and Wisconsin
+            Serving 10 Communities Across Rock, Dane & Jefferson Counties
           </p>
           <h1 className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Professional Home Inspection Services in {PRIMARY_LOCATION.city}, WI
+            Professional Home Inspection Services in Wisconsin
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/85">
-            Make informed property decisions with WISCo Inspections, LLC. Call to discuss your inspection needs and service
-            availability.
+            Make confident property decisions with WISCo Inspections, LLC. Based in Edgerton, we offer comprehensive buyer,
+            seller, environmental, and specialized inspections across Southern Wisconsin.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <CallButton size="lg" />
@@ -75,7 +75,7 @@ export default function HomePage() {
               to="/services"
               className="inline-flex items-center justify-center rounded-full border-2 border-white/80 px-7 py-4 text-base font-semibold text-white transition hover:bg-white hover:text-navy"
             >
-              Explore Inspection Services
+              Explore All 10 Services
             </Link>
           </div>
           <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/15 pt-8">
@@ -91,9 +91,20 @@ export default function HomePage() {
 
       <section className="bg-mist py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Home Inspection Services</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">Choose the inspection that fits</h2>
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div className="max-w-2xl">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Inspection Services</p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">10 Comprehensive Inspection Services</h2>
+              <p className="mt-4 text-base text-ink/75">
+                From pre-purchase evaluations to certified radon and mold testing, choose the exact inspection scope you need.
+              </p>
+            </div>
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 font-bold text-brand transition hover:text-navy"
+            >
+              View detailed services breakdown <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service) => (
@@ -119,33 +130,52 @@ export default function HomePage() {
       </section>
 
       <section className="bg-mist py-20 lg:py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Service Areas</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy">Inspections in {PRIMARY_LOCATION.name}</h2>
-              <p className="mt-4 text-base leading-relaxed text-ink/80">Call to confirm coverage for your property.</p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">10 Communities We Proudly Serve</h2>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink/80">
+                Based in {PRIMARY_LOCATION.name}, WISCo Inspections covers homes across Rock, Dane, and Jefferson counties. Select your community below to view local inspections.
+              </p>
             </div>
+            <Link
+              to="/service-areas"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-brand bg-white px-6 py-3 text-sm font-bold text-brand shadow-sm transition hover:bg-brand hover:text-white"
+            >
+              Explore All Service Areas <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
           </div>
-          <Link
-            to={`/${SERVICES[0].slug}-${PRIMARY_LOCATION.slug}`}
-            className="group flex items-center justify-between gap-6 rounded-2xl border border-navy-100 bg-white p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-lift"
-          >
-            <img
-              src={PHOTOS.outdoorInspector}
-              alt="Home inspector with a clipboard performing an outdoor property inspection"
-              loading="lazy"
-              decoding="async"
-              className="h-24 w-32 shrink-0 rounded-xl object-cover"
-            />
-            <span className="flex-1">
-              <span className="block text-lg font-bold text-navy">Home Inspection in {PRIMARY_LOCATION.city}, WI</span>
-              <span className="mt-1 block text-sm text-ink/70">See all inspections available in this area</span>
-            </span>
-            <span aria-hidden="true" className="text-2xl text-brand transition-transform duration-200 group-hover:translate-x-1">
-              →
-            </span>
-          </Link>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {SERVICE_LOCATIONS.map((loc) => (
+              <Link
+                key={loc.slug}
+                to={`/${SERVICES[0].slug}-${loc.slug}`}
+                className="group flex flex-col justify-between rounded-xl border border-navy-100 bg-white p-5 shadow-card transition duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-lift"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy/5 text-navy group-hover:bg-brand group-hover:text-white transition">
+                      <MapPin className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                    {loc.isPrimary && (
+                      <span className="rounded-full bg-gold/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-navy">
+                        Base
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="mt-4 text-base font-bold text-navy group-hover:text-brand transition">
+                    {loc.name}
+                  </h3>
+                  <p className="mt-1 text-xs text-ink/65">{loc.county}</p>
+                </div>
+                <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-brand transition group-hover:text-navy">
+                  View inspections <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

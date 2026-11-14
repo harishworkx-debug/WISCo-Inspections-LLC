@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import { ChevronDown, House, Menu, Phone, X } from 'lucide-react';
 import { BUSINESS } from '@/data/business';
-import { PRIMARY_LOCATION } from '@/data/locations';
+import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES } from '@/data/services';
 import { Link, usePathname } from '@/lib/router';
 import CallButton from '@/components/CallButton';
@@ -9,7 +9,7 @@ import CallButton from '@/components/CallButton';
 type OpenMenu = 'services' | 'areas' | null;
 
 const NAV_LINK = 'rounded-md px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10';
-const DROPDOWN_ITEM = 'block rounded-lg px-4 py-3 text-sm font-semibold text-navy transition hover:bg-brand-50 hover:text-brand';
+const DROPDOWN_ITEM = 'block rounded-lg px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-brand-50 hover:text-brand';
 
 function Dropdown({ open, onToggle, label, children }: { open: boolean; onToggle: () => void; label: string; children: ReactNode }) {
   return (
@@ -24,7 +24,7 @@ function Dropdown({ open, onToggle, label, children }: { open: boolean; onToggle
         <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} aria-hidden="true" />
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-xl border border-navy-100 bg-white p-2 shadow-lift">
+        <div className="absolute left-0 top-full z-50 mt-2 max-h-[75vh] w-80 overflow-y-auto rounded-xl border border-navy-100 bg-white p-2 shadow-lift">
           {children}
         </div>
       )}
@@ -48,7 +48,12 @@ export default function SiteHeader() {
 
   const serviceLinks = SERVICES.map((service) => ({
     to: `/${service.slug}-${PRIMARY_LOCATION.slug}`,
-    label: `${service.name} in ${PRIMARY_LOCATION.city}`,
+    label: service.name,
+  }));
+
+  const areaLinks = SERVICE_LOCATIONS.map((location) => ({
+    to: `/${SERVICES[0].slug}-${location.slug}`,
+    label: location.name,
   }));
 
   return (
@@ -77,16 +82,18 @@ export default function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <Link to="/services" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3`}>
-              View all inspection services
+            <Link to="/services" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}>
+              View all 10 inspection services →
             </Link>
           </Dropdown>
           <Dropdown open={openMenu === 'areas'} onToggle={() => toggleMenu('areas')} label="Service Areas">
-            <Link to={`/service-areas`} className={DROPDOWN_ITEM}>
-              {PRIMARY_LOCATION.name}
-            </Link>
-            <Link to="/service-areas" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3`}>
-              View all service areas
+            {areaLinks.map((item) => (
+              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM}>
+                {item.label}
+              </Link>
+            ))}
+            <Link to="/service-areas" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}>
+              View all 10 service areas →
             </Link>
           </Dropdown>
           <Link to="/contact" className={NAV_LINK}>
@@ -128,14 +135,24 @@ export default function SiteHeader() {
             </Link>
             <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Inspection Services</p>
             {serviceLinks.map((item) => (
-              <Link key={item.to} to={item.to} className={`${NAV_LINK} py-2.5 font-medium`}>
+              <Link key={item.to} to={item.to} className={`${NAV_LINK} py-2 font-medium`}>
                 {item.label}
               </Link>
             ))}
-            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Service Areas</p>
-            <Link to="/service-areas" className={`${NAV_LINK} py-2.5 font-medium`}>
-              {PRIMARY_LOCATION.name}
+            <Link to="/services" className={`${NAV_LINK} py-2 font-semibold text-gold-400`}>
+              View all services →
             </Link>
+
+            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Service Areas</p>
+            {areaLinks.map((item) => (
+              <Link key={item.to} to={item.to} className={`${NAV_LINK} py-2 font-medium`}>
+                {item.label}
+              </Link>
+            ))}
+            <Link to="/service-areas" className={`${NAV_LINK} py-2 font-semibold text-gold-400`}>
+              View all service areas →
+            </Link>
+
             <Link to="/contact" className={`${NAV_LINK} py-3`}>
               Contact
             </Link>
