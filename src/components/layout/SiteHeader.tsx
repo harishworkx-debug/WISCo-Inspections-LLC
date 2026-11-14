@@ -1,0 +1,154 @@
+import { useState, type ReactNode } from 'react';
+import { ChevronDown, House, Menu, Phone, X } from 'lucide-react';
+import { BUSINESS } from '@/data/business';
+import { PRIMARY_LOCATION } from '@/data/locations';
+import { SERVICES } from '@/data/services';
+import { Link, usePathname } from '@/lib/router';
+import CallButton from '@/components/CallButton';
+
+type OpenMenu = 'services' | 'areas' | null;
+
+const NAV_LINK = 'rounded-md px-3 py-2 text-sm font-semibold text-white transition hover:bg-white/10';
+const DROPDOWN_ITEM = 'block rounded-lg px-4 py-3 text-sm font-semibold text-navy transition hover:bg-brand-50 hover:text-brand';
+
+function Dropdown({ open, onToggle, label, children }: { open: boolean; onToggle: () => void; label: string; children: ReactNode }) {
+  return (
+    <div className="relative">
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={onToggle}
+        className={`${NAV_LINK} inline-flex items-center gap-1`}
+      >
+        {label}
+        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} aria-hidden="true" />
+      </button>
+      {open && (
+        <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-xl border border-navy-100 bg-white p-2 shadow-lift">
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function SiteHeader() {
+  const path = usePathname();
+  const [openMenu, setOpenMenu] = useState<OpenMenu>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [lastPath, setLastPath] = useState(path);
+
+  if (lastPath !== path) {
+    setLastPath(path);
+    setOpenMenu(null);
+    setMobileOpen(false);
+  }
+
+  const toggleMenu = (menu: Exclude<OpenMenu, null>) => setOpenMenu((current) => (current === menu ? null : menu));
+
+  const serviceLinks = SERVICES.map((service) => ({
+    to: `/${service.slug}-${PRIMARY_LOCATION.slug}`,
+    label: `${service.name} in ${PRIMARY_LOCATION.city}`,
+  }));
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-navy text-white shadow-md">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link to="/" className="flex min-w-0 items-center gap-3">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold text-navy">
+            <House className="h-6 w-6" aria-hidden="true" />
+          </span>
+          <span className="min-w-0 leading-tight">
+            <span className="block truncate text-base font-bold tracking-tight">WISCo Inspections</span>
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">LLC · Wisconsin</span>
+          </span>
+        </Link>
+
+        <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
+          <Link to="/" className={NAV_LINK}>
+            Home
+          </Link>
+          <Link to="/about" className={NAV_LINK}>
+            About Us
+          </Link>
+          <Dropdown open={openMenu === 'services'} onToggle={() => toggleMenu('services')} label="Inspection Services">
+            {serviceLinks.map((item) => (
+              <Link key={item.to} to={item.to} className={DROPDOWN_ITEM}>
+                {item.label}
+              </Link>
+            ))}
+            <Link to="/services" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3`}>
+              View all inspection services
+            </Link>
+          </Dropdown>
+          <Dropdown open={openMenu === 'areas'} onToggle={() => toggleMenu('areas')} label="Service Areas">
+            <Link to={`/service-areas`} className={DROPDOWN_ITEM}>
+              {PRIMARY_LOCATION.name}
+            </Link>
+            <Link to="/service-areas" className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3`}>
+              View all service areas
+            </Link>
+          </Dropdown>
+          <Link to="/contact" className={NAV_LINK}>
+            Contact
+          </Link>
+        </nav>
+
+        <div className="flex shrink-0 items-center gap-2">
+          <div className="hidden lg:block">
+            <CallButton label="Call Now" size="md" />
+          </div>
+          <a
+            href={BUSINESS.phoneHref}
+            aria-label={`Call ${BUSINESS.phoneDisplay}`}
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-gold text-navy shadow-md transition active:scale-95 lg:hidden"
+          >
+            <Phone className="h-5 w-5" aria-hidden="true" />
+          </a>
+          <button
+            type="button"
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+            onClick={() => setMobileOpen((value) => !value)}
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition hover:bg-white/10 lg:hidden"
+          >
+            {mobileOpen ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+          </button>
+        </div>
+      </div>
+
+      {mobileOpen && (
+        <nav aria-label="Mobile" className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-white/10 bg-navy px-4 pb-6 pt-2 lg:hidden">
+          <div className="flex flex-col gap-1">
+            <Link to="/" className={`${NAV_LINK} py-3`}>
+              Home
+            </Link>
+            <Link to="/about" className={`${NAV_LINK} py-3`}>
+              About Us
+            </Link>
+            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Inspection Services</p>
+            {serviceLinks.map((item) => (
+              <Link key={item.to} to={item.to} className={`${NAV_LINK} py-2.5 font-medium`}>
+                {item.label}
+              </Link>
+            ))}
+            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Service Areas</p>
+            <Link to="/service-areas" className={`${NAV_LINK} py-2.5 font-medium`}>
+              {PRIMARY_LOCATION.name}
+            </Link>
+            <Link to="/contact" className={`${NAV_LINK} py-3`}>
+              Contact
+            </Link>
+            <a
+              href={BUSINESS.phoneHref}
+              className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3.5 font-semibold text-navy"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              Call {BUSINESS.phoneDisplay}
+            </a>
+          </div>
+        </nav>
+      )}
+    </header>
+  );
+}

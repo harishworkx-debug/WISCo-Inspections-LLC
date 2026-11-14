@@ -1,0 +1,44 @@
+import SiteLayout from '@/components/layout/SiteLayout';
+import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
+import { SERVICES, SERVICE_BY_SLUG } from '@/data/services';
+import AboutPage from '@/pages/AboutPage';
+import ContactPage from '@/pages/ContactPage';
+import HomePage from '@/pages/HomePage';
+import NotFoundPage from '@/pages/NotFoundPage';
+import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
+import ServiceAreasPage from '@/pages/ServiceAreasPage';
+import ServiceLocationPage from '@/pages/ServiceLocationPage';
+import ServicesPage from '@/pages/ServicesPage';
+import TermsPage from '@/pages/TermsPage';
+import { usePathname } from '@/lib/router';
+
+const STATIC_ROUTES: Record<string, () => JSX.Element> = {
+  '/': HomePage,
+  '/about': AboutPage,
+  '/services': ServicesPage,
+  '/service-areas': ServiceAreasPage,
+  '/contact': ContactPage,
+  '/privacy-policy': PrivacyPolicyPage,
+  '/terms-and-conditions': TermsPage,
+};
+
+function renderServiceLocation(path: string) {
+  for (const location of SERVICE_LOCATIONS) {
+    for (const service of SERVICES) {
+      if (path === `/${service.slug}-${location.slug}`) {
+        return <ServiceLocationPage service={SERVICE_BY_SLUG[service.slug]} location={location} />;
+      }
+    }
+  }
+  return null;
+}
+
+function App() {
+  const path = usePathname();
+  const StaticPage = STATIC_ROUTES[path];
+  const content = StaticPage ? <StaticPage /> : renderServiceLocation(path) ?? <NotFoundPage />;
+
+  return <SiteLayout>{content}</SiteLayout>;
+}
+
+export default App;
