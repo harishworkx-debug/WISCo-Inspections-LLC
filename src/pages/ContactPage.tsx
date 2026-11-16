@@ -1,16 +1,37 @@
 import { Clock, MapPin, Phone, ShieldCheck } from 'lucide-react';
 import CallButton from '@/components/CallButton';
 import PageHero from '@/components/PageHero';
-import { BUSINESS, MAPS_EMBED_SRC } from '@/data/business';
+import { BUSINESS, MAPS_EMBED_SRC, SITE_URL } from '@/data/business';
 import { PRIMARY_LOCATION } from '@/data/locations';
 import { usePageMeta } from '@/lib/seo';
 
 export default function ContactPage() {
   usePageMeta({
-    title: 'Contact WISCo Inspections, LLC | Call for Home Inspections',
+    title: 'Contact WISCo Inspections | Schedule a Wisconsin Home Inspection',
     description:
-      'Contact WISCo Inspections, LLC by phone at (608) 642-1112 to discuss home inspection services in Edgerton and across Wisconsin.',
+      'Contact licensed Wisconsin home inspector Phil Jackson at WISCo Inspections, LLC. Call (608) 642-1112 for prompt scheduling across Madison, Edgerton, Janesville, and Southern WI.',
     path: '/contact',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'Contact WISCo Inspections, LLC',
+      url: `${SITE_URL}/contact`,
+      mainEntity: {
+        '@type': 'HomeInspector',
+        name: BUSINESS.name,
+        telephone: '+1-608-642-1112',
+        url: SITE_URL,
+        hasMap: BUSINESS.mapsUrl,
+        sameAs: [BUSINESS.mapsUrl],
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: BUSINESS.addressCity,
+          addressRegion: BUSINESS.addressState,
+          postalCode: BUSINESS.addressZip,
+          addressCountry: 'US',
+        },
+      },
+    },
   });
 
   return (

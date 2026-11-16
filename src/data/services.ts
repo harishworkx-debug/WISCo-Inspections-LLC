@@ -18,6 +18,8 @@ export type Faq = { question: string; answer: string };
 export type ServiceContent = {
   slug: string;
   name: string;
+  primaryKeyword: string;
+  supportingKeywords: string[];
   icon: LucideIcon;
   image: { src: string; alt: string };
   seoTitle: string;
@@ -37,6 +39,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'home-inspection',
     name: 'Home Inspection',
+    primaryKeyword: 'Home inspector',
+    supportingKeywords: ['Professional home inspection', 'Home inspection company'],
     icon: House,
     image: { src: PHOTOS.outdoorInspector, alt: 'Home inspector with a clipboard performing an outdoor property inspection' },
     seoTitle: 'Professional Home Inspection | WISCo Inspections, LLC',
@@ -100,6 +104,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'buyer-home-inspection',
     name: 'Buyer Home Inspection',
+    primaryKeyword: 'Buyer home inspection',
+    supportingKeywords: ['Pre-purchase inspection', 'Home inspection for buyers'],
     icon: FileSearch,
     image: { src: PHOTOS.buyerKeys, alt: 'Family receiving the keys to their new home from a real estate agent' },
     seoTitle: 'Buyer Home Inspection | WISCo Inspections, LLC',
@@ -157,6 +163,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'pre-listing-inspection',
     name: 'Pre-Listing Inspection',
+    primaryKeyword: 'Pre-listing home inspection',
+    supportingKeywords: ['Seller home inspection', 'Inspection before selling'],
     icon: ClipboardCheck,
     image: { src: PHOTOS.checklist, alt: 'Hands holding a home inspection checklist on a clipboard' },
     seoTitle: 'Pre-Listing Inspection for Home Sellers | WISCo Inspections, LLC',
@@ -214,6 +222,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'radon-testing',
     name: 'Radon Testing',
+    primaryKeyword: 'Radon testing',
+    supportingKeywords: ['Radon inspection', 'Home radon test'],
     icon: Wind,
     image: { src: PHOTOS.safetyDevices, alt: 'Smart home safety devices including a smoke detector and camera' },
     seoTitle: 'Certified Radon Testing | WISCo Inspections, LLC',
@@ -270,6 +280,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'mold-testing',
     name: 'Mold Testing & Assessment',
+    primaryKeyword: 'Mold testing',
+    supportingKeywords: ['Mold inspection', 'Indoor mold testing'],
     icon: Droplets,
     image: { src: PHOTOS.wallMoisture, alt: 'Close-up of a weathered wall showing cracks and moisture staining' },
     seoTitle: 'Mold Testing & Air Sampling | WISCo Inspections, LLC',
@@ -326,6 +338,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'basement-crawl-space-inspection',
     name: 'Basement & Crawl Space Inspection',
+    primaryKeyword: 'Basement inspection',
+    supportingKeywords: ['Crawl space inspection', 'Basement moisture inspection'],
     icon: Layers,
     image: { src: PHOTOS.basement, alt: 'Unfinished basement inspection showing concrete foundation walls and floor joists' },
     seoTitle: 'Basement & Crawl Space Inspection | WISCo Inspections, LLC',
@@ -382,6 +396,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'attic-roof-inspection',
     name: 'Attic & Roof Structure Inspection',
+    primaryKeyword: 'Attic inspection',
+    supportingKeywords: ['Roof inspection', 'Attic ventilation inspection'],
     icon: ShieldCheck,
     image: { src: PHOTOS.attic, alt: 'Home inspector inspecting attic insulation, trusses, and ventilation with a flashlight' },
     seoTitle: 'Attic & Roof Structure Inspection | WISCo Inspections, LLC',
@@ -439,6 +455,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'electrical-inspection',
     name: 'Electrical System Inspection',
+    primaryKeyword: 'Electrical inspection',
+    supportingKeywords: ['Home electrical safety inspection', 'Electrical defects'],
     icon: Zap,
     image: { src: PHOTOS.electrical, alt: 'Electrician inspecting a circuit breaker panel with diagnostic equipment' },
     seoTitle: 'Electrical System Inspection | WISCo Inspections, LLC',
@@ -496,6 +514,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'thermal-imaging-inspection',
     name: 'Thermal Imaging Inspection',
+    primaryKeyword: 'Thermal imaging inspection',
+    supportingKeywords: ['Infrared home inspection', 'Thermal camera inspection'],
     icon: Thermometer,
     image: { src: PHOTOS.doorframe, alt: 'Thermal imaging camera evaluating heat loss around window and door frames' },
     seoTitle: 'Thermal Imaging & Infrared Inspection | WISCo Inspections, LLC',
@@ -552,6 +572,8 @@ export const SERVICES: ServiceContent[] = [
   {
     slug: 'warranty-inspection',
     name: '11-Month Builder Warranty Inspection',
+    primaryKeyword: 'New home warranty inspection',
+    supportingKeywords: ['Builder warranty inspection', '11-month warranty inspection'],
     icon: Award,
     image: { src: PHOTOS.heroInspector, alt: 'Home inspector checking construction finishing, framing, and fixtures in a new home' },
     seoTitle: '11-Month Builder Warranty Inspection | WISCo Inspections, LLC',

@@ -92,6 +92,11 @@ export default function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link to="/articles" className={FOOTER_LINK}>
+                Educational Inspection Guides
+              </Link>
+            </li>
+            <li>
               <Link to="/contact" className={FOOTER_LINK}>
                 Contact & Scheduling
               </Link>

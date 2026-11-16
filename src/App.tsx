@@ -1,7 +1,10 @@
 import SiteLayout from '@/components/layout/SiteLayout';
+import { ARTICLE_BY_SLUG } from '@/data/articles';
 import { SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES, SERVICE_BY_SLUG } from '@/data/services';
 import AboutPage from '@/pages/AboutPage';
+import ArticleDetailPage from '@/pages/ArticleDetailPage';
+import ArticlesPage from '@/pages/ArticlesPage';
 import ContactPage from '@/pages/ContactPage';
 import HomePage from '@/pages/HomePage';
 import NotFoundPage from '@/pages/NotFoundPage';
@@ -17,10 +20,22 @@ const STATIC_ROUTES: Record<string, () => JSX.Element> = {
   '/about': AboutPage,
   '/services': ServicesPage,
   '/service-areas': ServiceAreasPage,
+  '/articles': ArticlesPage,
   '/contact': ContactPage,
   '/privacy-policy': PrivacyPolicyPage,
   '/terms-and-conditions': TermsPage,
 };
+
+function renderArticle(path: string) {
+  if (path.startsWith('/articles/')) {
+    const slug = path.replace('/articles/', '');
+    const article = ARTICLE_BY_SLUG[slug];
+    if (article) {
+      return <ArticleDetailPage article={article} />;
+    }
+  }
+  return null;
+}
 
 function renderServiceLocation(path: string) {
   for (const location of SERVICE_LOCATIONS) {
@@ -36,7 +51,8 @@ function renderServiceLocation(path: string) {
 function App() {
   const path = usePathname();
   const StaticPage = STATIC_ROUTES[path];
-  const content = StaticPage ? <StaticPage /> : renderServiceLocation(path) ?? <NotFoundPage />;
+  const content =
+    StaticPage ? <StaticPage /> : renderArticle(path) ?? renderServiceLocation(path) ?? <NotFoundPage />;
 
   return <SiteLayout>{content}</SiteLayout>;
 }

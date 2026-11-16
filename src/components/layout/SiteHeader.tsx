@@ -131,6 +131,9 @@ export default function SiteHeader() {
           <Link to="/about" className={NAV_LINK}>
             About Us
           </Link>
+          <Link to="/articles" className={NAV_LINK}>
+            Guides &amp; Articles
+          </Link>
           <Dropdown
             open={openMenu === 'services'}
             onOpen={openServices}
@@ -207,6 +210,9 @@ export default function SiteHeader() {
             </Link>
             <Link to="/about" className={`${NAV_LINK} py-3`}>
               About Us
+            </Link>
+            <Link to="/articles" className={`${NAV_LINK} py-3`}>
+              Guides &amp; Articles
             </Link>
             <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Inspection Services</p>
             {serviceLinks.map((item) => (

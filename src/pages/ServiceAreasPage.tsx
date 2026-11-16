@@ -1,7 +1,7 @@
 import { ArrowRight, ChevronRight, Home, MapPin } from 'lucide-react';
 import CallCtaBand from '@/components/CallCtaBand';
 import PageHero from '@/components/PageHero';
-import { PHOTOS } from '@/data/business';
+import { PHOTOS, SITE_URL } from '@/data/business';
 import { SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES } from '@/data/services';
 import { Link } from '@/lib/router';
@@ -9,10 +9,32 @@ import { usePageMeta } from '@/lib/seo';
 
 export default function ServiceAreasPage() {
   usePageMeta({
-    title: '10 Home Inspection Service Areas in Southern Wisconsin | WISCo Inspections, LLC',
+    title: 'Home Inspection Service Areas Wisconsin | WISCo Inspections',
     description:
-      'Explore the 10 Southern Wisconsin communities served by WISCo Inspections, LLC across Rock, Dane, and Jefferson counties. Call (608) 642-1112.',
+      'Professional home inspection and environmental testing across 10 South Central Wisconsin communities including Madison, Edgerton, Janesville, Beloit, Stoughton, and Sun Prairie. Call (608) 642-1112.',
     path: '/service-areas',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'ItemList',
+          name: 'WISCo Inspections Service Locations',
+          itemListElement: SERVICE_LOCATIONS.map((loc, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: `${loc.name} Home Inspection`,
+            url: `${SITE_URL}/home-inspection-${loc.slug}`,
+          })),
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+            { '@type': 'ListItem', position: 2, name: 'Service Areas', item: `${SITE_URL}/service-areas` },
+          ],
+        },
+      ],
+    },
   });
 
   return (
@@ -30,9 +52,9 @@ export default function ServiceAreasPage() {
       </nav>
 
       <PageHero
-        eyebrow="Service Areas"
-        title="10 Service Areas Across Southern Wisconsin"
-        lead="WISCo Inspections, LLC is based in Edgerton and actively inspects properties throughout Rock, Dane, and Jefferson counties. Call to confirm availability for your address."
+        eyebrow="Wisconsin Coverage"
+        title="Home Inspection Services Across South Central Wisconsin"
+        lead="WISCo Inspections, LLC is based in Edgerton and actively inspects properties throughout Rock, Dane, and Jefferson counties. Select your community below for localized service details and scheduling."
         image={{ src: PHOTOS.heroInspector, alt: 'Home inspector examining the interior of a residential home' }}
       />
 
@@ -68,14 +90,17 @@ export default function ServiceAreasPage() {
                     </div>
                   </div>
 
-                  <h3 className="mt-5 text-2xl font-bold text-navy">
-                    <Link
-                      to={`/${SERVICES[0].slug}-${location.slug}`}
-                      className="transition group-hover:text-brand"
-                    >
-                      {location.name}
-                    </Link>
-                  </h3>
+                  <div className="mt-5">
+                    <p className="text-xs font-bold uppercase tracking-wider text-brand">Home Inspector {location.city} WI</p>
+                    <h3 className="mt-1 text-2xl font-bold text-navy">
+                      <Link
+                        to={`/${SERVICES[0].slug}-${location.slug}`}
+                        className="transition group-hover:text-brand"
+                      >
+                        {location.name}
+                      </Link>
+                    </h3>
+                  </div>
                   <p className="mt-3 text-base leading-relaxed text-ink/80">{location.intro}</p>
 
                   <div className="mt-5">

@@ -35,6 +35,16 @@ export default function ServiceCard({
             {`${service.name} in ${loc.city}`}
           </Link>
         </h3>
+        <div className="mt-2.5 flex flex-wrap gap-1.5">
+          <span className="rounded-md bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand">
+            {service.primaryKeyword}
+          </span>
+          {service.supportingKeywords.slice(0, 2).map((kw) => (
+            <span key={kw} className="rounded-md bg-mist px-2 py-0.5 text-[11px] text-ink/70">
+              {kw}
+            </span>
+          ))}
+        </div>
         <p className="mt-3 flex-1 text-base leading-relaxed text-ink/80">{service.summary}</p>
         <div className="mt-5 flex items-center justify-between gap-4">
           <span className="inline-flex items-center gap-2 text-sm font-bold text-brand transition group-hover:text-navy">

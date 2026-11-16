@@ -2,7 +2,7 @@ import { Award, Eye, ListChecks, MessageCircle, ShieldCheck, Star } from 'lucide
 import CallCtaBand from '@/components/CallCtaBand';
 import PageHero from '@/components/PageHero';
 import CallButton from '@/components/CallButton';
-import { BUSINESS, PHOTOS } from '@/data/business';
+import { BUSINESS, PHOTOS, SITE_URL } from '@/data/business';
 import { REVIEWS_OVERVIEW } from '@/data/reviews';
 import { usePageMeta } from '@/lib/seo';
 
@@ -31,10 +31,42 @@ const PRINCIPLES = [
 
 export default function AboutPage() {
   usePageMeta({
-    title: 'About WISCo Inspections, LLC | Inspector Phil Jackson | Edgerton, WI',
+    title: 'About Inspector Phil Jackson | WISCo Inspections Wisconsin',
     description:
-      'Learn about Phil Jackson and WISCo Inspections, LLC, a top-rated 4.9★ home inspection company serving Edgerton, Janesville, Madison, and Southern Wisconsin.',
+      'Learn about Phil Jackson, licensed Wisconsin home inspector #3302-106 at WISCo Inspections, LLC. 4.9★ rating with 87 verified reviews across Madison, Edgerton, and Janesville.',
     path: '/about',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'AboutPage',
+          name: 'About Inspector Phil Jackson & WISCo Inspections',
+          url: `${SITE_URL}/about`,
+        },
+        {
+          '@type': 'Person',
+          name: BUSINESS.inspector,
+          jobTitle: 'Wisconsin Licensed Home Inspector',
+          hasCredential: {
+            '@type': 'EducationalOccupationalCredential',
+            credentialCategory: 'State License',
+            name: 'Wisconsin Home Inspector License #3302-106',
+          },
+          worksFor: {
+            '@type': 'HomeInspector',
+            name: BUSINESS.name,
+            url: SITE_URL,
+            hasMap: BUSINESS.mapsUrl,
+            sameAs: [BUSINESS.mapsUrl],
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              reviewCount: '87',
+            },
+          },
+        },
+      ],
+    },
   });
 
   return (
@@ -83,8 +115,8 @@ export default function AboutPage() {
                   <Award className="h-6 w-6 text-gold-600" />
                 </span>
                 <div>
-                  <p className="font-bold text-navy">Over 85+ Five-Star Reviews</p>
-                  <p className="text-sm text-ink/70">Top-rated home inspector in Rock, Dane & Jefferson counties.</p>
+                  <p className="font-bold text-navy">Wisconsin License #3302-106 · 85+ Five-Star Reviews</p>
+                  <p className="text-sm text-ink/70">Top-rated independent home inspector adhering to InterNACHI standards.</p>
                 </div>
               </div>
             </div>
