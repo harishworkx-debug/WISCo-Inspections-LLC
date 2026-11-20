@@ -14,6 +14,8 @@ import ServiceLocationPage from '@/pages/ServiceLocationPage';
 import ServicesPage from '@/pages/ServicesPage';
 import TermsPage from '@/pages/TermsPage';
 import { usePathname } from '@/lib/router';
+import { USE_LANDING_PAGE_AS_HOME } from '@/siteMode';
+import StandaloneLandingPage from '@/standalone-landing/StandaloneLandingPage';
 
 const STATIC_ROUTES: Record<string, () => JSX.Element> = {
   '/': HomePage,
@@ -50,6 +52,20 @@ function renderServiceLocation(path: string) {
 
 function App() {
   const path = usePathname();
+
+  // Standby preview route for the standalone landing page
+  if (path === '/home-page') {
+    return <StandaloneLandingPage />;
+  }
+
+  // 🎛️ Root Switcher Active: Direct landing page at root "/" and primary niche-location slug
+  if (USE_LANDING_PAGE_AS_HOME) {
+    if (path === '/' || path === '/home-inspection-edgerton-wi') {
+      return <StandaloneLandingPage />;
+    }
+  }
+
+  // Standard multi-page site routing wrapped in main SiteLayout
   const StaticPage = STATIC_ROUTES[path];
   const content =
     StaticPage ? <StaticPage /> : renderArticle(path) ?? renderServiceLocation(path) ?? <NotFoundPage />;
