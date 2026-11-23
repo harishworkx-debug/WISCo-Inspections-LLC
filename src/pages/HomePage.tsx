@@ -226,9 +226,9 @@ const EXTENDED_FAQS = [
       'Radon testing is strongly recommended whenever purchasing a home in Wisconsin, as Dane, Rock, and surrounding counties are classified by the EPA as High Radon Potential Zones (Zone 1). You should also test every two years, before finishing a basement, or after major energy-efficiency upgrades. We conduct 48-hour continuous electronic radon testing.',
   },
   {
-    question: 'What are the signs of hidden mold in a Wisconsin home?',
+    question: 'What are the signs of hidden mold in a Wisconsin home, and do you remove it?',
     answer:
-      'Common warning signs include persistent musty or earthy odors, visible discoloration or staining along drywall and baseboards, white powdery efflorescence on basement masonry, peeling paint, or past history of roof, plumbing, or ice dam leaks. Our mold testing combines moisture meter diagnostics with laboratory air spore trap and swab sampling.',
+      'Common warning signs include persistent musty or earthy odors, visible discoloration or staining along drywall and baseboards, white powdery efflorescence on basement masonry, peeling paint, or past history of roof, plumbing, or ice dam leaks. Our mold service combines moisture meter diagnostics with accredited laboratory air spore trap and swab sampling. Please note: WISCo Inspections strictly provides independent diagnostic testing only—we never perform physical mold removal or remediation, guaranteeing 100% unbiased findings.',
   },
   {
     question: 'What is involved in a home inspection for older houses in Wisconsin?',

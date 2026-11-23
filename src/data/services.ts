@@ -332,6 +332,11 @@ export const SERVICES: ServiceContent[] = [
         answer:
           'Once samples are received by the accredited lab, complete spore identification reports are typically returned within 2 to 3 business days.',
       },
+      {
+        question: 'Does WISCo Inspections perform mold removal or remediation?',
+        answer:
+          'No. To maintain complete diagnostic independence and eliminate any conflict of interest, WISCo Inspections strictly performs objective inspection, moisture mapping, and accredited laboratory air/surface testing. We never perform physical mold removal, remediation, or repairs. Our unbiased reports provide clear, verified documentation that homeowners can hand directly to an independent remediation contractor if abatement is needed.',
+      },
     ],
     related: ['home-inspection', 'radon-testing', 'basement-crawl-space-inspection', 'thermal-imaging-inspection'],
   },
