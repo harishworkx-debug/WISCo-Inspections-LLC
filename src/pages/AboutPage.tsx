@@ -1,68 +1,66 @@
-import { Award, Eye, ListChecks, MessageCircle, ShieldCheck, Star } from 'lucide-react';
+import { Award, ListChecks, ShieldCheck, Star, Waves, Zap } from 'lucide-react';
 import CallCtaBand from '@/components/CallCtaBand';
 import PageHero from '@/components/PageHero';
 import CallButton from '@/components/CallButton';
-import { BUSINESS, PHOTOS, SITE_URL } from '@/data/business';
+import { BUSINESS, MAPS_EMBED_SRC, PHOTOS, SITE_URL } from '@/data/business';
 import { REVIEWS_OVERVIEW } from '@/data/reviews';
 import { usePageMeta } from '@/lib/seo';
 
 const PRINCIPLES = [
   {
-    icon: ShieldCheck,
-    title: '100% Independent & Unbiased',
-    body: 'Our only role is to document what we observe about a property and explain it clearly. We do not sell repair services or accept contractor referral fees.',
+    icon: Waves,
+    title: '24/7 Rapid Emergency Response',
+    body: 'Water damage accelerates by the hour. We maintain emergency dispatch around the clock across Southern Wisconsin to stop flooding and extract water before structural rot and mold set in.',
   },
   {
-    icon: Eye,
-    title: 'Methodical System Evaluation',
-    body: 'We evaluate accessible areas systematically, including the foundation, roof, structure, exterior drainage, electrical panels, plumbing, and HVAC systems.',
+    icon: ShieldCheck,
+    title: 'IICRC-Compliant Protocols',
+    body: 'We follow strict IICRC S500 water damage restoration and S520 mold remediation standards, utilizing negative-air containment, HEPA air scrubbers, and botanical antimicrobial treatments.',
   },
   {
     icon: ListChecks,
-    title: 'Clear, Digital Reporting',
-    body: 'Findings are delivered within 24 hours with annotated color photos, video clips, and plain-English defect categories you can immediately share with contractors.',
+    title: 'Hassle-Free Insurance Coordination',
+    body: 'We document all damage thoroughly with thermal imaging, moisture mapping, and industry-standard Xactimate itemized pricing, working directly with your insurance adjuster.',
   },
   {
-    icon: MessageCircle,
-    title: 'Open Communication & Walkthrough',
-    body: 'Questions are always welcome. Inspector Phil Jackson takes the time to walk you through findings in person and remains available for follow-up questions after closing.',
+    icon: Zap,
+    title: 'Advanced Diagnostic Technology',
+    body: 'From FLIR infrared thermal cameras to commercial LGR dehumidifiers and air movers, we use state-of-the-art restoration technology to guarantee complete structural drying.',
   },
 ];
 
 export default function AboutPage() {
   usePageMeta({
-    title: 'About Inspector Phil Jackson | WISCo Inspections Wisconsin',
+    title: 'About WISCo Mold & Water Damage | Certified Restoration Wisconsin',
     description:
-      'Learn about Phil Jackson, licensed Wisconsin home inspector #3302-106 at WISCo Inspections, LLC. 4.9★ rating with 87 verified reviews across Madison, Edgerton, and Janesville.',
+      'Learn about WISCo Mold & Water Damage, LLC led by Phil Jackson. 24/7 emergency water extraction, flood cleanup, and certified mold remediation across Madison, Edgerton, and Janesville.',
     path: '/about',
     jsonLd: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'AboutPage',
-          name: 'About Inspector Phil Jackson & WISCo Inspections',
+          name: 'About WISCo Mold & Water Damage',
           url: `${SITE_URL}/about`,
         },
         {
-          '@type': 'Person',
-          name: BUSINESS.inspector,
-          jobTitle: 'Wisconsin Licensed Home Inspector',
-          hasCredential: {
-            '@type': 'EducationalOccupationalCredential',
-            credentialCategory: 'State License',
-            name: 'Wisconsin Home Inspector License #3302-106',
+          '@type': 'WaterDamageRestorationService',
+          name: BUSINESS.name,
+          telephone: '+1-608-642-1112',
+          url: SITE_URL,
+          hasMap: BUSINESS.mapsUrl,
+          sameAs: [BUSINESS.mapsUrl],
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: BUSINESS.addressCity,
+            addressRegion: BUSINESS.addressState,
+            postalCode: BUSINESS.addressZip,
+            addressCountry: 'US',
           },
-          worksFor: {
-            '@type': 'HomeInspector',
-            name: BUSINESS.name,
-            url: SITE_URL,
-            hasMap: BUSINESS.mapsUrl,
-            sameAs: [BUSINESS.mapsUrl],
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '87',
-            },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            reviewCount: '87',
           },
         },
       ],
@@ -72,12 +70,12 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Us"
-        title="Meet Inspector Phil Jackson & WISCo Inspections"
-        lead="A thoughtful, independent approach to residential home inspections and environmental testing across Southern Wisconsin."
-        image={{ src: PHOTOS.crawlSpace, alt: 'Inspector checking a crawl space entrance during a home inspection' }}
+        eyebrow="About WISCo Mold & Water Damage"
+        title="Restoring Wisconsin Homes & Peace of Mind"
+        lead="A dedicated, certified team delivering 24/7 emergency flood water extraction, structural drying, and safe mold remediation across Southern Wisconsin."
+        image={{ src: PHOTOS.waterExtraction, alt: 'Technician managing commercial water damage restoration and drying equipment' }}
       >
-        <CallButton size="lg" />
+        <CallButton size="lg" label="24/7 Emergency Call: (608) 642-1112" />
         <a
           href={BUSINESS.mapsUrl}
           target="_blank"
@@ -89,45 +87,56 @@ export default function AboutPage() {
               <Star key={i} className="h-4 w-4 fill-gold text-gold" aria-hidden="true" />
             ))}
           </div>
-          <span>4.9 ★ ({REVIEWS_OVERVIEW.totalReviews} Reviews)</span>
+          <span>4.9 ★ ({REVIEWS_OVERVIEW.totalReviews} Verified Reviews)</span>
         </a>
       </PageHero>
 
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Our Philosophy</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">Information you can act on</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Our Mission</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              Rapid Restoration When Disasters Strike
+            </h2>
             <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink/80">
               <p>
-                A home inspection should leave you confident and well-informed, not overwhelmed with technical jargon.
-                Founded by Wisconsin licensed inspector <strong>Phil Jackson</strong>, WISCo Inspections was built on the
-                premise that buyers, sellers, and homeowners deserve an objective, detailed evaluation with explanations they
-                can actually use.
+                When a pipe bursts during a sub-zero Wisconsin winter, a sump pump fails during a severe summer thunderstorm, or toxic black mold is discovered behind finished walls, homeowners need immediate, reliable assistance.
               </p>
               <p>
-                Whether inspecting a century-old historic craftsman in Madison or an 11-month builder warranty home in Sun
-                Prairie, Phil approaches every property with the same meticulous attention to detail. Every inspection concludes
-                with a thorough on-site walkthrough and a comprehensive digital report delivered within 24 hours.
+                Founded and directed by restoration specialist <strong>Phil Jackson</strong>, <strong>WISCo Mold &amp; Water Damage, LLC</strong> was established to provide homeowners, property managers, and businesses with fast, compassionate, and certified disaster mitigation.
+              </p>
+              <p>
+                Based centrally in Edgerton, Wisconsin, our crews arrive fully equipped with truck-mounted water extraction pumps, commercial LGR dehumidifiers, negative-air containment barriers, and infrared thermal imaging cameras. We treat your home with the utmost care, preventing secondary microbial growth and restoring healthy indoor air quality.
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/20 text-navy font-bold">
                   <Award className="h-6 w-6 text-gold-600" />
                 </span>
                 <div>
-                  <p className="font-bold text-navy">Wisconsin License #3302-106 · 85+ Five-Star Reviews</p>
-                  <p className="text-sm text-ink/70">Top-rated independent home inspector adhering to InterNACHI standards.</p>
+                  <p className="font-bold text-navy">Certified Mold Remediation &amp; Water Restoration Specialist</p>
+                  <p className="text-sm text-ink/70">Top-rated 4.9★ service across Rock, Dane, and Jefferson counties.</p>
                 </div>
               </div>
             </div>
           </div>
-          <img
-            src={PHOTOS.doorframe}
-            alt="Inspector with a clipboard checking the alignment of a doorframe"
-            loading="lazy"
-            decoding="async"
-            className="aspect-[4/3] w-full self-center rounded-3xl object-cover shadow-lift"
-          />
+          <div className="flex flex-col gap-6">
+            <img
+              src={PHOTOS.heroWaterDamage}
+              alt="Water damage restoration equipment drying a residential floor"
+              loading="lazy"
+              decoding="async"
+              className="aspect-[4/3] w-full self-center rounded-3xl object-cover shadow-lift"
+            />
+            {/* Interactive Location Map */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md h-64 w-full">
+              <iframe
+                title="WISCo Mold & Water Damage Headquarters Map"
+                src={MAPS_EMBED_SRC}
+                className="w-full h-full border-0"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -135,7 +144,9 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Our Core Principles</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">How we evaluate a property</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              How We Restore Your Property Safely
+            </h2>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {PRINCIPLES.map(({ icon: Icon, title, body }) => (
@@ -156,7 +167,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CallCtaBand heading="Talk Directly with Inspector Phil Jackson" body="Call (608) 642-1112 to discuss your property, get a prompt quote, and schedule your inspection." />
+      <CallCtaBand
+        heading="Facing Water Damage or Suspect Mold Growth?"
+        body="Call WISCo Mold & Water Damage 24/7 at (608) 642-1112 for immediate dispatch and consultation."
+      />
     </>
   );
 }

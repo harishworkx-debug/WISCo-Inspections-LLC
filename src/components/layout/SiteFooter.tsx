@@ -1,4 +1,4 @@
-import { House, Mail, MapPin, Star } from 'lucide-react';
+import { Mail, MapPin, Star, Waves } from 'lucide-react';
 import { BUSINESS } from '@/data/business';
 import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES } from '@/data/services';
@@ -13,19 +13,19 @@ export default function SiteFooter() {
         <div className="space-y-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold text-navy">
-              <House className="h-6 w-6" aria-hidden="true" />
+              <Waves className="h-6 w-6" aria-hidden="true" />
             </span>
             <span className="text-base font-bold">{BUSINESS.name}</span>
           </Link>
           <p className="max-w-xs text-xs leading-relaxed text-white/75">
-            Independent, licensed home inspections, radon testing, and mold assessments across 10 communities in Rock, Dane, and Jefferson counties.
+            24/7 Emergency water damage restoration, standing flood water extraction, and certified toxic mold remediation across 10 communities in Rock, Dane, and Jefferson counties.
           </p>
           <div>
             <a
               href={BUSINESS.phoneHref}
-              className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-xs font-bold text-navy transition hover:bg-gold-400"
+              className="inline-flex items-center gap-2 rounded-full bg-red-600 px-5 py-2.5 text-xs font-bold text-white transition hover:bg-red-500 shadow"
             >
-              Call {BUSINESS.phoneDisplay}
+              24/7 Emergency: {BUSINESS.phoneDisplay}
             </a>
           </div>
           <a
@@ -40,13 +40,13 @@ export default function SiteFooter() {
               ))}
             </span>
             <span className="font-bold text-white">4.9 ★</span>
-            <span>(87 Google Reviews)</span>
+            <span>(87 Verified Reviews)</span>
           </a>
         </div>
 
-        {/* All 10 Inspection Services */}
+        {/* All 10 Restoration Services */}
         <div>
-          <h2 className="mb-4 text-sm font-bold uppercase tracking-wider text-gold-400">All 10 Inspection Services</h2>
+          <h2 className="mb-4 text-sm font-bold uppercase tracking-wider text-gold-400">All 10 Restoration Services</h2>
           <ul className="space-y-2">
             {SERVICES.map((service) => (
               <li key={service.slug}>
@@ -57,7 +57,7 @@ export default function SiteFooter() {
             ))}
             <li className="pt-1">
               <Link to="/services" className="text-xs font-bold text-gold-400 transition hover:underline">
-                View service catalog overview →
+                View all restoration services →
               </Link>
             </li>
           </ul>
@@ -88,17 +88,17 @@ export default function SiteFooter() {
           <ul className="space-y-2.5 text-xs text-white/75">
             <li>
               <Link to="/about" className={FOOTER_LINK}>
-                About Inspector Phil Jackson
+                About WISCo Mold &amp; Water Damage
               </Link>
             </li>
             <li>
               <Link to="/articles" className={FOOTER_LINK}>
-                Educational Inspection Guides
+                Water Damage &amp; Mold Guides
               </Link>
             </li>
             <li>
               <Link to="/contact" className={FOOTER_LINK}>
-                Contact & Scheduling
+                Contact &amp; 24/7 Dispatch
               </Link>
             </li>
             <li>
@@ -113,7 +113,7 @@ export default function SiteFooter() {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-gold-400 shrink-0" aria-hidden="true" />
-              <span>Based in Edgerton, serving Southern WI</span>
+              <span>Edgerton, WI 53534 (Serving Southern WI)</span>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-gold-400 shrink-0" aria-hidden="true" />
@@ -125,38 +125,38 @@ export default function SiteFooter() {
         </div>
       </div>
 
-      {/* Sitewide Local Inspection Quick-Links Strip */}
+      {/* Sitewide Local Quick-Links Strip */}
       <div className="border-t border-white/10 bg-navy-950 py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-[11px] font-bold uppercase tracking-wider text-gold-400">
-            Southern Wisconsin Fast Directory:
+            Southern Wisconsin Mold &amp; Water Damage Directory:
           </p>
           <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1.5 text-[11px] text-white/60">
             {SERVICE_LOCATIONS.map((loc) => (
               <Link
-                key={loc.slug}
-                to={`/${SERVICES[0].slug}-${loc.slug}`}
-                className="hover:text-gold-400 transition"
-              >
-                Home Inspection in {loc.city}
-              </Link>
-            ))}
-            {SERVICE_LOCATIONS.map((loc) => (
-              <Link
                 key={`mold-${loc.slug}`}
-                to={`/mold-testing-${loc.slug}`}
+                to={`/mold-remediation-${loc.slug}`}
                 className="hover:text-gold-400 transition"
               >
-                Mold Testing in {loc.city}
+                Mold Remediation in {loc.city}
               </Link>
             ))}
             {SERVICE_LOCATIONS.map((loc) => (
               <Link
-                key={`radon-${loc.slug}`}
-                to={`/radon-testing-${loc.slug}`}
+                key={`water-${loc.slug}`}
+                to={`/water-damage-restoration-${loc.slug}`}
                 className="hover:text-gold-400 transition"
               >
-                Radon Testing in {loc.city}
+                Water Damage in {loc.city}
+              </Link>
+            ))}
+            {SERVICE_LOCATIONS.map((loc) => (
+              <Link
+                key={`extract-${loc.slug}`}
+                to={`/emergency-water-extraction-${loc.slug}`}
+                className="hover:text-gold-400 transition"
+              >
+                Water Extraction in {loc.city}
               </Link>
             ))}
           </div>
@@ -171,7 +171,7 @@ export default function SiteFooter() {
               Privacy Policy
             </Link>
             <Link to="/terms-and-conditions" className="transition hover:text-gold-400">
-              Terms & Conditions
+              Terms &amp; Conditions
             </Link>
           </div>
         </div>

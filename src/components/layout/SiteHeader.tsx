@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, type ReactNode } from 'react';
-import { ChevronDown, House, Menu, Phone, X } from 'lucide-react';
+import { ChevronDown, Menu, Phone, Waves, X } from 'lucide-react';
 import { BUSINESS } from '@/data/business';
 import { PRIMARY_LOCATION, SERVICE_LOCATIONS } from '@/data/locations';
 import { SERVICES } from '@/data/services';
@@ -116,10 +116,10 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gold text-navy">
-            <House className="h-6 w-6" aria-hidden="true" />
+            <Waves className="h-6 w-6" aria-hidden="true" />
           </span>
           <span className="min-w-0 leading-tight">
-            <span className="block truncate text-base font-bold tracking-tight">WISCo Inspections</span>
+            <span className="block truncate text-base font-bold tracking-tight">WISCo Mold &amp; Water Damage</span>
             <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">LLC · Wisconsin</span>
           </span>
         </Link>
@@ -139,7 +139,7 @@ export default function SiteHeader() {
             onOpen={openServices}
             onClose={closeMenu}
             onToggle={() => toggleMenu('services')}
-            label="Inspection Services"
+            label="Restoration Services"
           >
             {serviceLinks.map((item) => (
               <Link key={item.to} to={item.to} className={DROPDOWN_ITEM} onClick={closeMenu}>
@@ -148,10 +148,10 @@ export default function SiteHeader() {
             ))}
             <Link
               to="/services"
-              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}
+              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand font-bold`}
               onClick={closeMenu}
             >
-              View all 10 inspection services →
+              View all 10 restoration services →
             </Link>
           </Dropdown>
           <Dropdown
@@ -168,7 +168,7 @@ export default function SiteHeader() {
             ))}
             <Link
               to="/service-areas"
-              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand`}
+              className={`${DROPDOWN_ITEM} mt-1 border-t border-navy-100 pt-3 text-brand font-bold`}
               onClick={closeMenu}
             >
               View all 10 service areas →
@@ -181,12 +181,12 @@ export default function SiteHeader() {
 
         <div className="flex shrink-0 items-center gap-2">
           <div className="hidden lg:block">
-            <CallButton label="Call Now" size="md" />
+            <CallButton label="Call (608) 642-1112" size="md" />
           </div>
           <a
             href={BUSINESS.phoneHref}
             aria-label={`Call ${BUSINESS.phoneDisplay}`}
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-gold text-navy shadow-md transition active:scale-95 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full bg-red-600 text-white shadow-md transition active:scale-95 lg:hidden"
           >
             <Phone className="h-5 w-5" aria-hidden="true" />
           </a>
@@ -214,7 +214,7 @@ export default function SiteHeader() {
             <Link to="/articles" className={`${NAV_LINK} py-3`}>
               Guides &amp; Articles
             </Link>
-            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Inspection Services</p>
+            <p className="px-3 pb-1 pt-4 text-xs font-bold uppercase tracking-wider text-gold-400">Restoration Services</p>
             {serviceLinks.map((item) => (
               <Link key={item.to} to={item.to} className={`${NAV_LINK} py-2 font-medium`}>
                 {item.label}
@@ -239,10 +239,10 @@ export default function SiteHeader() {
             </Link>
             <a
               href={BUSINESS.phoneHref}
-              className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3.5 font-semibold text-navy"
+              className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-red-600 px-5 py-3.5 font-semibold text-white"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              Call {BUSINESS.phoneDisplay}
+              Emergency Call: {BUSINESS.phoneDisplay}
             </a>
           </div>
         </nav>

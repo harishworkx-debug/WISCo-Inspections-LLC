@@ -2,16 +2,16 @@ const fs = require('fs');
 const path = require('path');
 
 const services = [
-  'home-inspection',
-  'buyer-home-inspection',
-  'pre-listing-inspection',
-  'radon-testing',
+  'mold-remediation',
+  'water-damage-restoration',
+  'emergency-water-extraction',
   'mold-testing',
-  'basement-crawl-space-inspection',
-  'attic-roof-inspection',
-  'electrical-inspection',
-  'thermal-imaging-inspection',
-  'warranty-inspection',
+  'basement-water-damage',
+  'crawl-space-moisture-mold',
+  'sewage-backup-cleanup',
+  'thermal-imaging-leak-detection',
+  'attic-mold-remediation',
+  'structural-drying-dehumidification',
 ];
 
 const locations = [
@@ -28,16 +28,16 @@ const locations = [
 ];
 
 const articles = [
-  'what-does-a-home-inspection-include-wisconsin',
-  'how-much-does-a-home-inspection-cost-wisconsin',
-  '10-common-problems-found-during-home-inspections',
-  'should-you-get-a-home-inspection-before-selling',
-  'why-radon-testing-matters-buying-wisconsin-home',
-  'what-buyers-should-know-about-older-homes',
-  'what-happens-during-a-basement-inspection',
-  'home-inspection-vs-appraisal',
-  'when-should-you-schedule-new-construction-inspection',
-  'what-is-an-11-month-warranty-inspection',
+  'how-to-handle-water-damage-wisconsin-home',
+  'mold-remediation-vs-mold-testing',
+  'signs-of-hidden-mold-behind-drywall',
+  'frozen-pipe-burst-winter-emergency-steps',
+  'does-homeowners-insurance-cover-water-mold-damage',
+  'basement-flooding-sump-pump-failure-guide',
+  'black-mold-stachybotrys-health-risks-removal',
+  'how-long-does-structural-drying-take',
+  'attic-mold-winter-condensation-ice-dams',
+  'crawl-space-encapsulation-moisture-control',
 ];
 
 const staticPages = [
@@ -98,6 +98,6 @@ for (const loc of locations) {
 xml += `</urlset>\n`;
 
 const publicPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
-fs.writeFileSync(publicPath, xml);
-const totalUrls = staticPages.length + articles.length + (locations.length * services.length);
-console.log(`[Sitemap Generator] Successfully generated sitemap with ${totalUrls} URLs at ${publicPath}`);
+fs.writeFileSync(publicPath, xml, 'utf8');
+
+console.log(`[Sitemap Generator] Successfully generated sitemap with ${staticPages.length + articles.length + (services.length * locations.length)} URLs at ${publicPath}`);

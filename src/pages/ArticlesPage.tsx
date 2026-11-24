@@ -8,9 +8,9 @@ import { usePageMeta } from '@/lib/seo';
 
 export default function ArticlesPage() {
   usePageMeta({
-    title: 'Wisconsin Home Inspection Guides & Resources | WISCo Inspections',
+    title: 'Water Damage & Mold Remediation Guides | WISCo',
     description:
-      'Expert guides on Wisconsin home inspections, checklists, pricing, radon testing, older homes, and 11-month builder warranties by inspector Phil Jackson.',
+      'Expert guides on Wisconsin water damage restoration, basement flood cleanup, frozen burst pipes, black mold remediation, and insurance claims.',
     path: '/articles',
   });
 
@@ -24,15 +24,15 @@ export default function ArticlesPage() {
             <span>Home</span>
           </Link>
           <ChevronRight className="h-3 w-3 shrink-0 text-white/40" aria-hidden="true" />
-          <span className="font-semibold text-gold-400">Educational Guides</span>
+          <span className="font-semibold text-gold-400">Restoration Guides</span>
         </div>
       </nav>
 
       <PageHero
-        eyebrow="Homebuyer & Seller Education"
-        title="Wisconsin Home Inspection Guides & Knowledge Center"
-        lead="Straightforward, practical guides written from actual inspection field experience across Madison, Janesville, Edgerton, and Southern Wisconsin."
-        image={{ src: PHOTOS.checklist, alt: 'Home inspection checklist on a clipboard' }}
+        eyebrow="Homeowner Knowledge Center"
+        title="Wisconsin Water Damage & Mold Remediation Guides"
+        lead="Actionable, practical guides written from actual restoration field experience across Madison, Janesville, Edgerton, and Southern Wisconsin."
+        image={{ src: PHOTOS.heroWaterDamage, alt: 'Commercial water damage and mold remediation equipment' }}
       />
 
       <section className="bg-mist py-20 lg:py-28">
@@ -40,10 +40,10 @@ export default function ArticlesPage() {
           <div className="max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand">Field Expertise</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-              10 In-Depth Home Inspection Articles
+              10 In-Depth Restoration &amp; Remediation Articles
             </h2>
             <p className="mt-3 text-base text-ink/75">
-              Explore answers to key search intent questions about costs, checklists, common defects, radon testing, and builder warranty claims in Wisconsin:
+              Explore answers to key questions about burst pipes, flooded basements, toxic black mold removal, insurance coverage, and structural drying:
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function ArticlesPage() {
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand">
                       <BookOpen className="h-5 w-5" />
                     </span>
-                    <span className="text-xs font-semibold text-ink/60">Article #{index + 1}</span>
+                    <span className="text-xs font-semibold text-ink/60">Guide #{index + 1}</span>
                   </div>
 
                   <div className="mt-4">
@@ -68,17 +68,19 @@ export default function ArticlesPage() {
                     <h3 className="mt-3 text-xl font-bold text-navy group-hover:text-brand transition leading-snug">
                       <Link to={`/articles/${article.slug}`}>{article.title}</Link>
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-ink/80">{article.summary}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-ink/75 line-clamp-3">
+                      {article.summary}
+                    </p>
                   </div>
                 </div>
 
-                <div className="mt-6 border-t border-navy-100 pt-4 flex items-center justify-between">
-                  <span className="text-xs text-ink/60">{article.readTime}</span>
+                <div className="mt-6 border-t border-navy-100 pt-4 flex items-center justify-between text-xs font-bold">
+                  <span className="text-ink/60">{article.readTime}</span>
                   <Link
                     to={`/articles/${article.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-brand transition group-hover:text-navy hover:underline"
+                    className="inline-flex items-center gap-1 text-brand group-hover:text-navy transition"
                   >
-                    Read Full Guide <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    Read Guide <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
               </article>
@@ -88,8 +90,8 @@ export default function ArticlesPage() {
       </section>
 
       <CallCtaBand
-        heading="Have Questions About an Upcoming Inspection?"
-        body="Call inspector Phil Jackson at (608) 642-1112 for direct, honest advice on your property."
+        heading="Dealing with Active Water Leaks or Mold?"
+        body="Call WISCo Mold & Water Damage 24/7 at (608) 642-1112 for immediate dispatch across Southern Wisconsin."
       />
     </>
   );

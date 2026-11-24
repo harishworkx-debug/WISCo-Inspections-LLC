@@ -1,29 +1,28 @@
 import { ArrowRight, ChevronRight, Home, MapPin } from 'lucide-react';
 import CallCtaBand from '@/components/CallCtaBand';
 import PageHero from '@/components/PageHero';
-import { PHOTOS, SITE_URL } from '@/data/business';
+import { MAPS_EMBED_SRC, PHOTOS, SITE_URL } from '@/data/business';
 import { SERVICE_LOCATIONS } from '@/data/locations';
-import { SERVICES } from '@/data/services';
 import { Link } from '@/lib/router';
 import { usePageMeta } from '@/lib/seo';
 
 export default function ServiceAreasPage() {
   usePageMeta({
-    title: 'Home Inspection Service Areas Wisconsin | WISCo Inspections',
+    title: 'Mold & Water Damage Service Areas Wisconsin | WISCo',
     description:
-      'Professional home inspection and environmental testing across 10 South Central Wisconsin communities including Madison, Edgerton, Janesville, Beloit, Stoughton, and Sun Prairie. Call (608) 642-1112.',
+      '24/7 Emergency water damage restoration and certified mold remediation across 10 South Central Wisconsin communities: Edgerton, Janesville, Madison, Beloit, Stoughton, Sun Prairie, Fitchburg, and Verona. Call (608) 642-1112.',
     path: '/service-areas',
     jsonLd: {
       '@context': 'https://schema.org',
       '@graph': [
         {
           '@type': 'ItemList',
-          name: 'WISCo Inspections Service Locations',
+          name: 'WISCo Mold & Water Damage Service Locations',
           itemListElement: SERVICE_LOCATIONS.map((loc, index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            name: `${loc.name} Home Inspection`,
-            url: `${SITE_URL}/home-inspection-${loc.slug}`,
+            name: `${loc.name} Water Damage Restoration & Mold Remediation`,
+            url: `${SITE_URL}/water-damage-restoration-${loc.slug}`,
           })),
         },
         {
@@ -52,10 +51,10 @@ export default function ServiceAreasPage() {
       </nav>
 
       <PageHero
-        eyebrow="Wisconsin Coverage"
-        title="Home Inspection Services Across South Central Wisconsin"
-        lead="WISCo Inspections, LLC is based in Edgerton and actively inspects properties throughout Rock, Dane, and Jefferson counties. Select your community below for localized service details and scheduling."
-        image={{ src: PHOTOS.heroInspector, alt: 'Home inspector examining the interior of a residential home' }}
+        eyebrow="Southern Wisconsin Coverage"
+        title="24/7 Water Damage & Mold Remediation Across 10 Communities"
+        lead="WISCo Mold & Water Damage is based in Edgerton and actively dispatches emergency mitigation teams throughout Rock, Dane, and Jefferson counties. Select your community below for localized service details and emergency response times."
+        image={{ src: PHOTOS.waterExtraction, alt: 'Commercial flood restoration and water extraction equipment' }}
       />
 
       <section className="bg-white py-20 lg:py-28">
@@ -63,7 +62,7 @@ export default function ServiceAreasPage() {
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">Our Service Locations</h2>
             <p className="mt-3 text-base text-ink/75">
-              Select your city to view available inspection options, local property considerations, and scheduling details.
+              Select your city to view available restoration options, local property moisture risks, and emergency dispatch details.
             </p>
           </div>
 
@@ -75,70 +74,82 @@ export default function ServiceAreasPage() {
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-gold-400">
-                      <MapPin className="h-6 w-6" aria-hidden="true" />
+                    <span className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand">
+                      <MapPin className="h-4 w-4" /> {location.county}
                     </span>
-                    <div className="flex items-center gap-2">
-                      <span className="rounded-full bg-navy/10 px-3 py-1 text-xs font-semibold text-navy">
-                        {location.county}
-                      </span>
-                      {location.isPrimary && (
-                        <span className="rounded-full bg-gold px-3 py-1 text-xs font-bold text-navy">
-                          Primary Base
-                        </span>
-                      )}
+                    <span className="rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-0.5">
+                      24/7 Emergency Dispatch
+                    </span>
+                  </div>
+                  <h3 className="mt-3 text-2xl font-bold text-navy group-hover:text-brand transition">
+                    {location.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-ink/80">{location.intro}</p>
+
+                  <div className="mt-5 space-y-1.5">
+                    <div className="text-xs font-bold uppercase tracking-wider text-slate-700">
+                      Common Local Moisture &amp; Fungal Risks:
                     </div>
-                  </div>
-
-                  <div className="mt-5">
-                    <p className="text-xs font-bold uppercase tracking-wider text-brand">Home Inspector {location.city} WI</p>
-                    <h3 className="mt-1 text-2xl font-bold text-navy">
-                      <Link
-                        to={`/${SERVICES[0].slug}-${location.slug}`}
-                        className="transition group-hover:text-brand"
-                      >
-                        {location.name}
-                      </Link>
-                    </h3>
-                  </div>
-                  <p className="mt-3 text-base leading-relaxed text-ink/80">{location.intro}</p>
-
-                  <div className="mt-5">
-                    <Link
-                      to={`/${SERVICES[0].slug}-${location.slug}`}
-                      className="inline-flex items-center gap-2 text-sm font-bold text-brand transition hover:text-navy"
-                    >
-                      View Home Inspection in {location.city}
-                      <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
-                    </Link>
+                    <ul className="text-xs text-ink/75 space-y-1">
+                      {location.keyConcerns.slice(0, 3).map((c, i) => (
+                        <li key={i} className="flex items-center gap-1.5">
+                          <span className="text-brand font-bold">•</span>
+                          <span>{c}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
-                <div className="relative z-10 mt-8 border-t border-navy-100 pt-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-ink/65">
-                    All 10 Inspections Available in {location.city}:
-                  </p>
-                  <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
-                    {SERVICES.map((service) => (
-                      <li key={service.slug}>
-                        <Link
-                          to={`/${service.slug}-${location.slug}`}
-                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand transition hover:text-navy hover:underline"
-                        >
-                          <ArrowRight className="h-3 w-3 text-gold shrink-0" aria-hidden="true" />
-                          <span>{service.name}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="mt-6 pt-5 border-t border-navy-100 flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex flex-wrap gap-2 text-xs">
+                    <Link
+                      to={`/mold-remediation-${location.slug}`}
+                      className="text-xs font-bold text-brand hover:underline"
+                    >
+                      Mold Remediation in {location.city} →
+                    </Link>
+                    <span className="text-slate-300">|</span>
+                    <Link
+                      to={`/water-damage-restoration-${location.slug}`}
+                      className="text-xs font-bold text-brand hover:underline"
+                    >
+                      Water Damage in {location.city} →
+                    </Link>
+                  </div>
+                  <Link
+                    to={`/water-damage-restoration-${location.slug}`}
+                    className="inline-flex items-center gap-1 text-xs font-bold text-navy group-hover:text-brand"
+                  >
+                    View All Services <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
                 </div>
               </article>
             ))}
           </div>
+
+          {/* Interactive Google Map in Service Areas */}
+          <div className="mt-16 rounded-2xl overflow-hidden border border-slate-200 shadow-xl p-6 bg-slate-50">
+            <h3 className="text-xl font-bold text-navy mb-2">Central Dispatch Location Map</h3>
+            <p className="text-xs sm:text-sm text-slate-600 mb-4">
+              Centrally based in Edgerton, WI, enabling 45–60 minute emergency response times across Dane, Rock, and Jefferson counties.
+            </p>
+            <div className="rounded-xl overflow-hidden h-80 sm:h-96 w-full border border-slate-200">
+              <iframe
+                title="Service Area Coverage Map"
+                src={MAPS_EMBED_SRC}
+                className="w-full h-full border-0"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <CallCtaBand heading="Is Your Property in Our Service Area?" body="Call (608) 642-1112 to confirm coverage and schedule your inspection today." />
+      <CallCtaBand
+        heading="Have an Active Water Leak or Flooded Basement?"
+        body="Call WISCo Mold & Water Damage at (608) 642-1112 for 24/7 emergency water extraction and flood cleanup."
+      />
     </>
   );
 }

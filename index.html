@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
-    <title>WISCo Inspections, LLC | 4.9★ Home Inspection in Southern Wisconsin</title>
-    <meta name="description" content="WISCo Inspections, LLC provides professional 4.9★ rated home inspection, radon testing, and mold assessment services in Edgerton, Janesville, Madison, and Southern Wisconsin. Call (608) 642-1112." />
+    <title>WISCo Mold & Water Damage, LLC | 24/7 Water Damage Restoration & Mold Remediation Wisconsin</title>
+    <meta name="description" content="WISCo Mold & Water Damage, LLC provides 24/7 emergency water extraction, flood damage restoration, structural drying, and certified mold remediation in Edgerton, Janesville, Madison, and Southern Wisconsin. Call (608) 642-1112." />
     <link rel="canonical" href="https://www.wiscoinspections.com/" />
     
     <!-- Search Engine Indexing Directives -->
@@ -22,9 +22,9 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="WISCo Inspections, LLC" />
-    <meta property="og:title" content="WISCo Inspections, LLC | 4.9★ Home Inspection in Southern Wisconsin" />
-    <meta property="og:description" content="Top-rated 4.9★ independent home inspections, radon testing, and mold assessments in Edgerton, Janesville, Madison, and Southern Wisconsin. Call (608) 642-1112." />
+    <meta property="og:site_name" content="WISCo Mold & Water Damage, LLC" />
+    <meta property="og:title" content="WISCo Mold & Water Damage, LLC | 24/7 Water Damage Restoration & Mold Remediation Wisconsin" />
+    <meta property="og:description" content="Top-rated 4.9★ 24/7 emergency water damage restoration, standing water extraction, and certified mold remediation in Edgerton, Janesville, Madison, and Southern Wisconsin. Call (608) 642-1112." />
     <meta property="og:url" content="https://www.wiscoinspections.com/" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -36,27 +36,29 @@
           {
             "@type": "Organization",
             "@id": "https://www.wiscoinspections.com/#organization",
-            "name": "WISCo Inspections, LLC",
+            "name": "WISCo Mold & Water Damage, LLC",
+            "alternateName": "WISCo Mold & Water Damage",
             "url": "https://www.wiscoinspections.com/",
             "telephone": "+1-608-642-1112",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Edgerton",
               "addressRegion": "WI",
+              "postalCode": "53534",
               "addressCountry": "US"
             }
           },
           {
             "@type": "WebSite",
             "@id": "https://www.wiscoinspections.com/#website",
-            "name": "WISCo Inspections, LLC",
+            "name": "WISCo Mold & Water Damage, LLC",
             "url": "https://www.wiscoinspections.com/",
             "publisher": { "@id": "https://www.wiscoinspections.com/#organization" }
           },
           {
-            "@type": "HomeInspector",
+            "@type": "WaterDamageRestorationService",
             "@id": "https://www.wiscoinspections.com/#business",
-            "name": "WISCo Inspections, LLC",
+            "name": "WISCo Mold & Water Damage, LLC",
             "url": "https://www.wiscoinspections.com/",
             "hasMap": "https://maps.app.goo.gl/Q5MwGDQZFwL4dyME9",
             "sameAs": ["https://maps.app.goo.gl/Q5MwGDQZFwL4dyME9"],
@@ -66,8 +68,22 @@
               "@type": "PostalAddress",
               "addressLocality": "Edgerton",
               "addressRegion": "WI",
+              "postalCode": "53534",
               "addressCountry": "US"
             },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 42.8352,
+              "longitude": -89.0675
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            ],
             "areaServed": [
               { "@type": "City", "name": "Edgerton, WI" },
               { "@type": "City", "name": "Janesville, WI" },
@@ -83,16 +99,14 @@
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",
-              "reviewCount": "87",
-              "bestRating": "5",
-              "worstRating": "1"
+              "reviewCount": "87"
             }
           }
         ]
       }
     </script>
   </head>
-  <body class="bg-white font-sans text-ink antialiased">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

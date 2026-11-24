@@ -7,8 +7,8 @@ type CallCtaBandProps = {
 };
 
 export default function CallCtaBand({
-  heading = 'Need a Professional Home Inspection?',
-  body = 'Call WISCo Inspections, LLC to discuss your property and inspection needs.',
+  heading = 'Need Emergency Water Extraction or Mold Remediation?',
+  body = 'Call WISCo Mold & Water Damage, LLC for 24/7 emergency dispatch and certified mitigation.',
 }: CallCtaBandProps) {
   return (
     <section className="bg-brand text-white">

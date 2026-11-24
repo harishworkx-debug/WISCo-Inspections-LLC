@@ -22,18 +22,18 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Rock / Dane County',
     isPrimary: true,
     intro:
-      'Edgerton is the home base for WISCo Inspections, LLC. Spanning Rock and Dane counties near Lake Koshkonong, we provide thorough home inspection and environmental testing services to buyers, sellers, and homeowners throughout the Edgerton community.',
-    primaryKeyword: 'Home Inspector Edgerton WI',
+      'Edgerton is the central headquarters for WISCo Mold & Water Damage. Bordering Lake Koshkonong and the Yahara River, we provide 24/7 emergency water extraction, flood cleanup, certified mold remediation, and moisture mitigation across Edgerton and surrounding lake communities.',
+    primaryKeyword: 'Mold Remediation & Water Damage Edgerton WI',
     contentAngle:
-      'Local home inspection services for buyers and sellers in Edgerton, including property condition assessments, radon testing and other available inspection services.',
+      'Immediate 24/7 water damage mitigation, basement flood extraction, and certified mold removal for Edgerton homeowners, businesses, and lakefront properties.',
     housingProfile:
-      'Historic brick and frame residences near downtown Edgerton, Lake Koshkonong waterfront cottages, and established neighborhood single-family homes.',
+      'Lake Koshkonong waterfront cottages, historic brick residences near downtown Edgerton, and established single-family homes with high seasonal water tables.',
     keyConcerns: [
-      'Elevated moisture around Lake Koshkonong and Yahara River tributaries',
-      'Basement groundwater intrusion, weeping foundation walls, and sump pump reliability',
-      'Older electrical service panels, fuse boxes, and ungrounded branch wiring',
-      'Attic insulation depth and thermal bypass air leaks causing winter ice dams',
-      'Elevated radon levels from regional glacial drift soils requiring continuous testing',
+      'Elevated water tables and shoreline humidity around Lake Koshkonong and Yahara River',
+      'Basement hydrostatic seepage, saturated block foundation walls, and sump pump failures',
+      'Frozen burst copper pipes during sub-zero Wisconsin winter cold snaps',
+      'Attic mold from winter condensation and ice dam moisture backups under roof shingles',
+      'Crawl space wood rot, dirt floor humidity, and fungal colonies under living rooms',
     ],
     nearbySlugs: ['milton-wi', 'stoughton-wi', 'janesville-wi', 'madison-wi'],
   },
@@ -45,18 +45,18 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Rock County',
     isPrimary: false,
     intro:
-      'Janesville is Rock County’s largest city, featuring classic historic districts along the Rock River, mid-century ranch homes, and expanding modern developments. WISCo Inspections provides fast, comprehensive inspections throughout Janesville.',
-    primaryKeyword: 'Home Inspector Janesville WI',
+      'Janesville is Rock County’s largest city. Featuring classic historic districts along the Rock River, mid-century ranch homes, and expanding suburban developments, WISCo Mold & Water Damage provides rapid emergency water extraction and certified mold remediation throughout Janesville.',
+    primaryKeyword: 'Water Damage Restoration & Mold Remediation Janesville WI',
     contentAngle:
-      'Help buyers understand older and newer residential properties, major home systems and inspection findings before closing.',
+      '24/7 emergency flood response, commercial structural drying, and certified mold eradication for Janesville homes and commercial properties.',
     housingProfile:
-      'Rock County’s largest housing market featuring turn-of-the-century riverfront homes, mid-century ranch-style subdivisions, and expanding east-side developments.',
+      'Turn-of-the-century riverfront homes, mid-century ranch subdivisions with finished basements, and modern residential developments subject to storm runoff.',
     keyConcerns: [
-      'Aging cast-iron drain lines and cloth-sheathed wiring in older neighborhoods',
-      'Heating performance and boiler/furnace heat exchanger safety during Wisconsin freezes',
-      'Grading and perimeter downspout drainage directing roof runoff away from walls',
-      'Concrete block basement wall deflection and seasonal moisture penetration',
-      'Radon gas accumulation in finished basements and ground-floor bedrooms',
+      'Rock River flood surges and seasonal groundwater seepage into basement slabs',
+      'Aging plumbing pipes bursting during severe winter freezes',
+      'Hidden mold colonies behind basement paneling, drywall, and wet carpeting',
+      'Sump pump burnouts during heavy thunderstorm power outages',
+      'Commercial and residential sewer backups requiring biohazard extraction',
     ],
     nearbySlugs: ['edgerton-wi', 'beloit-wi', 'milton-wi', 'stoughton-wi'],
   },
@@ -68,18 +68,18 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Dane County',
     isPrimary: false,
     intro:
-      'Wisconsin’s capital city offers a rich variety of properties from vintage craftsman bungalows to contemporary lakeside homes. WISCo Inspections delivers detailed, independent property assessments and environmental testing across Greater Madison.',
-    primaryKeyword: 'Home Inspector Madison WI',
+      'As Wisconsin’s capital city, Greater Madison features a dense mix of vintage craftsman homes, lakeside residences, and multi-story apartment communities. WISCo Mold & Water Damage delivers 24/7 emergency water removal and certified mold remediation across Madison.',
+    primaryKeyword: 'Mold Remediation & Water Damage Madison WI',
     contentAngle:
-      'Buyer and seller inspection services for Madison-area homes, including property condition, environmental testing and inspection reporting.',
+      'Rapid emergency water extraction, structural drying, and certified toxic mold removal for Madison homeowners, property managers, and businesses.',
     housingProfile:
-      'Diverse architecture including craftsman bungalows on the Near East/West sides, mid-century homes, modern lakeside properties, and fast-paced competitive real estate transactions.',
+      'Historic craftsman bungalows on the Near East/West sides, Lake Mendota and Monona properties, and active residential rental and condominium markets.',
     keyConcerns: [
-      'Knob-and-tube wiring, cloth insulation, and ungrounded two-prong outlets in pre-1960 homes',
-      'Stone and brick masonry foundation mortar deterioration and efflorescence',
-      'Attic bypass heat loss melting roof snow and causing damaging winter ice dams',
-      'High radon gas concentrations naturally occurring in Dane County glacial soil (EPA Zone 1)',
-      'Corrosion in older galvanized plumbing supply lines and cast-iron sewer stacks',
+      'Old stone and brick masonry foundation seepage during spring thaw cycles',
+      'Plumbing supply line leaks in multi-story residential buildings affecting multiple levels',
+      'Attic mold growth from improper bathroom exhaust venting and winter ice damming',
+      'Basement flooding in low-lying isthmus and lake-adjacent neighborhoods',
+      'High indoor humidity fueling hidden toxic black mold behind bathroom tiles and drywall',
     ],
     nearbySlugs: ['fitchburg-wi', 'verona-wi', 'sun-prairie-wi', 'stoughton-wi'],
   },
@@ -91,20 +91,20 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Rock County',
     isPrimary: false,
     intro:
-      'Located in southern Rock County, Beloit features vibrant historic neighborhoods, brick craftsman homes, and newly revitalized residential areas. We provide clear, objective property inspections for buyers, sellers, and owners in Beloit.',
-    primaryKeyword: 'Home Inspector Beloit WI',
+      'Located in southern Rock County along the Illinois border, Beloit features stately historic residences, vibrant neighborhoods along the Rock River, and commercial corridors. We provide 24/7 emergency water extraction and certified mold cleanup throughout Beloit.',
+    primaryKeyword: 'Water Damage Restoration & Mold Removal Beloit WI',
     contentAngle:
-      'Explain what buyers should know about foundations, roofing, basements, plumbing and electrical systems during a property inspection.',
+      'Professional water extraction, sewage cleanup, and comprehensive mold remediation for Beloit residential and commercial properties.',
     housingProfile:
-      'Stately historic residences, brick colonials, and active revitalized residential neighborhoods along the Rock River and near Beloit College.',
+      'Stately historic brick colonials, college-area residential homes, and single-family river corridor neighborhoods.',
     keyConcerns: [
-      'Hydrostatic pressure on foundation walls along the river corridor',
-      'Outdated fuse panels, double-tapped circuit breakers, and ungrounded circuits',
-      'Older galvanized water pipes and sewer drain line settlement',
-      'Roof shingle aging, chimney masonry cracks, and step flashing gaps',
-      'Basement humidity, efflorescence, and crawl space ventilation',
+      'Rock River groundwater pressure creating continuous basement floor moisture',
+      'Outdated galvanized and cast iron plumbing corrosion causing sudden water leaks',
+      'Black mold in older basements lacking mechanical dehumidification',
+      'Crawl space dampness causing cupped hardwood floors in historic properties',
+      'Storm sewer backups during intense summer flash-flooding events',
     ],
-    nearbySlugs: ['janesville-wi', 'edgerton-wi', 'milton-wi', 'stoughton-wi'],
+    nearbySlugs: ['janesville-wi', 'edgerton-wi', 'milton-wi'],
   },
   {
     slug: 'stoughton-wi',
@@ -114,20 +114,20 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Dane County',
     isPrimary: false,
     intro:
-      'Situated just north of Edgerton on the Yahara River, Stoughton is known for its celebrated heritage and well-preserved older housing stock. WISCo Inspections helps Stoughton residents make informed real estate and maintenance decisions.',
-    primaryKeyword: 'Home Inspector Stoughton WI',
+      'Situated along the Yahara River just north of Lake Koshkonong, Stoughton features historic Norwegian heritage homes, riverside cottages, and contemporary neighborhoods. WISCo Mold & Water Damage provides fast emergency water extraction and mold remediation in Stoughton.',
+    primaryKeyword: 'Mold Remediation & Water Damage Stoughton WI',
     contentAngle:
-      'Residential inspection services for prospective buyers and homeowners, with practical guidance on moisture, attic ventilation and property maintenance.',
+      'Rapid flood pumping, structural dehumidification, and certified mold removal tailored to Yahara River basin properties.',
     housingProfile:
-      'Historic Norwegian heritage homes, Victorian residences along the Yahara River, mid-century single-family properties, and quiet suburban cul-de-sacs.',
+      'Riverside homes, historic frame residences with stone foundations, and modern subdivisions with finished basements.',
     keyConcerns: [
-      'Attic baffle airflow and ventilation balance to prevent severe winter ice dams',
-      'Riverfront soil moisture and sump pump check valve performance',
-      'Efflorescence and horizontal cracking on masonry foundation walls',
-      'Aging water heaters and boiler system safety checks',
-      'Continuous electronic radon testing in finished living areas and basements',
+      'Yahara River high water tables causing seasonal basement wall weeping',
+      'Sump pump failures resulting in flooded finished lower levels',
+      'Damp crawl spaces with fungal growth on subfloor framing',
+      'Attic frost buildup and subsequent spring thaw water leaks into ceilings',
+      'Appliance supply line failures (washing machines, dishwashers, water heaters)',
     ],
-    nearbySlugs: ['edgerton-wi', 'madison-wi', 'fitchburg-wi', 'verona-wi'],
+    nearbySlugs: ['edgerton-wi', 'madison-wi', 'fitchburg-wi', 'sun-prairie-wi'],
   },
   {
     slug: 'sun-prairie-wi',
@@ -137,20 +137,20 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Dane County',
     isPrimary: false,
     intro:
-      'As one of Dane County’s fastest-growing communities, Sun Prairie features extensive new construction subdivisions alongside established neighborhoods. We provide rigorous buyer, pre-listing, and warranty inspections in Sun Prairie.',
-    primaryKeyword: 'Home Inspector Sun Prairie WI',
+      'One of Dane County’s fastest-growing communities, Sun Prairie features extensive modern housing subdivisions, finished multi-level basements, and historic downtown homes. We provide 24/7 water damage mitigation and certified mold remediation in Sun Prairie.',
+    primaryKeyword: 'Water Damage Restoration & Mold Remediation Sun Prairie WI',
     contentAngle:
-      'Home inspection information for buyers evaluating established properties and newer residential construction.',
+      '24/7 emergency flood drying, water extraction, and certified mold removal for Sun Prairie homes and businesses.',
     housingProfile:
-      'Dynamic mix of rapid new construction master-planned communities, 11-month builder warranty homes, and charming historic downtown residences.',
+      'Modern suburban developments with large finished basements, multi-level homes, and surrounding rural agricultural residences.',
     keyConcerns: [
-      'Truss uplift and interior drywall settlement cracks in newer builds',
-      'Missing or displaced blown-in attic insulation around bath exhaust fans and hatches',
-      'Builder grading settlement causing rainwater to pond against foundation walls',
-      'Roof penetration flashing defects around plumbing stacks and valley intersections',
-      'Radon gas migration in tightly sealed modern energy-efficient building envelopes',
+      'Finished basement flooding destroying drywall, baseboards, and carpet pad',
+      'Sump pump circuit breaker trips during severe thunderstorms',
+      'Attic mold from inadequate roof ventilation and heavy winter snow loads',
+      'Hidden plumbing leaks in multi-bathroom modern home construction',
+      'Rapid mold spread behind insulated basement perimeter framing',
     ],
-    nearbySlugs: ['madison-wi', 'fitchburg-wi', 'verona-wi', 'edgerton-wi'],
+    nearbySlugs: ['madison-wi', 'fitchburg-wi', 'stoughton-wi', 'edgerton-wi'],
   },
   {
     slug: 'fitchburg-wi',
@@ -160,18 +160,18 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Dane County',
     isPrimary: false,
     intro:
-      'Fitchburg combines suburban convenience with rural tranquility just south of Madison. Our licensed inspectors inspect single-family homes, multi-level townhomes, and new developments throughout the Fitchburg area.',
-    primaryKeyword: 'Home Inspector Fitchburg WI',
+      'Bordering Madison’s southern edge, Fitchburg features a mix of suburban neighborhoods, walkout basement homes, and multi-family developments. WISCo Mold & Water Damage responds 24/7 for emergency water extraction and certified mold cleanup in Fitchburg.',
+    primaryKeyword: 'Mold Remediation & Water Damage Restoration Fitchburg WI',
     contentAngle:
-      'Property inspections covering accessible structural components, roofing, electrical systems and potential moisture concerns.',
+      'Rapid response water extraction, thermal leak detection, and certified mold removal for Fitchburg residential and commercial properties.',
     housingProfile:
-      'Established suburban neighborhoods, multi-story modern townhomes, contemporary single-family developments, and semi-rural acreage properties.',
+      'Modern single-family homes with walkout basements, master-planned developments, and contemporary multi-family complexes.',
     keyConcerns: [
-      'Basement hydrostatic water seepage during intense Wisconsin spring thaws',
-      'Roof valley flashing and gutter discharge clearance away from foundation walls',
-      'Modern 200A electrical service panel wiring safety and GFCI/AFCI verification',
-      'HVAC ductwork airflow balance across multiple residential living stories',
-      'Continuous digital radon monitoring in finished lower levels and recreation rooms',
+      'Walkout basement sliding door rainwater intrusion and grading overflow',
+      'Water heater ruptures and second-floor laundry room supply hose leaks',
+      'Elevated basement humidity feeding Aspergillus and Penicillium mold',
+      'Subfloor moisture saturation beneath hardwood and luxury vinyl plank (LVP) flooring',
+      'Hidden leaks detected with non-invasive infrared thermal imaging',
     ],
     nearbySlugs: ['madison-wi', 'verona-wi', 'stoughton-wi', 'edgerton-wi'],
   },
@@ -183,20 +183,20 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Dane County',
     isPrimary: false,
     intro:
-      'Known as Hometown USA, Verona has experienced substantial residential growth with premium new homes and scenic rural properties. WISCo Inspections provides meticulous, unbiased inspection reports for Verona buyers and homeowners.',
-    primaryKeyword: 'Home Inspector Verona WI',
+      'Known as "Hometown U.S.A." and home to major tech campuses, Verona features high-value custom residences, finished walkouts, and new construction. WISCo Mold & Water Damage provides premium water damage restoration and certified mold remediation in Verona.',
+    primaryKeyword: 'Water Damage Restoration & Mold Remediation Verona WI',
     contentAngle:
-      'Inspection guidance for buyers and sellers, including new-home inspections, pre-listing inspections and available testing services.',
+      'High-precision water damage restoration, hardwood floor drying, and certified mold remediation for Verona homeowners.',
     housingProfile:
-      'High-demand residential market with upscale contemporary subdivisions, newly constructed custom homes, and scenic rolling farmland properties.',
+      'Custom single-family residences, finished walkout lower levels, and modern luxury homes with premium architectural finishes.',
     keyConcerns: [
-      'New construction warranty punch-list defects before 1-year builder expiration',
-      'Thermal building envelope efficiency and hidden air leaks around windows/doors',
-      'Foundation settlement hairline cracks vs structural block shifting',
-      'Radon accumulation in energy-efficient tight building assemblies',
-      'Exterior stone veneer drainage weeping and flashing detail integrity',
+      'High-end hardwood floor water saturation requiring specialty vacuum mat drying',
+      'Finished basement entertainment rooms damaged by sudden sump pump failures',
+      'Plumbing supply line leaks behind custom tile showers and built-in cabinetry',
+      'Attic condensation and moisture retention during sub-zero Wisconsin freezes',
+      'Direct insurance claims coordination and itemized Xactimate estimates',
     ],
-    nearbySlugs: ['madison-wi', 'fitchburg-wi', 'stoughton-wi', 'edgerton-wi'],
+    nearbySlugs: ['fitchburg-wi', 'madison-wi', 'stoughton-wi'],
   },
   {
     slug: 'milton-wi',
@@ -206,20 +206,20 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Rock County',
     isPrimary: false,
     intro:
-      'Located just south of Edgerton, Milton offers small-town charm, historic properties, and lakeside homes near Lake Koshkonong. We deliver complete structural and mechanical inspections tailored to Milton properties.',
-    primaryKeyword: 'Home Inspector Milton WI',
+      'Located directly south of Edgerton, Milton features established community neighborhoods, historic frame residences, and rural single-family properties. WISCo Mold & Water Damage delivers fast emergency water removal and certified mold remediation throughout Milton.',
+    primaryKeyword: 'Mold Remediation & Water Damage Milton WI',
     contentAngle:
-      'Local property inspection information, including basement conditions, roofing, moisture and major home systems.',
+      'Local 24/7 emergency water extraction, crawl space encapsulation, and certified mold removal for Milton homes.',
     housingProfile:
-      'Historic nineteenth-century homes, quiet family neighborhoods, and lakeside residences surrounding Lake Koshkonong and Clear Lake.',
+      'Classic mid-century and historic residential properties, rural farmsteads with stone foundations, and quiet single-family subdivisions.',
     keyConcerns: [
-      'High seasonal water tables impacting basements and crawl spaces',
-      'Sump pump check valve failure and emergency battery backup readiness',
-      'Crawl space vapor retarder integrity and floor joist deflection/rot',
-      'Chimney masonry mortar decay and roof shingle granule erosion',
-      'Radon gas entering through stone or block foundation perimeters',
+      'Unsealed stone and concrete foundation seepage during heavy rains',
+      'Dirt-floor crawl space moisture and fungal rot attacking floor joists',
+      'Frozen well line or internal copper pipe bursts during winter freezes',
+      'Basement mold colonies flourishing in unventilated storage rooms',
+      'Storm drainage overflow pooling against exterior foundation perimeters',
     ],
-    nearbySlugs: ['edgerton-wi', 'janesville-wi', 'fort-atkinson-wi', 'beloit-wi'],
+    nearbySlugs: ['edgerton-wi', 'janesville-wi', 'fort-atkinson-wi'],
   },
   {
     slug: 'fort-atkinson-wi',
@@ -229,21 +229,26 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Jefferson County',
     isPrimary: false,
     intro:
-      'Fort Atkinson in Jefferson County features a scenic riverfront, vintage architecture, and established residential pockets. WISCo Inspections is proud to serve Fort Atkinson with dependable home inspections and specialty testing.',
-    primaryKeyword: 'Home Inspector Fort Atkinson WI',
+      'Located along the Rock River in Jefferson County, Fort Atkinson features historic riverside neighborhoods, vintage properties, and expanding residential areas. We provide 24/7 emergency water damage restoration and certified mold remediation in Fort Atkinson.',
+    primaryKeyword: 'Water Damage Restoration & Mold Remediation Fort Atkinson WI',
     contentAngle:
-      'Home inspection guidance for buyers and sellers, focusing on property condition, visible defects and inspection planning.',
+      'Fast 24/7 emergency flood pumping, structural drying, and certified toxic mold removal for Fort Atkinson residential properties.',
     housingProfile:
-      'Picturesque Rock River community with historic commercial-residential corridors, Craftsman homes, and mid-century family neighborhoods in Jefferson County.',
+      'Rock River valley residences, historic downtown neighborhoods, and quiet single-family subdivisions in Jefferson County.',
     keyConcerns: [
-      'River valley humidity and seasonal basement moisture intrusion',
-      'Aging electrical distribution panels, ungrounded circuits, and GFCI protection gaps',
-      'Attic insulation thermal R-values needed for harsh Wisconsin winters',
-      'Perimeter grading slope directing roof runoff toward foundation walls',
-      'Radon gas testing in lower-level living and recreation areas',
+      'Rock River seasonal cresting and groundwater infiltration into basements',
+      'Severe mold growth in older basements and utility rooms following leaks',
+      'Sump pump overflows during heavy spring thunderstorms and snowmelt',
+      'Attic timber mold resulting from roof ice dams and inadequate ventilation',
+      'Rapid emergency extraction to save carpets, walls, and structural framing',
     ],
-    nearbySlugs: ['edgerton-wi', 'milton-wi', 'stoughton-wi', 'madison-wi'],
+    nearbySlugs: ['edgerton-wi', 'milton-wi', 'stoughton-wi'],
   },
 ];
 
-export const PRIMARY_LOCATION = SERVICE_LOCATIONS.find((location) => location.isPrimary)!;
+export const PRIMARY_LOCATION = SERVICE_LOCATIONS[0];
+
+export const LOCATION_BY_SLUG = SERVICE_LOCATIONS.reduce<Record<string, ServiceLocation>>((acc, loc) => {
+  acc[loc.slug] = loc;
+  return acc;
+}, {});

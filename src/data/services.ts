@@ -1,13 +1,13 @@
 import type { LucideIcon } from 'lucide-react';
 import {
-  Award,
+  AlertTriangle,
   ClipboardCheck,
   Droplets,
-  FileSearch,
   House,
   Layers,
-  ShieldCheck,
+  ShieldAlert,
   Thermometer,
+  Waves,
   Wind,
   Zap,
 } from 'lucide-react';
@@ -37,610 +37,628 @@ export type ServiceContent = {
 
 export const SERVICES: ServiceContent[] = [
   {
-    slug: 'home-inspection',
-    name: 'Home Inspection',
-    primaryKeyword: 'Home inspector',
-    supportingKeywords: ['Professional home inspection', 'Home inspection company'],
-    icon: House,
-    image: { src: PHOTOS.outdoorInspector, alt: 'Home inspector with a clipboard performing an outdoor property inspection' },
-    seoTitle: 'Professional Home Inspection | WISCo Inspections, LLC',
+    slug: 'mold-remediation',
+    name: 'Mold Remediation & Removal',
+    primaryKeyword: 'Mold remediation',
+    supportingKeywords: ['Mold removal', 'Black mold remediation', 'Professional mold remediation company'],
+    icon: ShieldAlert,
+    image: { src: PHOTOS.moldRemediation, alt: 'Certified technicians performing professional mold remediation with containment barriers' },
+    seoTitle: 'Mold Remediation & Removal | WISCo Mold & Water Damage',
     metaDescription:
-      'Professional home inspection covering roof, foundation, electrical, plumbing, HVAC, attic, and more. Call WISCo Inspections at (608) 642-1112.',
+      'Certified mold remediation and safe mold removal across Wisconsin. Containment, HEPA air filtration, antimicrobial treatment, and clearance testing. Call (608) 642-1112.',
     summary:
-      'A thorough visual evaluation of the accessible systems and components of a residential property, with clear findings you can use to make an informed decision.',
+      'Comprehensive containment, safe removal of contaminated materials, and EPA-registered antimicrobial treatment to eradicate toxic mold colonies and restore indoor air quality.',
     overview: [
-      'A home inspection is an unbiased, visual, non-invasive evaluation of a residential property. The inspector reviews the accessible parts of the home, including the roof, structure, exterior, interior, and major building systems, and documents the conditions observed.',
-      'The goal is to help you understand the property as it stands today. Findings explain what is working, what needs attention, and where maintenance may be needed in the future.',
+      'Mold growth can spread behind walls, under floorboards, and across framing within 24 to 48 hours of water intrusion. Unchecked mold releases millions of airborne mycotoxins and spores that degrade structural wood and cause chronic respiratory illness.',
+      'WISCo Mold & Water Damage uses strict IICRC S520 remediation protocols. We establish negative air pressure containment chambers, operate industrial HEPA air scrubbers, safely remove unsalvageable porous materials, and fog framing with botanical antimicrobial sanitizers.',
     ],
     localIntro:
-      'Residential home inspections in Edgerton, Wisconsin help buyers, sellers, and current owners understand the condition of a home before a major decision. Call WISCo Inspections to discuss the property and the inspection scope.',
+      'Wisconsin homes in Edgerton, Janesville, Madison, and surrounding counties experience frequent mold from winter condensation, humid basements, and spring thaw seepage. Contact WISCo Mold & Water Damage for prompt, certified mold removal.',
     covers: [
-      'Roof and roofing components, as accessible',
-      'Foundation and structural components',
-      'Exterior conditions and drainage around the home',
-      'Interior walls, ceilings, and floors',
-      'Electrical systems and visible wiring components',
-      'Plumbing fixtures, supply, and drainage components',
-      'Heating and cooling systems',
-      'Attic, ventilation, and visible insulation',
-      'Built-in appliances',
-      'Doors, windows, the garage, and other accessible areas',
+      'Containment chamber setup with plastic sheeting and negative air pressure machines',
+      'Industrial HEPA air scrubbing (filtering 99.97% of airborne spores down to 0.3 microns)',
+      'Safe removal and disposal of contaminated drywall, insulation, and carpeting',
+      'HEPA vacuuming and antimicrobial sanitizing of structural wood framing and concrete',
+      'Air duct and ventilation system decontamination',
+      'Post-remediation moisture tracking and third-party clearance air testing verification',
     ],
     whoNeedsIt: [
-      'Homebuyers who want to understand a property before closing',
-      'Homeowners who want an objective view of their home’s condition',
-      'Anyone planning renovations and wanting to know the current state of major systems',
+      'Homeowners with visible black, green, or white mold on walls, ceilings, or baseboards',
+      'Residents experiencing persistent musty odors, coughing, eye irritation, or asthma flare-ups',
+      'Property owners discovering mold during real estate transactions or home remodeling',
+      'Anyone who recently suffered a basement flood, roof leak, or plumbing failure',
     ],
     whatToExpect: [
-      'A walk-through evaluation of the accessible areas of the property',
-      'Notes on visible defects, wear, and maintenance concerns',
-      'An explanation of findings so you understand what you are looking at',
-      'A written report of the inspection findings delivered promptly',
+      'Immediate on-site containment to isolate the mold colony from healthy living areas',
+      'Use of protective personal equipment (PPE) and sealed bag disposal protocols',
+      'Thorough antimicrobial treatment preventing regrowth on remaining structural elements',
+      'Clear documentation provided for your records and homeowners insurance claims',
     ],
     limitations: [
-      'An inspection is a visual evaluation of accessible components at the time of the inspection. It is not a guarantee against future defects or problems.',
-      'Concealed, locked, or inaccessible components may not be inspected. Items such as areas behind finished walls are generally outside the scope of a visual inspection.',
-      'Inspection scope is confirmed when you call. Ask about exclusions before scheduling.',
+      'Mold remediation requires the underlying source of moisture (leak, drainage, or humidity) to be resolved to prevent future re-growth.',
+      'Heavily rotted framing compromised by long-term fungal decay may require structural carpentry repair.',
     ],
     faqs: [
       {
-        question: 'How long does a home inspection take?',
+        question: 'How long does professional mold remediation take?',
         answer:
-          'Inspection duration depends on the size, age, and condition of the property, typically between 2.5 and 4 hours. Call WISCo Inspections to discuss your specific property.',
+          'Most residential mold remediation projects take between 1 to 3 days depending on the square footage affected and whether wall demolition or carpet removal is necessary. We provide an exact timeline during our initial inspection.',
       },
       {
-        question: 'Should I attend the inspection?',
+        question: 'Can my family stay in the home during mold remediation?',
         answer:
-          'Attending is strongly encouraged because the inspector can point out findings, explain maintenance tips, and answer your questions directly on site.',
+          'For localized containment (such as a single bathroom or basement utility room), you can typically remain in the home while our negative air machines run. For widespread whole-house contamination, temporary relocation for 24-48 hours may be recommended for safety.',
       },
       {
-        question: 'Does a home inspection find every problem?',
+        question: 'Does homeowners insurance cover mold remediation in Wisconsin?',
         answer:
-          'No. A home inspection is a visual evaluation of accessible components and cannot identify concealed defects behind finished walls or predict future component lifespans.',
+          'Many insurance policies cover mold remediation if it resulted from a "sudden and accidental" covered water event, such as a burst frozen pipe or water heater failure. We work directly with all major insurance carriers to document damage and expedite your claim.',
       },
     ],
-    related: ['buyer-home-inspection', 'pre-listing-inspection', 'radon-testing', 'mold-testing'],
+    related: ['water-damage-restoration', 'mold-testing', 'basement-water-damage', 'thermal-imaging-leak-detection'],
   },
   {
-    slug: 'buyer-home-inspection',
-    name: 'Buyer Home Inspection',
-    primaryKeyword: 'Buyer home inspection',
-    supportingKeywords: ['Pre-purchase inspection', 'Home inspection for buyers'],
-    icon: FileSearch,
-    image: { src: PHOTOS.buyerKeys, alt: 'Family receiving the keys to their new home from a real estate agent' },
-    seoTitle: 'Buyer Home Inspection | WISCo Inspections, LLC',
+    slug: 'water-damage-restoration',
+    name: 'Water Damage Restoration',
+    primaryKeyword: 'Water damage restoration',
+    supportingKeywords: ['Water mitigation company', 'Home water damage repair', 'Flood damage restoration'],
+    icon: Droplets,
+    image: { src: PHOTOS.heroWaterDamage, alt: 'Commercial water damage restoration equipment and drying fans in a flooded home' },
+    seoTitle: 'Water Damage Restoration & Mitigation | WISCo Mold & Water Damage',
     metaDescription:
-      'Buyer home inspection to understand a property’s condition, visible defects, and major systems before you buy. Call (608) 642-1112.',
+      'Fast 24/7 water damage restoration and flood mitigation in Wisconsin. Rapid extraction, thermal moisture mapping, and structural drying. Call (608) 642-1112.',
     summary:
-      'An inspection tailored for homebuyers, focused on discovering safety hazards, major defects, and deferred maintenance before you finalize your purchase.',
+      'Rapid emergency water extraction, thermal imaging moisture tracking, and commercial structural dehumidification to stop water damage before mold sets in.',
     overview: [
-      'Buying a home is one of the largest financial commitments you will ever make. A buyer home inspection provides an independent, objective evaluation so you can understand the true condition of the property before closing.',
-      'Inspection findings help you negotiate repairs, budget for upcoming maintenance, or make an informed decision regarding your purchase contingency.',
+      'Water damage worsens by the hour. Within minutes, water saturates drywall, swells wood trim, and seeps into subflooring. Within 24 hours, secondary damage begins as high humidity warps framing and triggers hazardous mold growth.',
+      'WISCo Mold & Water Damage provides prompt emergency water damage restoration across Southern Wisconsin. We extract standing water, deploy high-velocity air movers and low-grain refrigerant (LGR) dehumidifiers, and monitor drying progress with calibrated psychrometric meters until your home reaches dry standard.',
     ],
     localIntro:
-      'Buyers considering a home in Edgerton, Wisconsin can call WISCo Inspections to discuss the property, the inspection timeline, and availability before making an offer or during your inspection contingency window.',
+      'From frozen pipe bursts in Janesville to torrential summer storm runoff in Madison, Wisconsin weather constantly threatens residential properties. We respond rapidly across Edgerton and surrounding communities.',
     covers: [
-      'Overall condition of the property as observed during the inspection',
-      'Visible defects in the roof, structure, exterior, and interior',
-      'Major mechanicals: HVAC, electrical panel, and plumbing supply/drain lines',
-      'Safety hazards including carbon monoxide, GFCI operation, and fire separation',
-      'Accessible attics, basements, crawlspaces, and garages',
+      '24/7 Emergency response and rapid water extraction with truck-mounted pumps',
+      'Infrared thermal imaging inspection to detect water trapped behind walls and beneath flooring',
+      'Strategic structural drying utilizing industrial LGR dehumidifiers and axial air movers',
+      'Antimicrobial application to prevent bacterial contamination and mold spore germination',
+      'Direct insurance claims assistance, itemized billing, and Xactimate documentation',
+      'Hardwood floor and subfloor specialty drying mats',
     ],
     whoNeedsIt: [
-      'First-time homebuyers who want to understand home maintenance',
-      'Buyers of older or historic Wisconsin homes with complex structures',
-      'Buyers seeking an independent third-party opinion separate from seller disclosures',
+      'Homeowners experiencing a burst frozen copper pipe, failed appliance hose, or water heater leak',
+      'Properties with rainwater intrusion from damaged shingles, ice dams, or roof failures',
+      'Buyers or sellers dealing with sudden unexpected water leaks prior to closing',
+      'Anyone with water saturated carpeting, swollen drywall, or buckled floorboards',
     ],
     whatToExpect: [
-      'Flexible scheduling coordinated with your contingency deadline',
-      'On-site walk-through explaining all notable findings and system shut-offs',
-      'A comprehensive digital report with high-resolution photos and defect summaries',
+      'Arrival of certified technicians equipped with commercial extraction and drying units',
+      'Comprehensive moisture readings establishing baseline moisture levels in all affected materials',
+      'Daily equipment check-ins and moisture mapping until dry standard is achieved',
+      'Complete clearance documentation for your peace of mind and insurance file',
     ],
     limitations: [
-      'A buyer inspection is visual and non-invasive. It does not certify property market value or code compliance.',
-      'Environmental testing (such as radon and mold) are specialized add-ons that should be requested when scheduling.',
-      'Conditions may change after the inspection date if the seller alters or uses the property.',
+      'Porous building materials (such as standard fiberglass insulation or pad under carpet) exposed to contaminated water must often be safely discarded and replaced.',
     ],
     faqs: [
       {
-        question: 'When should a buyer schedule an inspection?',
+        question: 'How quickly should water damage restoration begin?',
         answer:
-          'Schedule immediately after your purchase offer is accepted to ensure sufficient time within your inspection contingency period to review findings and request repairs.',
+          'Restoration should ideally begin within the first 24 to 48 hours. Quick extraction and drying prevents irreversible structural warping, delamination, and fungal spore colonization.',
       },
       {
-        question: 'Can I use the inspection report to negotiate?',
+        question: 'How long do drying fans and dehumidifiers need to run?',
         answer:
-          'Yes. Inspection findings are frequently used with your real estate agent to negotiate seller credits, price adjustments, or required safety repairs prior to closing.',
+          'Commercial drying equipment typically runs for 3 to 5 days. Our technicians perform daily moisture checks to ensure every structural stud, joist, and subfloor has returned to normal equilibrium moisture content (EMC).',
       },
       {
-        question: 'Will the inspector tell me whether to buy the home?',
+        question: 'Will water damage cause mold?',
         answer:
-          'The inspector documents the physical condition of the property objectively. The purchasing decision rests with you and your real estate advisor.',
+          'Yes, mold requires moisture and organic cellulose to proliferate. If saturated materials are not professionally dried within 48 hours, active mold colonies will begin growing behind baseboards and sheetrock.',
       },
     ],
-    related: ['home-inspection', 'radon-testing', 'mold-testing', 'basement-crawl-space-inspection'],
+    related: ['emergency-water-extraction', 'mold-remediation', 'structural-drying-dehumidification', 'basement-water-damage'],
   },
   {
-    slug: 'pre-listing-inspection',
-    name: 'Pre-Listing Inspection',
-    primaryKeyword: 'Pre-listing home inspection',
-    supportingKeywords: ['Seller home inspection', 'Inspection before selling'],
-    icon: ClipboardCheck,
-    image: { src: PHOTOS.checklist, alt: 'Hands holding a home inspection checklist on a clipboard' },
-    seoTitle: 'Pre-Listing Inspection for Home Sellers | WISCo Inspections, LLC',
+    slug: 'emergency-water-extraction',
+    name: 'Emergency Water Extraction',
+    primaryKeyword: 'Emergency water extraction',
+    supportingKeywords: ['Flood water removal', 'Standing water pumping', '24/7 water extraction service'],
+    icon: Waves,
+    image: { src: PHOTOS.waterExtraction, alt: 'High powered water extraction pumping standing flood water from a residential basement' },
+    seoTitle: '24/7 Emergency Water Extraction | WISCo Mold & Water Damage',
     metaDescription:
-      'Pre-listing home inspection for sellers who want to understand their home’s condition before listing. Call WISCo Inspections at (608) 642-1112.',
+      '24/7 Emergency water extraction and standing flood water pumping in Wisconsin. Fast arrival for burst pipes and storm floods. Call (608) 642-1112 immediately.',
     summary:
-      'A proactive inspection for homeowners preparing to sell, identifying repair needs in advance to avoid last-minute surprises during buyer negotiations.',
+      'Immediate 24/7 extraction of standing flood water and pipe burst runoff using powerful commercial truck-mounted and submersible extraction pumps.',
     overview: [
-      'A pre-listing inspection gives sellers the upper hand by evaluating the home before it hits the market. Discovering maintenance items or safety issues in advance gives you time to make repairs at your own pace and budget.',
-      'It helps substantiate your asking price, makes seller disclosures straightforward, and prevents last-minute deal cancellations or aggressive price renegotiations by buyers.',
+      'When thousands of gallons of water inundate your living space or basement, every minute counts. Standing water puts immense hydrostatic pressure on floors and foundations while soaking upward into walls through capillary action.',
+      'Our emergency response team arrives with heavy-duty submersible pumps, ride-on weighted extraction rovers, and truck-mounted vacuum systems capable of removing thousands of gallons per hour, saving your valuable property from total loss.',
     ],
     localIntro:
-      'Homeowners in Edgerton, Wisconsin who are preparing to list their home can call WISCo Inspections to schedule a pre-listing evaluation and streamline their selling process.',
+      'Standing water in your Edgerton, Stoughton, or Madison property requires immediate action. Call (608) 642-1112 anytime day or night for fast water extraction.',
     covers: [
-      'Roofing, flashings, chimney masonry, and exterior drainage',
-      'Foundation walls, basement moisture signs, and structural supports',
-      'Electrical service panel, wiring safety, and GFCI outlets',
-      'Furnace, boiler, and air conditioning operational checks',
-      'Attic insulation, roof ventilation, and exhaust terminations',
+      '24/7 emergency dispatch across Rock, Dane, and Jefferson counties',
+      'Heavy-duty submersible trash pumps for deep basement floodwaters',
+      'Weighted surface extraction claws that pull water from carpet pad without tearing carpets',
+      'Rapid removal of Category 1 (clean), Category 2 (gray), and Category 3 (black) water',
+      'Emergency containment and placement of initial commercial drying equipment',
+      'Emergency shut-off assistance for broken main water valves',
     ],
     whoNeedsIt: [
-      'Homeowners preparing to list their property for sale',
-      'Sellers of older homes who want to avoid unexpected buyer repair demands',
-      'Sellers looking to present a confident, transparent disclosure packet',
+      'Homes with several inches or feet of standing water in basements or living rooms',
+      'Floods caused by severe storms, rapid snowmelt, or river tributary surges',
+      'Catastrophic plumbing failures, fire sprinkler activations, or cracked water supply lines',
     ],
     whatToExpect: [
-      'Complete property evaluation before professional photography and listing',
-      'Prioritized breakdown of critical safety concerns versus routine cosmetic wear',
-      'Documentation that helps your real estate agent market the home with confidence',
+      'Rapid arrival of emergency dispatch technicians with commercial extraction gear',
+      'Systematic pumping of standing water directly to authorized sanitary sewer drainage',
+      'Immediate moisture assessment to initiate drying phase without delay',
     ],
     limitations: [
-      'A pre-listing inspection does not replace legal seller disclosures required by Wisconsin law.',
-      'Prospective buyers may still choose to hire their own independent inspector.',
-      'Inspector does not perform remediation or contracting work.',
+      'Electrical service to flooded areas must be safely isolated before technicians enter standing water.',
     ],
     faqs: [
       {
-        question: 'Why should I pay for an inspection before selling?',
+        question: 'What should I do while waiting for the water extraction team?',
         answer:
-          'Finding issues early lets you hire contractors without rush fees, prevents renegotiation under pressure, and speeds up closing when a buyer appears.',
+          'If safe to do so, shut off the main water valve to stop incoming water. Do not walk into standing water if electrical outlets or wiring are submerged. Move lightweight valuables to dry upper levels.',
       },
       {
-        question: 'Does a pre-listing inspection eliminate buyer inspections?',
+        question: 'Can you pump water out of a completely flooded basement?',
         answer:
-          'Most buyers will still hire their own inspector, but your pre-listing report significantly reduces surprise issues that can jeopardize the sale.',
+          'Yes. We use heavy-duty submersible pumps capable of pumping out flooded basements quickly while monitoring exterior groundwater levels to ensure foundation integrity.',
       },
       {
-        question: 'Do I have to disclose issues found in the pre-listing inspection?',
+        question: 'Is emergency water extraction available on weekends and holidays?',
         answer:
-          'Wisconsin real estate law requires truthful disclosure of known material defects. Consult your licensed real estate agent on how to incorporate completed repairs into your condition report.',
+          'Yes. Water disasters do not observe business hours. We maintain emergency response readiness 24 hours a day, 7 days a week, 365 days a year.',
       },
     ],
-    related: ['home-inspection', 'buyer-home-inspection', 'radon-testing', 'electrical-inspection'],
-  },
-  {
-    slug: 'radon-testing',
-    name: 'Radon Testing',
-    primaryKeyword: 'Radon testing',
-    supportingKeywords: ['Radon inspection', 'Home radon test'],
-    icon: Wind,
-    image: { src: PHOTOS.safetyDevices, alt: 'Smart home safety devices including a smoke detector and camera' },
-    seoTitle: 'Certified Radon Testing | WISCo Inspections, LLC',
-    metaDescription:
-      'Professional continuous radon testing in Edgerton and Southern Wisconsin. Accurate measurements for home sales and family safety. Call (608) 642-1112.',
-    summary:
-      'Accurate radon gas measurement using calibrated testing equipment, helping you protect your family and meet real estate transaction requirements.',
-    overview: [
-      'Radon is a naturally occurring, odorless, radioactive gas produced by the decay of uranium in soil and rock. Because Wisconsin soil contains prevalent glacial deposits, radon gas can migrate through foundation cracks and concentrate indoors.',
-      'Prolonged radon exposure is the second leading cause of lung cancer. Testing is the only way to know if radon levels exceed the EPA action level of 4.0 pCi/L.',
-    ],
-    localIntro:
-      'Radon levels vary significantly throughout Edgerton and Southern Wisconsin. Call WISCo Inspections to arrange certified, tamper-resistant radon monitoring for your home.',
-    covers: [
-      'Placement of continuous electronic radon monitors or calibrated test canisters',
-      'Closed-house condition monitoring to ensure test validity',
-      'Hourly radon readings showing fluctuations and final average concentration',
-      'Written test report with EPA guidance on mitigation if levels exceed 4.0 pCi/L',
-    ],
-    whoNeedsIt: [
-      'Homebuyers during standard purchase contingency periods',
-      'Homeowners who have never tested their living space or basement',
-      'Families who have finished their basement into bedrooms or recreation areas',
-    ],
-    whatToExpect: [
-      'Minimum 48-hour continuous testing period under closed-building conditions',
-      'Placement in the lowest livable area of the home away from drafts and exterior doors',
-      'Same-day digital results report delivered immediately following retrieval',
-    ],
-    limitations: [
-      'Test results reflect radon concentrations during the specific 48-hour testing window.',
-      'Weather conditions, barometric pressure, and wind can influence short-term radon levels.',
-      'WISCo Inspections provides independent testing and does not install mitigation systems, ensuring no conflict of interest.',
-    ],
-    faqs: [
-      {
-        question: 'What is a safe radon level?',
-        answer:
-          'The EPA recommends taking action to mitigate radon when levels are at or above 4.0 pCi/L, and considering mitigation between 2.0 and 4.0 pCi/L.',
-      },
-      {
-        question: 'How long does radon testing take?',
-        answer:
-          'Standard real estate testing takes a minimum of 48 hours under closed-house conditions (doors and windows closed except for normal entry/exit).',
-      },
-      {
-        question: 'Can radon be fixed if the test is high?',
-        answer:
-          'Yes. Radon mitigation systems (active soil depressurization) are straightforward to install by certified radon mitigation contractors.',
-      },
-    ],
-    related: ['home-inspection', 'mold-testing', 'basement-crawl-space-inspection', 'buyer-home-inspection'],
+    related: ['water-damage-restoration', 'basement-water-damage', 'structural-drying-dehumidification', 'sewage-backup-cleanup'],
   },
   {
     slug: 'mold-testing',
-    name: 'Mold Testing & Assessment',
+    name: 'Mold Inspection & Air Quality Testing',
     primaryKeyword: 'Mold testing',
-    supportingKeywords: ['Mold inspection', 'Indoor mold testing'],
-    icon: Droplets,
-    image: { src: PHOTOS.wallMoisture, alt: 'Close-up of a weathered wall showing cracks and moisture staining' },
-    seoTitle: 'Mold Testing & Air Sampling | WISCo Inspections, LLC',
+    supportingKeywords: ['Mold inspection', 'Indoor air quality mold testing', 'Air spore trap sampling'],
+    icon: ClipboardCheck,
+    image: { src: PHOTOS.inspectionEquipment, alt: 'Environmental technician taking air spore trap samples with calibrated testing equipment' },
+    seoTitle: 'Mold Inspection & Air Quality Testing | WISCo Mold & Water Damage',
     metaDescription:
-      'Professional mold inspection and air quality sampling for moisture concerns, musty odors, and water damage. Call WISCo Inspections at (608) 642-1112.',
+      'Professional mold inspection, air spore sampling, and surface testing in Wisconsin. Certified laboratory results and moisture investigations. Call (608) 642-1112.',
     summary:
-      'Targeted inspection and laboratory air/surface sampling to identify hidden mold growth, spore concentrations, and moisture causes.',
+      'Scientific mold inspection combining infrared leak detection, pinless moisture meter surveys, and certified laboratory air spore trap analysis.',
     overview: [
-      'Mold colonies thrive wherever moisture, organic material, and poor ventilation coincide. Leaking pipes, damp basements, crawl space humidity, or past roof leaks can trigger rapid fungal growth inside living spaces.',
-      'Our mold assessment pairs visual moisture investigation with air spore trap sampling and tape/swab samples analyzed by an accredited independent microbiology laboratory.',
+      'Not all mold problems are clearly visible. Fungal colonies frequently thrive behind drywall, under vinyl flooring, or inside HVAC plenums, emitting microscopic spores and volatile organic compounds (VOCs) that irritate lungs and cause illness.',
+      'WISCo Mold & Water Damage performs rigorous diagnostic mold testing. We collect baseline outdoor control samples and comparative indoor air cassettes, along with bio-tape surface samples. All samples are analyzed by an accredited independent microbiology laboratory providing exact spore counts and species identification (including Stachybotrys, Aspergillus, and Penicillium).',
     ],
     localIntro:
-      'If you notice persistent musty smells, staining, or previous water intrusion in Edgerton, Wisconsin, contact WISCo Inspections to schedule an objective mold assessment.',
+      'Whether you smell damp, earthy odors in Edgerton or want pre-remediation documentation for an insurance claim in Madison, our certified testing gives you the facts.',
     covers: [
-      'Visual examination for visible mold colonies, efflorescence, and water staining',
-      'Moisture meter probing of walls, baseboards, subfloors, and framing',
-      'Indoor and outdoor baseline air spore trap sampling',
-      'Surface tape lifts or swab samples of suspect growth',
-      'Certified independent lab report detailing spore counts and fungal species',
+      'Visual examination for hidden microbial growth, water staining, and structural decay',
+      'Non-invasive infrared thermal imaging to map hidden dampness inside walls',
+      'Calibrated baseline outdoor air samples and targeted indoor air cassette collection',
+      'Surface tape lifts and swab sampling of suspect surface staining',
+      'Accredited third-party microbiology laboratory analysis report with spore count breakdown',
+      'Clear remediation protocol guidance if elevated mold levels are confirmed',
     ],
     whoNeedsIt: [
-      'Homebuyers noticing damp odors, water marks, or discolored drywall',
-      'Occupants experiencing unexplained allergies or respiratory discomfort',
-      'Homeowners following a basement flood, plumbing leak, or ice dam event',
+      'Homeowners noticing unexplained persistent coughing, sinus congestion, or allergic reactions',
+      'Real estate buyers conducting environmental due diligence before closing',
+      'Property owners wanting post-remediation clearance to verify a mold cleanup was successful',
+      'Anyone who has had past leaks and wants to ensure no hidden mold colonies developed',
     ],
     whatToExpect: [
-      'Systematic moisture survey focusing on bathrooms, kitchens, attics, and basements',
-      'Collection of comparative air samples indoors alongside outdoor controls',
-      'Detailed laboratory analysis report with clear explanations of findings',
+      'Detailed on-site walkthrough with digital moisture meters and infrared cameras',
+      'Careful collection of air and surface samples according to strict chain-of-custody protocols',
+      'Comprehensive lab report delivered within 2 to 3 business days with clear explanations',
     ],
     limitations: [
-      'Air sampling measures airborne spores at the moment of collection; hidden growth inside sealed wall cavities without air paths may not show elevated airborne counts.',
-      'WISCo Inspections provides objective diagnostic testing only and does not perform mold remediation, guaranteeing unbiased results.',
+      'Air sampling represents airborne spore levels at the specific time of collection under current HVAC/ventilation conditions.',
     ],
     faqs: [
       {
-        question: 'When should I have a mold test done?',
+        question: 'What is the difference between mold testing and mold inspection?',
         answer:
-          'Testing is recommended when you smell musty odors without visible mold, after water damage, or when evaluating a property with past water intrusion.',
+          'A mold inspection is a physical visual and thermal search to locate moisture sources and visible growth. Mold testing involves collecting physical air and surface samples for certified laboratory analysis to quantify spore types and concentrations.',
       },
       {
-        question: 'Does the standard home inspection include mold testing?',
+        question: 'When is mold testing recommended?',
         answer:
-          'A general home inspection notes visible moisture concerns, but laboratory mold testing and air spore sampling require specialized equipment and lab fees as an add-on service.',
+          'Testing is recommended when you smell musty odors but see no visible mold, after completing water damage drying, during property transactions, or to verify that mold remediation successfully eliminated airborne spores.',
       },
       {
-        question: 'How quickly do lab results arrive?',
+        question: 'What types of mold are most hazardous in Wisconsin homes?',
         answer:
-          'Once samples are received by the accredited lab, complete spore identification reports are typically returned within 2 to 3 business days.',
-      },
-      {
-        question: 'Does WISCo Inspections perform mold removal or remediation?',
-        answer:
-          'No. To maintain complete diagnostic independence and eliminate any conflict of interest, WISCo Inspections strictly performs objective inspection, moisture mapping, and accredited laboratory air/surface testing. We never perform physical mold removal, remediation, or repairs. Our unbiased reports provide clear, verified documentation that homeowners can hand directly to an independent remediation contractor if abatement is needed.',
+          'Stachybotrys chartarum (commonly called black mold), Aspergillus, and Penicillium are common in damp Wisconsin basements and walls. These species produce mycotoxins that can trigger significant health complications.',
       },
     ],
-    related: ['home-inspection', 'radon-testing', 'basement-crawl-space-inspection', 'thermal-imaging-inspection'],
+    related: ['mold-remediation', 'thermal-imaging-leak-detection', 'crawl-space-moisture-mold', 'attic-mold-remediation'],
   },
   {
-    slug: 'basement-crawl-space-inspection',
-    name: 'Basement & Crawl Space Inspection',
-    primaryKeyword: 'Basement inspection',
-    supportingKeywords: ['Crawl space inspection', 'Basement moisture inspection'],
+    slug: 'basement-water-damage',
+    name: 'Basement Flood Cleanup & Water Damage',
+    primaryKeyword: 'Basement water damage',
+    supportingKeywords: ['Basement flooding cleanup', 'Sump pump failure cleanup', 'Flooded basement restoration'],
+    icon: House,
+    image: { src: PHOTOS.basementFlooding, alt: 'Flooded basement restoration showing water extraction and concrete drying equipment' },
+    seoTitle: 'Basement Flood Cleanup & Water Damage | WISCo Mold & Water Damage',
+    metaDescription:
+      'Emergency flooded basement cleanup in Wisconsin. Sump pump failures, heavy storm seepage, sewage backups, and rapid drying. Call (608) 642-1112 24/7.',
+    summary:
+      'Complete flooded basement restoration: fast water extraction, sanitization of concrete and drywall, sump pump failure cleanup, and structural moisture removal.',
+    overview: [
+      'Basements in Southern Wisconsin bear the brunt of severe storms, rapid snowmelts, and saturated glacial drift soils. When a sump pump fails during a thunderstorm or hydrostatic groundwater forces moisture through foundation joints, basements flood rapidly.',
+      'Water in a basement quickly ruins stored belongings, saturates finished framing, and triggers rampant mold in carpet pads and drywall. WISCo Mold & Water Damage extracts floodwaters, sanitizes concrete slab floors, applies antimicrobials to framing, and deploys high-volume drying equipment to protect your home.',
+    ],
+    localIntro:
+      'From Lake Koshkonong high water levels in Edgerton to seasonal river flooding in Janesville, we provide specialized basement flood restoration throughout Southern Wisconsin.',
+    covers: [
+      'Extraction of water from poured concrete, block, and historic stone foundation basements',
+      'Sump pump failure water removal and emergency backup equipment advice',
+      'Removal of saturated drywall, trim, carpeting, and wet fiberglass insulation',
+      'Antimicrobial disinfection of concrete slab and masonry foundation walls',
+      'Commercial desiccant and LGR dehumidification to dry out moisture-laden concrete',
+      'Elimination of lingering damp, sour basement flood odors',
+    ],
+    whoNeedsIt: [
+      'Homeowners with a flooded basement after heavy rains or power outages',
+      'Properties with groundwater weeping through cove joints, foundation floor cracks, or window wells',
+      'Residents with water backing up through basement floor drains',
+    ],
+    whatToExpect: [
+      'Immediate pumping of water followed by removal of damaged, unsalvageable porous items',
+      'Deep antimicrobial washdown of concrete floors and foundation walls',
+      'Strategic drying setup targeted at thick masonry materials that hold moisture',
+    ],
+    limitations: [
+      'External foundation cracks, failed drain tile, or defective sump pumps must be repaired to stop future rain intrusion.',
+    ],
+    faqs: [
+      {
+        question: 'Why does my basement flood during Wisconsin spring thaws?',
+        answer:
+          'When frozen ground prevents melting snow and spring rains from absorbing into the soil, water pools around your foundation. The resulting hydrostatic pressure forces water through concrete block seams, cove joints, and hairline floor cracks.',
+      },
+      {
+        question: 'Is water from a sump pump failure covered by homeowners insurance?',
+        answer:
+          'Many homeowners policies require a specific "Water Backup and Sump Overflow" endorsement. If you have this endorsement, the cleanup, extraction, and drying costs are typically covered. We assist in preparing full insurance documentation.',
+      },
+      {
+        question: 'Can carpet in a flooded basement be saved?',
+        answer:
+          'If the floodwater was clean (Category 1) and extracted within 24 hours, the carpet may be saved, although the pad underneath is usually replaced. If the water came from exterior soil or a backed-up drain, carpet must be replaced for health safety.',
+      },
+    ],
+    related: ['emergency-water-extraction', 'water-damage-restoration', 'crawl-space-moisture-mold', 'mold-remediation'],
+  },
+  {
+    slug: 'crawl-space-moisture-mold',
+    name: 'Crawl Space Mold & Moisture Mitigation',
+    primaryKeyword: 'Crawl space mold',
+    supportingKeywords: ['Crawl space encapsulation', 'Crawl space moisture control', 'Crawl space mold removal'],
     icon: Layers,
-    image: { src: PHOTOS.basement, alt: 'Unfinished basement inspection showing concrete foundation walls and floor joists' },
-    seoTitle: 'Basement & Crawl Space Inspection | WISCo Inspections, LLC',
+    image: { src: PHOTOS.crawlSpaceEncapsulation, alt: 'Clean crawl space with heavy duty vapor barrier encapsulation and mold remediation treatment' },
+    seoTitle: 'Crawl Space Mold & Moisture Mitigation | WISCo Mold & Water Damage',
     metaDescription:
-      'Comprehensive foundation, moisture, and crawl space inspection in Wisconsin. Evaluating structural integrity, efflorescence, and sump pumps. Call (608) 642-1112.',
+      'Crawl space mold removal, moisture drying, and heavy-duty vapor barrier encapsulation across Southern Wisconsin. Protect your foundation. Call (608) 642-1112.',
     summary:
-      'A specialized assessment of foundation walls, structural posts, crawl space vapor barriers, sump pumps, and signs of water infiltration.',
+      'Eradication of crawl space wood rot and mold colonies, standing water drainage, and heavy-duty vapor barrier encapsulation to stop humidity rising into living spaces.',
     overview: [
-      'In Wisconsin, seasonal freeze-thaw cycles and varying water tables subject foundations to heavy hydrostatic pressure. The basement or crawl space carries the entire weight of your home and is the primary defense against moisture intrusion.',
-      'Our basement and crawl space inspection investigates foundation stability, floor joist deflection, moisture vapor barriers, and drainage systems to ensure your home has a sound substructure.',
+      'Up to 50% of the air on your home’s first floor originates in your crawl space due to the natural "stack effect." Dirt-floor crawl spaces constantly evaporate gallons of groundwater into subflooring, rotting floor joists, inviting wood-destroying insects, and feeding thick mold colonies.',
+      'WISCo Mold & Water Damage cleans and sanitizes contaminated crawl spaces. We remediate mold on wooden beams, pump out standing water, and install durable multi-mil reinforced vapor barriers with dedicated crawl space dehumidifiers to keep your foundation dry permanently.',
     ],
     localIntro:
-      'Basements and crawl spaces in Edgerton, Wisconsin face challenging seasonal moisture. Let WISCo Inspections evaluate your foundation health, sump pump reliability, and framing condition.',
+      'Historic homes and waterfront cottages in Edgerton, Rock County, and Dane County often suffer from wet, moldy crawl spaces. We deliver complete crawl space restoration.',
     covers: [
-      'Foundation walls: checking for horizontal cracks, bowing, step cracks, and shifting',
-      'Moisture intrusion: efflorescence, water stains, mold signs, and weeping walls',
-      'Structural supports: steel posts, wood columns, carrying beams, and sill plates',
-      'Sump pump testing, backup battery systems, and exterior discharge lines',
-      'Crawl space ground vapor retarders, ventilation, and subfloor insulation',
+      'Mold eradication on floor joists, subflooring, girders, and sill plates',
+      'HEPA vacuuming and antimicrobial timber sealing',
+      'Removal of wet, contaminated, sagging fiberglass insulation batts',
+      'Pumping out standing water and grading crawl space dirt floors',
+      'Installation of heavy-duty puncture-resistant vapor barrier liners',
+      'Placement of low-temperature commercial crawl space dehumidification units',
     ],
     whoNeedsIt: [
-      'Buyers of older homes with stone, brick, or concrete block foundations',
-      'Homeowners noticing foundation wall cracks, sticking doors, or uneven floors',
-      'Property owners experiencing damp smells or recurring water seepage',
+      'Homeowners with cold, damp, or sagging first-floor rooms',
+      'Properties with musty or mildew odors rising through floor vents',
+      'Houses with unsealed dirt or gravel crawl spaces with recurring standing water',
     ],
     whatToExpect: [
-      'Hands-on visual and moisture meter evaluation of accessible foundation walls',
-      'Thorough inspection of crawl spaces including soil cover and wood framing',
-      'Clear documentation of structural concerns and recommended preventative maintenance',
+      'Thorough inspection of all framing members for fungal rot and structural sagging',
+      'Cleanout of debris and complete antimicrobial decontamination',
+      'Sealing of ground moisture and installation of proper humidity control',
     ],
     limitations: [
-      'Finished basement walls covered by drywall or paneling cannot be visually inspected behind the surface.',
-      'Inaccessible crawl spaces with low clearance or standing water may have limited entry.',
+      'Crawl spaces with severe standing water springs may require an interior sump pit installation in conjunction with encapsulation.',
     ],
     faqs: [
       {
-        question: 'What does white powder on basement walls mean?',
+        question: 'Why does mold grow so fast in crawl spaces?',
         answer:
-          'White powdery residue is efflorescence—mineral salts left behind as moisture evaporates through masonry. It indicates historical or ongoing moisture penetration.',
+          'Crawl spaces provide ideal conditions for fungal growth: constant dark, stagnant air, unsealed soil moisture, and an abundance of organic wood framing for food.',
       },
       {
-        question: 'Are all basement wall cracks dangerous?',
+        question: 'Does crawl space mold affect indoor air quality upstairs?',
         answer:
-          'Not all cracks indicate structural failure. Small vertical shrinkage cracks are common, whereas horizontal cracks or bowing walls indicate serious soil pressure that needs professional attention.',
+          'Yes. As warm air rises through your home and exits through the attic, it pulls air upward from the crawl space. This brings microscopic mold spores, damp odors, and soil allergens directly into living areas.',
       },
       {
-        question: 'How do you check crawl spaces?',
+        question: 'What is crawl space encapsulation?',
         answer:
-          'We inspect accessible crawl spaces by evaluating ground vapor barriers, wood joists for rot or insect damage, foundation vents, and insulation condition.',
+          'Encapsulation involves lining the entire crawl space floor and foundation walls with heavy-duty, commercial-grade polyethylene vapor barriers, sealing vents, and adding dehumidification to create a completely dry, clean, conditioned space.',
       },
     ],
-    related: ['home-inspection', 'mold-testing', 'thermal-imaging-inspection', 'buyer-home-inspection'],
+    related: ['mold-remediation', 'basement-water-damage', 'structural-drying-dehumidification', 'mold-testing'],
   },
   {
-    slug: 'attic-roof-inspection',
-    name: 'Attic & Roof Structure Inspection',
-    primaryKeyword: 'Attic inspection',
-    supportingKeywords: ['Roof inspection', 'Attic ventilation inspection'],
-    icon: ShieldCheck,
-    image: { src: PHOTOS.attic, alt: 'Home inspector inspecting attic insulation, trusses, and ventilation with a flashlight' },
-    seoTitle: 'Attic & Roof Structure Inspection | WISCo Inspections, LLC',
+    slug: 'sewage-backup-cleanup',
+    name: 'Sewage Backup & Biohazard Cleanup',
+    primaryKeyword: 'Sewage backup cleanup',
+    supportingKeywords: ['Sewage cleanup company', 'Basement sewage removal', 'Black water extraction'],
+    icon: AlertTriangle,
+    image: { src: PHOTOS.sewageCleanup, alt: 'Specialized biohazard technicians safely cleaning and sanitizing after a residential sewage backup' },
+    seoTitle: 'Sewage Backup & Biohazard Cleanup | WISCo Mold & Water Damage',
     metaDescription:
-      'Thorough attic and roof framing inspection in Wisconsin. Evaluating roof ventilation, insulation depth, ice dam risk, and framing integrity. Call (608) 642-1112.',
+      'Emergency sewage backup cleanup in Wisconsin. Safe Category 3 black water extraction, hospital-grade disinfection, and odor removal. Call (608) 642-1112 24/7.',
     summary:
-      'Detailed evaluation of attic ventilation, insulation depth, roof framing, and moisture barriers to prevent ice dams, heat loss, and structural decay.',
+      'Safe, certified extraction of hazardous Category 3 black water sewage backups, contaminated material disposal, and hospital-grade antimicrobial disinfection.',
     overview: [
-      'Wisconsin winters test roofs and attic assemblies to the limit. Inadequate insulation or poor attic ventilation allows interior heat to warm the roof deck, creating damaging ice dams and moisture condensation that rots roof sheathing.',
-      'Our attic and roof structure inspection examines the underside of roof decking, truss and rafter integrity, baffle airflow, insulation R-values, and bathroom fan exhaust venting.',
+      'A sewer line backup is a serious biological emergency. Category 3 "black water" contains dangerous pathogens, bacteria (such as E. coli and Salmonella), viruses, and toxic parasites that pose acute health hazards to your household.',
+      'Never attempt to clean a sewage backup without professional protective equipment. WISCo Mold & Water Damage provides immediate biohazard extraction, safely removes contaminated porous surfaces, applies hospital-grade disinfectants, and deodorizes your home using advanced hydroxyl generators.',
     ],
     localIntro:
-      'Homes in Edgerton and Dane/Rock counties require properly balanced attic ventilation to withstand Wisconsin winters. Contact WISCo Inspections for a comprehensive attic assessment.',
+      'Municipal sewer line surcharges and tree root blockages can trigger violent toilet or basement floor drain overflows in Edgerton, Janesville, and Madison. Call for emergency biohazard cleanup.',
     covers: [
-      'Roof framing: rafters, engineered trusses, collar ties, and purlins',
-      'Roof sheathing condition, inspecting for water stains, mold, or rot',
-      'Attic insulation type, depth, and approximate thermal R-value',
-      'Ventilation airflow: soffit intake vents, ridge vents, and gable louvers',
-      'Exhaust vent terminations to confirm fans vent to the outside, not into the attic',
-      'Chimney flashing, plumbing vent penetrations, and recessed lighting covers',
+      '24/7 rapid response for residential and commercial sewer backups',
+      'Full personal protective equipment (PPE) and containment to prevent cross-contamination',
+      'Safe extraction and biohazard disposal of sewage water and solids',
+      'Removal of non-salvageable materials (drywall, carpet, baseboards, insulation)',
+      'Hospital-grade EPA-registered biocides and virucides applied to all hard surfaces',
+      'Thermal fogging and hydroxyl odor neutralization',
     ],
     whoNeedsIt: [
-      'Homeowners who have experienced winter ice dams or icicle buildup along gutters',
-      'Buyers evaluating the remaining lifespan of roof decking and attic systems',
-      'Properties with unusually high heating or cooling energy bills',
+      'Homeowners with overflowing basement floor drains, toilets, or sewer cleanouts',
+      'Properties impacted by city main line backups or septic tank failures',
+      'Any property exposed to toilet black water or exterior stormwater overflow',
     ],
     whatToExpect: [
-      'Safe visual inspection of the attic space from access hatches or interior catwalks',
-      'Depth measurements of blown-in or batt insulation',
-      'Inspection for bypass air leaks, moisture stains, and animal entry signs',
+      'Immediate containment isolating the contaminated area from clean living spaces',
+      'Thorough extraction followed by sanitization and removal of all organic hazards',
+      'Rapid air filtration and drying to prevent secondary mold and bacteria growth',
     ],
     limitations: [
-      'Attics without solid flooring or with low roof pitch may be inspected from the hatchway only to prevent ceiling damage.',
-      'Heavy snow or ice cover on exterior roofs may restrict exterior shingle evaluation.',
+      'Porous items like mattresses, cushions, and carpet pads saturated with sewage cannot be safely sanitized and must be discarded.',
     ],
     faqs: [
       {
-        question: 'Why do ice dams form on roofs?',
+        question: 'Is sewage backup water dangerous to touch?',
         answer:
-          'Ice dams occur when escaping attic heat melts snow on the upper roof. The runoff freezes at the cold eaves, creating a dam that forces water under shingles into the home.',
+          'Yes. Raw sewage contains bloodborne pathogens, coliform bacteria, fungi, and dangerous microorganisms. Direct contact or inhaling aerosolized droplets can cause severe gastrointestinal and respiratory infections.',
       },
       {
-        question: 'How much attic insulation is recommended in Wisconsin?',
+        question: 'What causes sewer lines to back up into basements?',
         answer:
-          'In Wisconsin (Climate Zone 6), the Department of Energy recommends R-49 to R-60 insulation in attics, which is roughly 16 to 20 inches of blown cellulose or fiberglass.',
+          'Common causes include municipal sewer overload during heavy rain, tree roots invading private sewer lateral pipes, grease accumulation, or broken cast iron sewer lines.',
       },
       {
-        question: 'Why should bathroom fans vent to the exterior?',
+        question: 'How do you eliminate the persistent sewer smell after cleanup?',
         answer:
-          'Bathroom exhaust fans vented into the attic dump gallons of warm, humid air into cold framing, causing wood rot, condensation, and rapid mold growth.',
+          'We use industrial-strength antimicrobial washes and hydroxyl air generators. Hydroxyl radicals dismantle organic odor molecules at the molecular level without leaving toxic residues.',
       },
     ],
-    related: ['home-inspection', 'thermal-imaging-inspection', 'pre-listing-inspection', 'mold-testing'],
+    related: ['emergency-water-extraction', 'water-damage-restoration', 'basement-water-damage', 'structural-drying-dehumidification'],
   },
   {
-    slug: 'electrical-inspection',
-    name: 'Electrical System Inspection',
-    primaryKeyword: 'Electrical inspection',
-    supportingKeywords: ['Home electrical safety inspection', 'Electrical defects'],
-    icon: Zap,
-    image: { src: PHOTOS.electrical, alt: 'Electrician inspecting a circuit breaker panel with diagnostic equipment' },
-    seoTitle: 'Electrical System Inspection | WISCo Inspections, LLC',
-    metaDescription:
-      'Safety inspection of electrical panels, circuit breakers, grounding, and wiring. Identify outdated or hazardous electrical components. Call (608) 642-1112.',
-    summary:
-      'A focused electrical safety evaluation covering service panels, circuit breaker sizing, grounding rods, GFCI/AFCI protection, and wiring conditions.',
-    overview: [
-      'Electrical fires cause thousands of residential disasters each year, often due to obsolete wiring, overloaded breakers, missing ground rods, or DIY modifications.',
-      'Our electrical system inspection evaluates the entire visible distribution system from the overhead or underground service drop to branch wiring, breaker panel dead-fronts, and outlet polarity.',
-    ],
-    localIntro:
-      'Whether your Edgerton property is a turn-of-the-century residence or a recent build, WISCo Inspections provides comprehensive electrical safety assessments.',
-    covers: [
-      'Main electrical service panel amperage and service entrance cables',
-      'Circuit breaker and fuse sizing matched to conductor wire gauge',
-      'Panel bonding, grounding electrode conductors, and ground rod connections',
-      'Inspection for vintage knob-and-tube, cloth-sheathed, or aluminum branch wiring',
-      'Ground Fault Circuit Interrupter (GFCI) and Arc Fault (AFCI) safety testing',
-      'Testing accessible outlets for proper polarity, grounding, and physical damage',
-    ],
-    whoNeedsIt: [
-      'Buyers considering older homes built before 1975',
-      'Homeowners planning major remodeling, EV charger, or heat pump installations',
-      'Properties where previous owners completed unpermitted electrical alterations',
-    ],
-    whatToExpect: [
-      'Removal of panel dead-front covers for interior inspection of wiring and busbars',
-      'Testing of representative outlets, switches, and safety interrupters throughout the house',
-      'Identification of double-tapped breakers, oversized fuses, and exposed splices',
-    ],
-    limitations: [
-      'Concealed wiring inside finished walls, ceilings, and buried underground conduits cannot be viewed.',
-      'Inspectors do not dismantle energized components or perform intrusive load calculations.',
-    ],
-    faqs: [
-      {
-        question: 'Why is knob-and-tube wiring a concern?',
-        answer:
-          'Knob-and-tube wiring lacks an equipment grounding conductor and its cloth insulation deteriorates over time. Many insurance carriers refuse coverage or charge higher premiums for homes with active knob-and-tube wiring.',
-      },
-      {
-        question: 'What is a double-tapped breaker?',
-        answer:
-          'A double tap occurs when two wires are connected to a circuit breaker terminal rated for only one. It can cause loose connections, arcing, and fire hazards.',
-      },
-      {
-        question: 'Where are GFCI outlets required?',
-        answer:
-          'GFCI protection is essential in areas where water is present, including kitchens, bathrooms, garages, crawl spaces, unfinished basements, and outdoor receptacles.',
-      },
-    ],
-    related: ['home-inspection', 'buyer-home-inspection', 'thermal-imaging-inspection', 'pre-listing-inspection'],
-  },
-  {
-    slug: 'thermal-imaging-inspection',
-    name: 'Thermal Imaging Inspection',
-    primaryKeyword: 'Thermal imaging inspection',
-    supportingKeywords: ['Infrared home inspection', 'Thermal camera inspection'],
+    slug: 'thermal-imaging-leak-detection',
+    name: 'Thermal Imaging & Moisture Leak Detection',
+    primaryKeyword: 'Thermal imaging leak detection',
+    supportingKeywords: ['Infrared moisture detection', 'Hidden water leak detection', 'Thermal camera water inspection'],
     icon: Thermometer,
-    image: { src: PHOTOS.doorframe, alt: 'Thermal imaging camera evaluating heat loss around window and door frames' },
-    seoTitle: 'Thermal Imaging & Infrared Inspection | WISCo Inspections, LLC',
+    image: { src: PHOTOS.thermalImaging, alt: 'High resolution thermal imaging camera screen detecting cold moisture spots hidden inside a wall' },
+    seoTitle: 'Thermal Imaging & Leak Detection | WISCo Mold & Water Damage',
     metaDescription:
-      'Non-invasive infrared thermal imaging to identify hidden moisture leaks, missing insulation, and overheating electrical components. Call (608) 642-1112.',
+      'Pinpoint hidden plumbing leaks, roof water intrusion, and moisture behind walls with infrared thermal imaging cameras in Wisconsin. Call (608) 642-1112.',
     summary:
-      'State-of-the-art infrared camera technology to reveal hidden moisture leaks, energy loss, missing insulation, and electrical hotspots behind walls.',
+      'Non-destructive infrared thermal imaging and digital moisture meters to locate hidden pipe leaks, roof moisture paths, and wet insulation without tearing down walls.',
     overview: [
-      'Thermal imaging allows us to see what the naked eye cannot. By capturing surface temperature variations, our calibrated infrared cameras reveal concealed water leaks, air drafts, insulation gaps, and overloaded electrical circuits without damaging walls.',
-      'This non-destructive diagnostic service is invaluable for discovering moisture intrusion from plumbing pipes or roofs before visible stains and mold develop.',
+      'Water often travels far from its original entry point, running along floor joists and behind wall cavities before pooling in unexpected areas. Traditional inspection methods often require cutting open drywall to find the leak.',
+      'WISCo Mold & Water Damage employs calibrated infrared thermal imaging technology. Because evaporating water cools adjacent building materials, thermal cameras clearly reveal the precise boundaries of hidden moisture plumes, allowing targeted, surgical repairs that save time and money.',
     ],
     localIntro:
-      'Detect hidden energy waste and concealed leaks in your Edgerton, WI home with thermal imaging from WISCo Inspections, LLC.',
+      'Avoid unnecessary drywall demolition in your Edgerton, Madison, or Verona home. Our thermal imaging reveals hidden leaks instantly.',
     covers: [
-      'Infrared scan of exterior walls and ceilings for insulation voids and cold air infiltration',
-      'Detection of concealed plumbing leaks behind drywall and underneath fixtures',
-      'Roof leak tracking and moisture path identification inside ceilings',
-      'Electrical panel thermal scanning to detect hot circuits and loose wire terminals',
-      'Locating radiant floor heating loops and verifying uniform heating performance',
+      'High-resolution infrared thermal imaging scans of ceilings, walls, and flooring',
+      'Pinless and penetrating RF moisture meter cross-verification',
+      'Detection of pinhole copper pipe leaks, hidden drain line cracks, and shower pan failures',
+      'Roof leak tracking from attic decking down through finished ceilings',
+      'Ice dam moisture migration analysis behind siding and eaves',
+      'Comprehensive digital thermal report with side-by-side visible and thermal photography',
     ],
     whoNeedsIt: [
-      'Homeowners experiencing mysterious moisture or recurring high heating bills',
-      'Buyers seeking the most rigorous, high-tech inspection available',
-      'Property owners after heavy storms, roof repairs, or plumbing incidents',
+      'Homeowners seeing mysterious ceiling water spots or blistering wall paint',
+      'Residents with unexpectedly high water bills indicating a hidden running pipe leak',
+      'Properties with recurring musty smells where no visible water can be found',
     ],
     whatToExpect: [
-      'Systematic room-by-room infrared scan of walls, ceilings, and mechanical panels',
-      'Side-by-side high-resolution digital and thermal comparative photos in your report',
-      'Moisture meter corroboration for any thermal cold spots suggesting leaks',
+      'Non-invasive walkthrough scanning all suspect areas with high-sensitivity FLIR cameras',
+      'Instant visual proof showing exact moisture boundaries on camera',
+      'Clear advice on the exact location of the leak for your plumber or roofer to repair',
     ],
     limitations: [
-      'Infrared cameras detect surface temperature differences—they do not see through walls like X-rays.',
-      'An adequate temperature difference (delta-T) between indoor and outdoor air is required for building envelope energy scans.',
+      'Thermal cameras detect temperature differentials caused by moisture evaporation; they must be cross-verified with calibrated electronic moisture meters for positive identification.',
     ],
     faqs: [
       {
-        question: 'Can thermal imaging see through walls?',
+        question: 'Can a thermal imaging camera see water through walls?',
         answer:
-          'No. A thermal camera reads infrared energy emitted from wall surfaces. Evaporating water or missing insulation creates subtle surface temperature changes that the camera highlights in color.',
+          'Thermal cameras detect heat signatures rather than "seeing through" walls. Because water cools building materials through evaporation, the wet area appears distinctly cooler than surrounding dry drywall, outlining the exact moisture pattern.',
       },
       {
-        question: 'Does thermal imaging find mold?',
+        question: 'Does thermal imaging locate pinhole plumbing leaks?',
         answer:
-          'Thermal cameras do not detect mold directly, but they quickly identify the hidden moisture sources and damp materials that allow mold to grow.',
+          'Yes. Water escaping from a pressurized pipe spreads into surrounding insulation and studs, creating a noticeable thermal footprint that we can pinpoint behind walls or under subfloors.',
       },
       {
-        question: 'Is thermal imaging included in every inspection?',
+        question: 'Do you provide a report of the thermal scan?',
         answer:
-          'We utilize thermal cameras during general inspections for suspected problem areas, and provide full-house comprehensive infrared energy and moisture surveys upon request.',
+          'Yes. We provide an annotated digital report featuring high-resolution thermal images paired with standard visual photos, showing temperature deltas and moisture meter percentages for your records or insurance claims.',
       },
     ],
-    related: ['home-inspection', 'mold-testing', 'electrical-inspection', 'attic-roof-inspection'],
+    related: ['water-damage-restoration', 'mold-testing', 'mold-remediation', 'attic-mold-remediation'],
   },
   {
-    slug: 'warranty-inspection',
-    name: '11-Month Builder Warranty Inspection',
-    primaryKeyword: 'New home warranty inspection',
-    supportingKeywords: ['Builder warranty inspection', '11-month warranty inspection'],
-    icon: Award,
-    image: { src: PHOTOS.heroInspector, alt: 'Home inspector checking construction finishing, framing, and fixtures in a new home' },
-    seoTitle: '11-Month Builder Warranty Inspection | WISCo Inspections, LLC',
+    slug: 'attic-mold-remediation',
+    name: 'Attic Mold Remediation & Roof Leak Cleanup',
+    primaryKeyword: 'Attic mold remediation',
+    supportingKeywords: ['Attic mold removal', 'Roof leak mold cleanup', 'Ice dam mold remediation'],
+    icon: Wind,
+    image: { src: PHOTOS.atticMold, alt: 'Technician treating roof sheathing and attic trusses for mold after a winter ice dam moisture leak' },
+    seoTitle: 'Attic Mold Remediation & Roof Leak Cleanup | WISCo Mold & Water Damage',
     metaDescription:
-      'Independent 11-month warranty inspection for new construction homes in Wisconsin. Catch builder defects before your 1-year warranty expires. Call (608) 642-1112.',
+      'Specialized attic mold remediation and roof moisture cleanup in Wisconsin. Treat roof sheathing, remove contaminated insulation, and seal timber. Call (608) 642-1112.',
     summary:
-      'An independent evaluation for newly built homes approaching their one-year anniversary, providing an itemized punch list for your builder warranty claim.',
+      'Safe removal of mold from attic roof decking and rafters, removal of damp compressed insulation, and antimicrobial sealing following roof leaks or winter ice dams.',
     overview: [
-      'Most new construction homes in Wisconsin come with a 1-year builder warranty covering materials and workmanship. During the first year of occupancy, homes settle, framing lumber dries, and building systems undergo seasonal temperature extremes.',
-      'Our 11-month warranty inspection uncovers nail pops, foundation settling, roofing deficiencies, HVAC imbalance, and plumbing leaks so you can require the builder to fix them before your warranty protection expires.',
+      'Attic mold is exceptionally common in Wisconsin due to extreme winter temperature contrasts. When warm, humid indoor air escapes into a cold attic through unsealed ceiling penetrations, it condenses against freezing plywood roof sheathing, feeding black and white mold colonies.',
+      'Additionally, winter ice dams force water backward under shingles, saturating roof framing and insulation. WISCo Mold & Water Damage remediates attic fungal growth, treats roof decking with commercial fungicidal coatings, and extracts contaminated insulation to restore healthy airflow.',
     ],
     localIntro:
-      'Living in a new build in Edgerton, Sun Prairie, or Dane County? Let WISCo Inspections inspect your property before your one-year builder warranty expires.',
+      'Wisconsin winters take a heavy toll on attics in Edgerton, Janesville, Sun Prairie, and Madison. We eliminate attic mold and seal your roof decking safely.',
     covers: [
-      'Exterior grading, soil settlement around foundation, and downspout extensions',
-      'Roofing materials, flashing terminations, vent caps, and gutter slope',
-      'Attic framing, insulation settlement, and mechanical duct connections',
-      'Plumbing fixtures, garbage disposal, water pressure, and shut-off valves',
-      'HVAC operation, supply register airflow, and thermostat controls',
-      'Interior drywall cracks, door/window latching, and cabinet alignment',
+      'Dry-ice blasting or abrasive scrubbing of mold-stained roof sheathing and rafters',
+      'EPA-registered antimicrobial fogging and fungicidal protective coating on all attic timbers',
+      'Removal and replacement of moisture-damaged, compressed fiberglass or cellulose insulation',
+      'Attic containment preventing mold spores from entering living areas through access hatches',
+      'Inspection of bathroom exhaust duct terminations to verify they vent outside rather than into the attic',
+      'Airflow and ventilation assessment to stop recurring condensation',
     ],
     whoNeedsIt: [
-      'Homeowners who bought new construction within the past 9 to 11 months',
-      'Owners approaching their builder’s one-year warranty claim cutoff date',
-      'Anyone who wants an independent expert punch list backed by photographic evidence',
+      'Homeowners noticing dark, blackened staining on attic roof plywood or rafters',
+      'Properties where winter ice dams caused ceiling water leaks',
+      'Homes where bathroom fans were improperly vented directly into the attic cavity',
+      'Sellers receiving a buyer home inspection report flagging attic fungal growth',
     ],
     whatToExpect: [
-      'Complete top-to-bottom inspection of all interior and exterior systems',
-      'Itemized list of warrantable defects categorized clearly for builder review',
-      'Digital report with high-resolution photos that you can email directly to your builder',
+      'Installation of containment around the attic entrance with negative pressure filtration',
+      'Aggressive removal of mold from roof framing without compromising structural integrity',
+      'Application of white or clear antimicrobial fungicidal sealant with long-term protection',
     ],
     limitations: [
-      'The inspection reports warrantable defects under standard construction guidelines; builder response and repair agreements depend on your specific builder contract terms.',
-      'Inspection does not certify municipal code compliance, which is under the jurisdiction of local municipal inspectors.',
+      'Underlying ventilation shortfalls (such as blocked soffit vents or lack of ridge vents) must be addressed to ensure permanent prevention.',
     ],
     faqs: [
       {
-        question: 'Why do I need an inspection on a brand new home?',
+        question: 'What causes attic mold in Wisconsin homes?',
         answer:
-          'New construction homes are built by dozens of subcontractors working fast. Minor oversights, missing attic insulation, improper flashing, or plumbing leaks often go unnoticed until months later.',
+          'Attic mold is primarily caused by two factors: winter condensation from warm indoor air leaking into a cold, under-ventilated attic, and roof leaks caused by damaged shingles or severe winter ice dams.',
       },
       {
-        question: 'When should I schedule an 11-month inspection?',
+        question: 'Will attic mold spread to the rest of the house?',
         answer:
-          'Schedule around month 10 or 11 of your ownership to give your builder ample time to schedule and complete warranty repairs before your 12-month deadline.',
+          'Yes. As pressure changes occur throughout the year, airborne mold spores from the attic can migrate down through recessed light fixtures, electrical conduits, and ceiling access panels into your living spaces.',
       },
       {
-        question: 'Will the builder accept an independent inspector’s report?',
+        question: 'Can attic mold kill a home sale?',
         answer:
-          'Yes. Builders routinely accept professional inspection reports because they document issues clearly with photos, specific descriptions, and industry standards.',
+          'Attic mold is one of the most frequent deal-killers in Wisconsin real estate. Buyers and lenders often demand professional remediation before loan approval. We provide certified remediation and clearance documentation to keep your sale on track.',
       },
     ],
-    related: ['home-inspection', 'radon-testing', 'attic-roof-inspection', 'thermal-imaging-inspection'],
+    related: ['mold-remediation', 'thermal-imaging-leak-detection', 'water-damage-restoration', 'mold-testing'],
+  },
+  {
+    slug: 'structural-drying-dehumidification',
+    name: 'Structural Drying & Dehumidification',
+    primaryKeyword: 'Structural drying',
+    supportingKeywords: ['Commercial dehumidification', 'Hardwood floor drying', 'Industrial air movers water damage'],
+    icon: Zap,
+    image: { src: PHOTOS.dehumidificationEquipment, alt: 'High capacity commercial LGR dehumidifiers and high velocity air movers drying structural floor joists' },
+    seoTitle: 'Structural Drying & Dehumidification | WISCo Mold & Water Damage',
+    metaDescription:
+      'Commercial structural drying and industrial dehumidification in Wisconsin. Extract deep moisture from wall studs, concrete, and hardwood. Call (608) 642-1112.',
+    summary:
+      'High-capacity commercial LGR dehumidifiers and directed industrial air movers to extract deep, bound moisture from structural framing, drywall, and hardwood floors.',
+    overview: [
+      'Moisture doesn’t just sit on the surface—it absorbs deep into structural wood framing, concrete foundation slabs, and subfloors. Standard household fans and portable dehumidifiers simply cannot extract deep bound moisture before mold growth begins.',
+      'WISCo Mold & Water Damage deploys commercial Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers. By controlling temperature, airflow, and specific vapor pressure differentials, we draw moisture out of dense materials and exhaust dry, conditioned air until structural materials return to industry-standard dry thresholds.',
+    ],
+    localIntro:
+      'Serving Edgerton, Dane County, Rock County, and Jefferson County with industrial drying equipment capable of handling any size residential or commercial water loss.',
+    covers: [
+      'Commercial LGR and desiccant dehumidifiers capable of removing 150+ pints per day per unit',
+      'High-velocity axial and centrifugal air movers creating circular vortex airflow',
+      'Specialty injector drying systems for cabinets, wall cavities, and finished ceilings',
+      'Hardwood floor rescue mat systems that draw water directly through wood pores',
+      'Daily psychrometric temperature and relative humidity tracking with digital logs',
+      'Moisture mapping of framing, subfloor, and drywall to verify complete drying',
+    ],
+    whoNeedsIt: [
+      'Properties where water soaked into hardwood floors, custom cabinetry, or concrete',
+      'Buildings with wet insulation or water trapped inside wall cavities',
+      'Commercial and residential properties following major fire hose operations or flood events',
+    ],
+    whatToExpect: [
+      'Strategic layout of commercial drying equipment maximizing airflow across wet surfaces',
+      'Continuous extraction of moisture from both materials and indoor ambient air',
+      'Daily technician visits to adjust equipment positioning and record psychrometric drying curves',
+    ],
+    limitations: [
+      'Drying equipment must remain powered on continuously until target dry standards are met to prevent fungal rebound.',
+    ],
+    faqs: [
+      {
+        question: 'Can hardwood floors be saved after water damage?',
+        answer:
+          'Yes, if drying begins promptly! We use negative-pressure hardwood drying mats that vacuum trapped water out through the floor seams, flattening cupped floorboards and saving thousands in replacement costs.',
+      },
+      {
+        question: 'Why do drying fans need to stay running 24 hours a day?',
+        answer:
+          'Continuous airflow maintains evaporation momentum. Shutting fans off causes moisture trapped deep inside wood to equalize back to the surface, spiking humidity and creating a breeding ground for mold.',
+      },
+      {
+        question: 'How do you know when a house is completely dry?',
+        answer:
+          'We use calibrated electronic moisture meters to test affected structural materials against unaffected dry baseline materials in your home. Once the readings match industry dry standards, equipment is safely removed.',
+      },
+    ],
+    related: ['water-damage-restoration', 'emergency-water-extraction', 'basement-water-damage', 'mold-remediation'],
   },
 ];
 
-export const SERVICE_BY_SLUG = Object.fromEntries(SERVICES.map((service) => [service.slug, service]));
+export const SERVICE_BY_SLUG = SERVICES.reduce<Record<string, ServiceContent>>((acc, s) => {
+  acc[s.slug] = s;
+  return acc;
+}, {});
 
 export const HOME_PROCESS = [
-  { title: 'Call WISCo Inspections', body: 'Phone us to talk about the property and what you need from the inspection.' },
-  { title: 'Discuss the property', body: 'We review the home, the inspection type, and the scope that fits your situation.' },
-  { title: 'Confirm availability', body: 'We confirm availability and the details of the inspection when you call.' },
-  { title: 'Complete the inspection', body: 'The inspection is carried out according to the scope agreed during your call.' },
-  { title: 'Review your findings', body: 'You receive the inspection findings and report, and can ask questions about them.' },
+  {
+    step: '01',
+    title: '24/7 Rapid Emergency Dispatch',
+    description:
+      'Call (608) 642-1112 anytime. Our certified restoration technicians mobilize immediately across Southern Wisconsin with commercial water extraction and containment equipment.',
+  },
+  {
+    step: '02',
+    title: 'Thermal Imaging & Damage Mapping',
+    description:
+      'We inspect affected areas with infrared cameras and electronic moisture meters to identify the full perimeter of water spread and detect hidden mold behind walls.',
+  },
+  {
+    step: '03',
+    title: 'Extraction, Containment & Air Filtration',
+    description:
+      'We extract standing water with commercial truck-mounted pumps, establish containment barriers to isolate mold, and run HEPA air scrubbers to clean the air.',
+  },
+  {
+    step: '04',
+    title: 'Antimicrobial Treatment & Structural Drying',
+    description:
+      'We treat framing with EPA-registered botanical antimicrobials to destroy mold colonies and run commercial LGR dehumidifiers until materials reach dry standard.',
+  },
+  {
+    step: '05',
+    title: 'Final Clearance & Direct Insurance Billing',
+    description:
+      'We verify drying completion, conduct clearance air quality checks, and submit comprehensive itemized documentation directly to your insurance company.',
+  },
 ];

@@ -23,7 +23,7 @@ export default function CallButton({ label, variant = 'gold', size = 'md', class
   return (
     <a
       href={BUSINESS.phoneHref}
-      aria-label={`Call WISCo Inspections at ${BUSINESS.phoneDisplay}`}
+      aria-label={`Call ${BUSINESS.name} at ${BUSINESS.phoneDisplay}`}
       className={`inline-flex items-center justify-center gap-2 rounded-full font-semibold transition duration-200 hover:-translate-y-0.5 active:translate-y-0 ${variants[variant]} ${sizes[size]} ${className}`}
     >
       <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />

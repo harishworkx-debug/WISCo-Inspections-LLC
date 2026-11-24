@@ -21,414 +21,437 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
-    slug: 'what-does-a-home-inspection-include-wisconsin',
-    title: 'What Does a Home Inspection Include in Wisconsin?',
-    mainKeyword: 'Wisconsin home inspection checklist',
+    slug: 'how-to-handle-water-damage-wisconsin-home',
+    title: 'How to Handle Sudden Water Damage in a Wisconsin Home',
+    mainKeyword: 'Wisconsin water damage restoration',
     metaDescription:
-      'Understand what is evaluated during a Wisconsin home inspection. Over 400 checkpoints covering foundations, roofs, electrical, plumbing, and HVAC systems.',
-    publishDate: '2026-11-14',
+      'Critical emergency steps to take immediately when water damage strikes your Wisconsin home. Stop the leak, prevent toxic mold, and ensure insurance coverage.',
+    publishDate: '2026-11-20',
     readTime: '6 min read',
-    targetServiceSlug: 'home-inspection',
-    targetServiceAnchor: 'Professional Wisconsin Home Inspection Services',
+    targetServiceSlug: 'water-damage-restoration',
+    targetServiceAnchor: 'Professional Water Damage Restoration Services',
     summary:
-      'A thorough residential home inspection in Wisconsin is a non-invasive, visual evaluation of accessible building systems from foundation to roof, designed to uncover safety hazards and major defects before you buy or sell.',
+      'Sudden water damage from pipe bursts, storm runoff, or appliance failures requires rapid action within the first 24 to 48 hours to prevent structural warping and toxic mold colonization.',
     sections: [
       {
-        heading: 'The Scope of a Wisconsin Residential Property Inspection',
+        heading: 'The 24-Hour Clock: Why Rapid Action Saves Your Home',
         paragraphs: [
-          'Under Wisconsin state standards of practice for licensed home inspectors (Wis. Admin. Code SPS 131), a home inspection evaluates the accessible physical structure and mechanical systems of a home at the time of the inspection.',
-          'Rather than being a simple pass/fail grade, a professional inspection is an objective status assessment. It identifies components operating normally, items nearing the end of their functional lifespan, deferred maintenance items, and critical safety hazards that require immediate contractor evaluation.',
+          'Water is the single most destructive element inside a residential building. Within minutes of a leak, water spreads through porous drywall, seeps into subflooring, and saturates wall insulation. Within 24 to 48 hours, stagnant moisture and ambient warmth trigger active mold spore germination.',
+          'In Wisconsin, where winter temperatures cause pipe bursts and summer thunderstorms saturate low-lying basements, knowing what to do immediately can save tens of thousands of dollars in structural repairs and prevent long-term health hazards.',
         ],
       },
       {
-        heading: 'Major Components on the Wisconsin Inspection Checklist',
+        heading: 'Immediate Emergency Checklist for Homeowners',
         paragraphs: [
-          'WISCo Inspections examines more than 400 individual checkpoints across eight primary system categories. Key areas reviewed include:',
+          'Before professional mitigation crews arrive with truck-mounted pumps, complete these safety and mitigation steps if it is safe to do so:',
         ],
         checklist: [
-          'Foundation & Structure: Poured concrete, masonry blocks, carrying beams, support columns, floor joists, and crawl space vapor retarders.',
-          'Roofing & Drainage: Shingles, step and valley flashing, plumbing vent boots, chimney masonry, gutters, and downspout extensions.',
-          'Attic & Thermal Envelope: Insulation depth and R-value, roof sheathing, framing trusses, and bathroom fan exhaust duct terminations.',
-          'Electrical Service & Distribution: Main service entrance amperage, circuit breaker sizing, conductor wire type (checking for knob-and-tube or cloth wiring), and GFCI/AFCI receptacles.',
-          'Plumbing Systems: Main shut-off valves, water supply lines, waste drain stacks, water heater safety valves (TPR), and sump pump float travel.',
-          'Heating & Cooling (HVAC): Furnace operational checks, burner cleanliness, flue draft integrity, air filter condition, and AC condenser temperature split.',
-          'Interior Living Areas: Windows, doors, stairway tread/handrail safety, fire doors, smoke alarms, and carbon monoxide detectors.',
+          'Shut Off the Main Water Supply: Locate your home’s main shut-off valve (typically in the basement near the water meter) and turn it clockwise until fully closed.',
+          'Turn Off Electricity in Wet Zones: If standing water reaches electrical outlets or baseboard heaters, cut power at the main circuit breaker. Never enter standing water with live power.',
+          'Document Everything Before Cleanup: Take high-resolution photographs and videos of standing water levels, damaged furniture, and wet structural walls for your insurance adjuster.',
+          'Call a Certified 24/7 Mitigation Team: Contact WISCo Mold & Water Damage at (608) 642-1112 for immediate water extraction and containment.',
         ],
       },
       {
-        heading: 'What Is Excluded from a Standard Visual Inspection?',
+        heading: 'Why Household Fans Are Not Enough',
         paragraphs: [
-          'A standard home inspection is non-invasive and visual. It does not dismantle walls, ceilings, or sealed systems. Items concealed behind drywall, underground sewer lateral pipes, or buried fuel tanks require specialized third-party testing.',
-          'Environmental diagnostics—including continuous radon gas testing and mold air spore sampling—are specialized add-ons that should be requested when booking your inspection.',
+          'Many homeowners mistakenly believe placing standard box fans and running a small dehumidifier will dry a water-damaged room. Unfortunately, surface moisture is only 20% of the problem. Up to 80% of water absorbs deep into sill plates, subflooring, and interior wall studs.',
+          'Professional structural drying requires commercial Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers that create low vapor pressure differentials, literally pulling bound moisture out of the pores of building materials.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Does the inspector test every outlet in the home?',
+        question: 'How quickly does mold grow after a water leak?',
         answer:
-          'Inspectors test representative outlets in every room, and 100% of accessible outlets in wet zones (kitchens, bathrooms, garages, basements, and exteriors) for GFCI ground fault safety and polarity.',
+          'Under typical indoor temperatures (65°F to 80°F), microscopic mold spores will begin germinating within 24 to 48 hours of sustained moisture contact.',
       },
       {
-        question: 'How long does a typical Wisconsin inspection take?',
+        question: 'Should I call my insurance company or a restoration contractor first?',
         answer:
-          'A thorough inspection takes between 2.5 and 4 hours depending on the property size, age, and foundation type. Inspector Phil Jackson takes the time necessary to inspect every accessible component carefully.',
+          'Call your restoration contractor immediately. Most insurance policies require homeowners to take reasonable steps to mitigate secondary damage right away. A certified mitigation company can begin emergency water extraction while helping you open the insurance claim.',
       },
     ],
   },
   {
-    slug: 'how-much-does-a-home-inspection-cost-wisconsin',
-    title: 'How Much Does a Home Inspection Cost in Wisconsin?',
-    mainKeyword: 'Home inspection cost Wisconsin',
+    slug: 'mold-remediation-vs-mold-testing',
+    title: 'Mold Remediation vs. Mold Testing: What Homeowners Need to Know',
+    mainKeyword: 'Mold remediation vs mold testing',
     metaDescription:
-      'Learn about typical home inspection costs in Wisconsin, what factors influence inspection pricing, and how bundle add-ons like radon and mold save money.',
-    publishDate: '2026-11-14',
+      'Understand the crucial difference between mold testing and mold remediation. Learn when you need air spore lab testing and when full containment removal is required.',
+    publishDate: '2026-11-20',
     readTime: '5 min read',
-    targetServiceSlug: 'buyer-home-inspection',
-    targetServiceAnchor: 'Buyer Home Inspection Pricing & Scopes',
+    targetServiceSlug: 'mold-remediation',
+    targetServiceAnchor: 'Certified Mold Remediation & Removal Services',
     summary:
-      'Home inspection fees in South Central Wisconsin typically range from $375 to $650, varying primarily based on square footage, home age, foundation complexity, and specialized testing add-ons.',
+      'Mold testing provides scientific proof of spore species and concentrations, while mold remediation is the physical containment, removal, and antimicrobial eradication of fungal growth.',
     sections: [
       {
-        heading: 'Average Pricing for Wisconsin Home Inspections',
+        heading: 'Defining Mold Testing vs. Remediation',
         paragraphs: [
-          'In South Central Wisconsin communities including Madison, Janesville, and Edgerton, standard residential home inspection pricing generally reflects the time, liability, and specialized diagnostic equipment required.',
-          'For a standard single-family home under 2,000 square feet, buyers typically invest between $375 and $450. Larger properties (2,500 to 4,000+ sq ft), historic homes with complex foundations, or dual-unit multi-family properties range from $475 to $650+.',
+          'Homeowners facing mold concerns often confuse testing with remediation. While both are critical phases of indoor environmental management, they serve entirely different functions.',
+          'Mold Testing is diagnostic: an environmental specialist collects indoor air cassettes and surface swabs to send to an accredited microbiology laboratory. The lab report identifies exact mold species (e.g., Stachybotrys, Aspergillus, Cladosporium) and counts per cubic meter.',
+          'Mold Remediation is physical cleanup and removal: certified technicians erect negative air containment barriers, run HEPA scrubbers, remove contaminated porous materials, and apply EPA-registered fungicidal coatings to permanently kill root systems.',
         ],
       },
       {
-        heading: 'Key Factors That Determine Inspection Cost',
+        heading: 'When Do You Need Testing Before Remediation?',
         paragraphs: [
-          'Several physical and logistical variables dictate the final inspection fee:',
+          'Testing is recommended when you smell musty odors but see no visible mold, when unexplained respiratory illness occurs, or when buying/selling a property. If you already have extensive visible black mold covering several square feet of drywall following a pipe leak, remediation is immediately required.',
         ],
         checklist: [
-          'Total Square Footage: Larger properties require significantly more time to test receptacles, inspect windows, and examine heating/plumbing loops.',
-          'Age of the Home: Century-old homes in Madison or Beloit often feature vintage framing, active knob-and-tube wiring, and older masonry that requires meticulous review.',
-          'Foundation Type: Basements with crawl spaces require additional protective gear and hands-on traversal compared to slab-on-grade builds.',
-          'Ancillary Environmental Testing: Adding 48-hour continuous digital radon monitoring or laboratory mold air sampling.',
-        ],
-      },
-      {
-        heading: 'Why Cheap Inspections Often Cost Homeowners More',
-        paragraphs: [
-          'Attempting to save $50 to $75 by hiring the lowest-cost inspector often leads to rushed walk-throughs, missed safety defects, and boiler-plate checklist reports without annotated photos.',
-          'Investing in an independent inspector equipped with infrared thermal imaging and pinless moisture meters routinely saves buyers thousands of dollars during repair negotiations.',
+          'Pre-Remediation Testing: Establishes baseline contamination levels and maps all affected rooms.',
+          'Post-Remediation Clearance Testing: Conducted after cleanup to independently verify airborne spore counts have returned to normal clean outdoor baseline levels.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Who pays for the home inspection in Wisconsin?',
+        question: 'Can I just spray bleach on mold instead of remediating?',
         answer:
-          'In almost all standard real estate purchase contracts, the buyer selects, hires, and pays for the independent home inspection during their contingency window.',
+          'No! The EPA and OSHA do not recommend bleach for porous surfaces like wood framing or drywall. Bleach is mostly water; the chlorine evaporates rapidly while the water soaks into the wood, feeding the mold roots beneath the surface.',
       },
       {
-        question: 'Is it cheaper to bundle radon testing with a home inspection?',
+        question: 'What is clearance testing?',
         answer:
-          'Yes. Most inspectors offer a substantial package discount when booking continuous radon testing or mold air sampling at the same time as the general inspection.',
+          'Clearance testing is an air spore trap test taken inside the containment zone after remediation to certify that airborne spore concentrations are at or below healthy outdoor levels.',
       },
     ],
   },
   {
-    slug: '10-common-problems-found-during-home-inspections',
-    title: '10 Common Problems Found During Home Inspections',
-    mainKeyword: 'Common home inspection problems',
+    slug: 'signs-of-hidden-mold-behind-drywall',
+    title: '10 Warning Signs of Hidden Mold Behind Drywall and Basements',
+    mainKeyword: 'Hidden mold signs in home',
     metaDescription:
-      'Discover the 10 most frequent defects uncovered during Wisconsin property inspections, from wet basements and missing GFCIs to improper attic ventilation.',
-    publishDate: '2026-11-14',
+      'Discover the top 10 hidden signs that toxic mold is growing inside your walls, ceilings, and basement framing before serious structural rot occurs.',
+    publishDate: '2026-11-21',
     readTime: '7 min read',
-    targetServiceSlug: 'home-inspection',
-    targetServiceAnchor: 'Comprehensive Home Inspection Services',
+    targetServiceSlug: 'mold-testing',
+    targetServiceAnchor: 'Professional Mold Inspection & Testing',
     summary:
-      'From basement moisture infiltration to ungrounded electrical circuits, these 10 common issues appear frequently during residential property inspections across South Central Wisconsin.',
+      'Mold colonies often thrive completely out of sight inside wall cavities and subfloors. Learn the subtle physical, visual, and olfactory clues that reveal hidden fungal growth.',
     sections: [
       {
-        heading: 'Frequent Defects Uncovered in Wisconsin Properties',
+        heading: 'Why Hidden Mold is the Most Dangerous',
         paragraphs: [
-          'Even homes that look immaculate on surface showings frequently harbor hidden mechanical deficiencies or deferred maintenance items. Understanding the most frequent findings helps buyers prepare repair contingency requests and helps sellers proactively address issues before listing.',
+          'Because mold thrives in dark, stagnant, and humid environments, the largest colonies in residential properties are rarely found in plain view on an open wall. Instead, they proliferate behind baseboards, inside exterior wall insulation, beneath glued vinyl flooring, and behind basement wood paneling.',
+        ],
+      },
+      {
+        heading: 'The Top 10 Hidden Mold Indicators',
+        paragraphs: [
+          'Inspect your home for these ten warning signs:',
         ],
         checklist: [
-          '1. Negative Exterior Grading: Soil sloping toward the foundation instead of away, allowing rainwater and snowmelt to saturate basement masonry.',
-          '2. Missing Downspout Extensions: Downspouts dumping roof water directly against foundation walls rather than discharging 6+ feet away.',
-          '3. Electrical Safety Violations: Double-tapped circuit breakers inside panels, open junction boxes, and ungrounded two-prong outlets in older homes.',
-          '4. Missing GFCI Protection: Lack of ground-fault circuit interrupters near water sources in kitchens, bathrooms, unfinished basements, and outdoor outlets.',
-          '5. Basement Moisture & Efflorescence: White mineral residue on foundation walls signaling ongoing groundwater seepage and hydrostatic pressure.',
-          '6. Inadequate Attic Ventilation: Blocked soffit vents or insufficient ridge ventilation leading to moisture buildup, wood rot, and winter ice dams.',
-          '7. Bathroom Exhaust Terminating in Attics: Exhaust fans dumping moist humid air directly into attic spaces rather than ducting outside through roof caps.',
-          '8. Plumbing Leaks & Slow Drains: Minor active drips under sink P-traps, worn toilet flappers, or corroded galvanized supply pipes.',
-          '9. Water Heater TPR Discharge Deficiencies: Missing or improperly pitched discharge pipes on temperature-pressure relief valves creating scalding risks.',
-          '10. Damaged Roof Shingles & Flashing Gaps: Missing granules, lifted shingles, and deteriorated chimney step flashing that invite ceiling leaks.',
+          '1. Persistent Musty or Earthy Odor: A distinctive sour, damp smell that lingers even after thorough house cleaning.',
+          '2. Unexplained Chronic Allergic Reactions: Sneezing, eye irritation, chronic sinus headaches, or asthma symptoms that improve when away from home.',
+          '3. Peeling or Bubbling Paint and Wallpaper: Moisture vapor trapped behind paint forces it to separate from drywall paper.',
+          '4. Discoloration or Yellow Water Rings: Past leaks on ceilings or walls that appear dry on the surface frequently conceal mold inside the stud cavity.',
+          '5. Powdery White Efflorescence on Masonry: Mineral salt deposits left by moisture migrating through basement foundation blocks.',
+          '6. Soft, Spongy Drywall or Trim: Cellulose materials that flex under gentle finger pressure indicate moisture decay.',
+          '7. Warped or Cupped Wood Flooring: Floorboards curling upward indicate excessive subfloor humidity.',
+          '8. History of Past Ice Dams or Roof Leaks: Moisture from past winter storms trapped in attic insulation.',
+          '9. Condensation on Window Panes and Cold Corners: Consistently high indoor relative humidity above 55%.',
+          '10. High Readings on Pinless Moisture Meters: Detected during a professional thermal imaging inspection.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Are all 10 problems considered deal-breakers?',
+        question: 'How do professionals find mold behind walls without knocking them down?',
         answer:
-          'No. Most items (such as extending downspouts, installing GFCI outlets, or reconnecting bath fan ducts) are minor, inexpensive fixes. Major structural foundation bowing or obsolete electrical panels represent more serious negotiation points.',
+          'We use calibrated infrared thermal cameras that detect temperature changes caused by hidden moisture evaporation, combined with penetrating radio-frequency moisture meters and wall-cavity air sampling cassettes.',
       },
     ],
   },
   {
-    slug: 'should-you-get-a-home-inspection-before-selling',
-    title: 'Should You Get a Home Inspection Before Selling Your Wisconsin Home?',
-    mainKeyword: 'Pre-listing home inspection',
+    slug: 'frozen-pipe-burst-winter-emergency-steps',
+    title: 'Emergency Action Steps After a Frozen Pipe Bursts in Wisconsin',
+    mainKeyword: 'Burst frozen pipe cleanup Wisconsin',
     metaDescription:
-      'Learn why sellers in Wisconsin benefit from a pre-listing inspection. Avoid buyer renegotiations, control repair costs, and speed up closing day.',
-    publishDate: '2026-11-14',
-    readTime: '5 min read',
-    targetServiceSlug: 'pre-listing-inspection',
-    targetServiceAnchor: 'Pre-Listing Inspection for Home Sellers',
-    summary:
-      'A pre-listing home inspection puts sellers in control of their real estate transaction by revealing repair needs in advance, preventing aggressive buyer price reductions, and ensuring smooth closings.',
-    sections: [
-      {
-        heading: 'The Strategic Advantage of Inspecting Before You List',
-        paragraphs: [
-          'Most home sales hit unexpected friction during the buyer’s inspection contingency period. When an independent inspector uncovers unexpected roof leaks, electrical panel double-taps, or sump pump failures, buyers often react with panic, demanding inflated repair credits or walking away entirely.',
-          'By ordering a pre-listing inspection before planting the "For Sale" sign, homeowners gain an objective preview of what the buyer’s inspector will find. This allows sellers to make repairs calmly using their preferred contractors, substantiate their asking price, and present a clean disclosure packet.',
-        ],
-      },
-      {
-        heading: 'Top Benefits for Wisconsin Home Sellers',
-        paragraphs: ['Key financial and logistical advantages include:'],
-        checklist: [
-          'No Rushed Contractor Fees: Complete repairs on your own schedule instead of paying emergency rush rates during tight 10-day contingency windows.',
-          'Strengthened Pricing Defense: Solidify your listing price with documented evidence that all major structural and mechanical systems are in sound working order.',
-          'Eliminates Deal-Killing Surprises: Reduce the risk of buyers renegotiating credits or canceling their purchase contract days before closing.',
-          'Transparent Disclosures: Complete Wisconsin Real Estate Condition Reports accurately and honestly, minimizing post-sale legal exposure.',
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: 'Do sellers still have to disclose defects found in a pre-listing inspection?',
-        answer:
-          'Yes. Wisconsin law requires truthful disclosure of known material defects. However, once you repair the item with receipts from licensed contractors, you can disclose both the prior defect and the completed professional repair.',
-      },
-    ],
-  },
-  {
-    slug: 'why-radon-testing-matters-buying-wisconsin-home',
-    title: 'Why Radon Testing Matters When Buying a Wisconsin Home',
-    mainKeyword: 'Radon testing Wisconsin',
-    metaDescription:
-      'Understand why radon testing is critical when purchasing a home in Wisconsin. Learn about EPA Zone 1 glacial soils and continuous electronic monitoring.',
-    publishDate: '2026-11-14',
+      'What to do immediately when sub-zero Wisconsin temperatures cause a frozen copper or PEX pipe to burst. Stop flooding, minimize water damage, and start drying.',
+    publishDate: '2026-11-21',
     readTime: '6 min read',
-    targetServiceSlug: 'radon-testing',
-    targetServiceAnchor: 'Certified Radon Testing Services',
+    targetServiceSlug: 'emergency-water-extraction',
+    targetServiceAnchor: '24/7 Emergency Water Extraction Services',
     summary:
-      'Because Southern Wisconsin soils contain prevalent glacial deposits, odorless radon gas commonly migrates into homes. Testing during your purchase contingency protects your health and real estate investment.',
+      'Wisconsin winters regularly bring polar vortex freezes that burst residential plumbing. Follow this emergency guide to stop the flood and extract water before structural damage escalates.',
     sections: [
       {
-        heading: 'What Is Radon and Why Is Southern Wisconsin High Risk?',
+        heading: 'The Mechanics of a Winter Pipe Freeze',
         paragraphs: [
-          'Radon is a naturally occurring, odorless, radioactive gas produced by the decay of uranium in soil, gravel, and rock. The EPA classifies Rock, Dane, and Jefferson counties as Zone 1 High Potential Radon Areas, where predicted indoor radon levels frequently exceed 4.0 picoCuries per liter (pCi/L).',
-          'Because modern homes create natural stack effects—drawing air upward through warm living spaces—radon gas enters through foundation cracks, sump basins, and construction joints. Prolonged radon exposure is the second leading cause of lung cancer in the United States and the number one cause among non-smokers.',
+          'When temperatures dip below 20°F in Southern Wisconsin, water inside uninsulated pipes in crawl spaces, attics, and exterior walls freezes. As water turns to ice, it expands by approximately 9%, generating thousands of pounds of hydraulic pressure that splits copper, CPVC, and PEX pipes.',
+          'The catastrophic flooding typically begins when the freeze thaws, unleashing hundreds of gallons of pressurized water into finished walls and ceilings every hour.',
         ],
       },
       {
-        heading: 'How Professional Continuous Radon Testing Works',
+        heading: 'Five Critical Steps to Take Right Now',
         paragraphs: [
-          'WISCo Inspections conducts continuous electronic radon monitoring over a minimum 48-hour period under closed-building conditions. Unlike store-bought charcoal test canisters that take weeks to mail to a lab, continuous electronic monitors record hourly readings to identify barometric fluctuations and provide immediate same-day digital reports upon retrieval.',
+          'Follow these immediate action steps:',
+        ],
+        checklist: [
+          '1. Shut off the main water valve immediately to cut water pressure.',
+          '2. Turn off the water heater breaker so the heating elements do not burn out when the tank drains.',
+          '3. Open faucets on lower levels to relieve residual line pressure.',
+          '4. Call a licensed plumber to repair the ruptured pipe.',
+          '5. Call WISCo Mold & Water Damage at (608) 642-1112 for immediate commercial water extraction and drying.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'What is the EPA action level for radon?',
+        question: 'Will homeowners insurance pay for burst frozen pipe damage?',
         answer:
-          'The EPA recommends mitigating when radon levels test at or above 4.0 pCi/L, and considering mitigation between 2.0 and 4.0 pCi/L.',
-      },
-      {
-        question: 'Who pays to fix high radon in a real estate purchase?',
-        answer:
-          'If continuous testing reveals levels at or above 4.0 pCi/L, buyers routinely request that the seller install an active soil depressurization radon mitigation system prior to closing.',
+          'Yes, most standard homeowners policies cover water damage resulting from burst frozen pipes provided the home was kept heated to a reasonable temperature (typically at least 55°F).',
       },
     ],
   },
   {
-    slug: 'what-buyers-should-know-about-older-homes',
-    title: 'What Buyers Should Know About Older Wisconsin Homes',
-    mainKeyword: 'Older home inspection',
+    slug: 'does-homeowners-insurance-cover-water-mold-damage',
+    title: 'Does Homeowners Insurance Cover Water and Mold Damage in Wisconsin?',
+    mainKeyword: 'Insurance coverage water mold damage Wisconsin',
     metaDescription:
-      'Essential inspection considerations for historic and older homes in Wisconsin, including knob-and-tube wiring, stone foundations, and galvanized plumbing.',
-    publishDate: '2026-11-14',
+      'Learn what types of water damage and mold remediation are covered by standard Wisconsin homeowners insurance policies, and how to file a successful claim.',
+    publishDate: '2026-11-22',
+    readTime: '7 min read',
+    targetServiceSlug: 'water-damage-restoration',
+    targetServiceAnchor: 'Water Damage Restoration & Insurance Claims Assistance',
+    summary:
+      'Understanding the difference between "sudden and accidental" water losses versus gradual neglect is the key to getting your water mitigation and mold remediation claims approved.',
+    sections: [
+      {
+        heading: 'Sudden & Accidental vs. Gradual Damage',
+        paragraphs: [
+          'Wisconsin homeowners insurance policies are designed to cover sudden, accidental, and unexpected water emergencies—such as a burst supply line, water heater tank failure, or washing machine hose rupture.',
+          'Conversely, claims are frequently denied if the damage resulted from gradual long-term seepage, unresolved roof leaks, or deferred maintenance. Furthermore, standard policies typically require a separate "Water Backup of Sewer/Drain" rider to cover flooded basements caused by sump pump failures.',
+        ],
+      },
+      {
+        heading: 'How Mold Coverage Works',
+        paragraphs: [
+          'In many Wisconsin policies, mold remediation coverage is capped (often between $5,000 and $10,000) unless it directly stems from a covered sudden water incident that was professionally mitigated immediately.',
+        ],
+        checklist: [
+          'Always notify your insurance carrier within 24 to 48 hours of discovering water damage.',
+          'Never discard water-damaged appliances or broken pipe fittings before the insurance adjuster inspects them.',
+          'Work with a restoration company that provides certified Xactimate itemized estimates and digital psychrometric moisture logs.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does WISCo work directly with my insurance company?',
+        answer:
+          'Yes. We work directly with all major homeowners insurance carriers across Wisconsin, providing itemized Xactimate estimates, thermal photos, and drying logs to streamline your claim.',
+      },
+    ],
+  },
+  {
+    slug: 'basement-flooding-sump-pump-failure-guide',
+    title: 'Basement Flooding and Sump Pump Failure: Immediate Cleanup Guide',
+    mainKeyword: 'Basement flood cleanup Wisconsin',
+    metaDescription:
+      'Complete emergency guide for flooded basements caused by sump pump failures, heavy rains, and spring snowmelts in Wisconsin. Fast extraction and sanitization.',
+    publishDate: '2026-11-22',
     readTime: '6 min read',
-    targetServiceSlug: 'electrical-inspection',
-    targetServiceAnchor: 'Electrical System & Older Home Inspections',
+    targetServiceSlug: 'basement-water-damage',
+    targetServiceAnchor: 'Basement Flood Cleanup & Water Damage Restoration',
     summary:
-      'Historic craftsmanship and vintage character come with unique structural and mechanical realities. Here is what buyers must know when inspecting older homes built before 1975.',
+      'When your sump pump fails during a heavy Wisconsin rainstorm, basements flood fast. Learn how to safely extract water, salvage finished materials, and prevent mold.',
     sections: [
       {
-        heading: 'The Appeal and Challenges of Older Wisconsin Housing',
+        heading: 'Why Sump Pumps Fail at the Worst Moments',
         paragraphs: [
-          'Historic neighborhoods in Madison, Janesville, Edgerton, and Beloit feature remarkable architectural details: quarter-sawn oak trim, hand-laid brick facades, and solid timber framing. However, building codes and safety expectations have evolved dramatically over the past century.',
-          'Older homes require an inspector with deep experience evaluating legacy materials, structural alterations, and outdated wiring systems that can impact home insurance underwriting.',
+          'Sump pumps fail most often during intense thunderstorms due to power outages, stuck mechanical float switches, clogged intake impellers, or frozen exterior discharge pipes during late winter.',
+          'Within hours, thousands of gallons of saturated groundwater pour over the basement floor, saturating drywall, baseboards, and carpet padding.',
+        ],
+      },
+      {
+        heading: 'Steps to Restore a Flooded Basement',
+        paragraphs: [
+          'Follow these restoration phases:',
         ],
         checklist: [
-          'Knob-and-Tube Wiring: Common in pre-1940 homes, this open-air wiring system lacks an equipment ground wire and deteriorates when covered by modern attic insulation.',
-          'Stone & Mortar Foundations: Fieldstone and lime-mortar basements require regular repointing and careful exterior drainage management to avoid hydrostatic wall failure.',
-          'Galvanized & Lead Plumbing: Older steel pipes corrode internally over decades, choking water pressure and introducing rust sediment.',
-          'Cast Iron Waste Stacks: Cast iron sewer drain lines deteriorate along horizontal channels, leading to subterranean leaks and sewer gas intrusion.',
-          'Undersized Electrical Panels: 60-amp and 100-amp fuse boxes cannot safely power modern EV chargers, heat pumps, and modern appliances without service upgrades.',
+          'Rapid Water Extraction: Commercial pumps remove standing water down to the concrete slab.',
+          'Tear-Out of Contaminated Porous Materials: Wet carpet pad, lower drywall (flood cut), and baseboards are removed.',
+          'Antimicrobial Sanitizing: EPA-approved disinfectants are applied to concrete floors and foundation walls.',
+          'Commercial Structural Drying: Dehumidifiers and air movers run continuously for 3 to 5 days to dry out framing and masonry.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Will insurance companies insure a home with knob-and-tube wiring?',
+        question: 'Can you save drywall that got wet in a basement flood?',
         answer:
-          'Many major insurance carriers will deny coverage or charge significant surcharges until active knob-and-tube wiring is professionally replaced by a licensed electrical contractor.',
+          'If drywall was submerged in ground floodwater for more than a few hours, building codes require making a clean "flood cut" 12 to 24 inches above the water line to remove saturated gypsum and prevent mold growth behind the wall.',
       },
     ],
   },
   {
-    slug: 'what-happens-during-a-basement-inspection',
-    title: 'What Happens During a Basement and Crawl Space Inspection?',
-    mainKeyword: 'Basement inspection',
+    slug: 'black-mold-stachybotrys-health-risks-removal',
+    title: 'Black Mold (Stachybotrys): Health Hazards and Safe Removal Protocols',
+    mainKeyword: 'Black mold removal Wisconsin',
     metaDescription:
-      'Learn how inspectors evaluate basement walls, hydrostatic pressure, sump pumps, and crawl space vapor retarders in Wisconsin homes.',
-    publishDate: '2026-11-14',
-    readTime: '5 min read',
-    targetServiceSlug: 'basement-crawl-space-inspection',
-    targetServiceAnchor: 'Basement & Crawl Space Inspection Services',
+      'Learn the true health hazards of toxic black mold (Stachybotrys chartarum), how it spreads in Wisconsin homes, and how certified containment removal works.',
+    publishDate: '2026-11-23',
+    readTime: '6 min read',
+    targetServiceSlug: 'mold-remediation',
+    targetServiceAnchor: 'Safe Toxic Black Mold Removal Services',
     summary:
-      'Wisconsin foundations carry the entire structural weight of the property while defending against harsh seasonal freeze-thaw groundwater pressure. Here is how we evaluate substructures.',
+      'Stachybotrys chartarum is a toxic fungal species that thrives on water-damaged cellulose. Discover the health symptoms it causes and why certified negative-pressure containment is required for safe removal.',
     sections: [
       {
-        heading: 'Why Basements Demand Rigorous Evaluation in Wisconsin',
+        heading: 'Understanding Stachybotrys Chartarum',
         paragraphs: [
-          'Wisconsin soils undergo deep freezing in winter and saturated thawing in spring. When heavy clay soils absorb moisture, they expand and exert enormous hydrostatic lateral pressure against foundation walls.',
-          'Our basement and crawl space inspection examines poured concrete, masonry block, and stone walls for horizontal pressure cracks, stair-step cracks, wall bowing, and foundation displacement.',
+          'Stachybotrys chartarum, commonly known as toxic black mold, is a dark greenish-black fungus that grows on cellulose-rich materials (drywall paper, wood framing, drop ceiling tiles) that have experienced continuous, heavy water saturation.',
+          'Unlike ordinary household mildew, Stachybotrys produces dangerous trichothecene mycotoxins that bond to airborne dust particles and spores, posing severe health hazards when disturbed.',
+        ],
+      },
+      {
+        heading: 'Health Symptoms Associated with Black Mold',
+        paragraphs: [
+          'Common health impacts include chronic respiratory distress, severe headaches, coughing, persistent fatigue, skin rashes, and heightened asthma attacks, especially in children and elderly residents.',
         ],
         checklist: [
-          'Moisture Meter Testing: Measuring moisture percentages in baseboards, sill plates, and drywall to identify active seepage.',
-          'Efflorescence & Staining: Documenting white mineral residue left behind by evaporated water.',
-          'Support Beams & Posts: Inspecting steel lally columns, wood posts, and carrying girders for levelness and deflection.',
-          'Sump Pump Reliability: Testing float switches, check valves, and exterior discharge lines to ensure groundwater is pumped away.',
-          'Crawl Space Soil Retarders: Verifying thick, continuous plastic vapor barriers that prevent soil moisture and earth odors from rising into living areas.',
+          'Negative Air Containment: Heavy plastic sheeting and industrial air filtration units prevent mycotoxins from escaping into unaffected rooms.',
+          'HEPA Vacuuming: Specialized vacuums capture 99.97% of micro-particles down to 0.3 microns.',
+          'Controlled Material Disposal: Contaminated materials are bagged in heavy-duty 6-mil poly bags inside the containment zone.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Is a vertical crack in a concrete basement wall dangerous?',
+        question: 'Why should I never scrape dry black mold myself?',
         answer:
-          'Vertical cracks are often harmless shrinkage cracks that occur as concrete cures. However, horizontal cracks or inward bowing walls indicate serious soil pressure that requires structural engineering attention.',
+          'Scraping or brushing dry mold releases millions of microscopic spores and mycotoxins into your home’s air and HVAC ductwork, contaminating your entire house and exposing your family to acute respiratory toxins.',
       },
     ],
   },
   {
-    slug: 'home-inspection-vs-appraisal',
-    title: 'Home Inspection vs. Appraisal: What’s the Difference?',
-    mainKeyword: 'Home inspection vs appraisal',
+    slug: 'how-long-does-structural-drying-take',
+    title: 'How Long Does Structural Drying Take After a Water Leak?',
+    mainKeyword: 'Structural drying time water damage',
     metaDescription:
-      'Understand the key differences between a home inspection and a bank appraisal in Wisconsin. Learn why both are essential when buying a property.',
-    publishDate: '2026-11-14',
+      'Find out how many days commercial dehumidification and structural drying take after a flood or pipe leak in Wisconsin, and what factors control the timeline.',
+    publishDate: '2026-11-23',
     readTime: '5 min read',
-    targetServiceSlug: 'buyer-home-inspection',
-    targetServiceAnchor: 'Buyer Inspection Services',
+    targetServiceSlug: 'structural-drying-dehumidification',
+    targetServiceAnchor: 'Structural Drying & Dehumidification Services',
     summary:
-      'While often confused by first-time homebuyers, an appraisal determines property financial market value for the lender, while an inspection evaluates physical safety, function, and defects for the buyer.',
+      'Standard residential structural drying takes between 3 to 5 days using commercial equipment. Learn what factors influence drying speed and how technicians measure equilibrium moisture content.',
     sections: [
       {
-        heading: 'Two Distinct Evaluations for Two Different Stakeholders',
+        heading: 'The Science of Psychrometric Drying',
         paragraphs: [
-          'During a Wisconsin real estate purchase, you will encounter both an inspection and an appraisal. While both professionals visit the property, their purpose, scope, and fiduciary duty are fundamentally different.',
-        ],
-        checklist: [
-          'Home Inspection: Hired by you (the buyer). The inspector spends 3+ hours crawling attics, testing electrical outlets, evaluating furnaces, and inspecting plumbing to protect your physical safety and budget.',
-          'Home Appraisal: Ordered by your mortgage lender. The appraiser spends 20–30 minutes confirming square footage, room counts, and comparing recent neighborhood sales to protect the bank’s loan value.',
+          'Structural drying is not a guessing game. Certified restoration specialists use psychrometry—the science of the relationship between temperature, humidity, and vapor pressure—to calculate the exact drying rate of wet building assemblies.',
+          'By maintaining optimal specific humidity (grains per pound) and continuous high-velocity airflow across wet surfaces, water is systematically drawn from the core of dense materials into the air, where commercial dehumidifiers condense and pump it away.',
         ],
       },
       {
-        heading: 'Does a Good Appraisal Mean the Home Is in Good Condition?',
+        heading: 'Factors That Affect Drying Duration',
         paragraphs: [
-          'No! An appraiser will not test GFCI outlets, walk the roof, crawl into low attic spaces, or use thermal imaging cameras. An appraisal only estimates what the property is worth on paper, whereas an inspection explains how the home actually works and what needs fixing.',
+          'Typical drying times range from 72 to 120 hours depending on:',
+        ],
+        checklist: [
+          'Type of Building Materials: Drywall and pine framing dry faster than dense concrete slabs, masonry blocks, and solid hardwood flooring.',
+          'Water Classification: Clean water dries faster than Category 2 or 3 water, which requires sanitation steps before drying begins.',
+          'Ambient Outdoor Weather: Cold, humid Wisconsin winter weather requires careful indoor heat supplementation to support rapid evaporation.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Can an appraisal replace a home inspection?',
+        question: 'Can drying equipment be turned off at night because of the noise?',
         answer:
-          'Never. Waiving an inspection because the lender completed an appraisal leaves buyers vulnerable to thousands of dollars in hidden foundation, roofing, and mechanical repair costs.',
+          'No! Turning off drying fans or dehumidifiers causes relative humidity to skyrocket overnight, stalling the evaporation curve and allowing mold to begin colonizing within hours.',
       },
     ],
   },
   {
-    slug: 'when-should-you-schedule-new-construction-inspection',
-    title: 'When Should You Schedule a New Construction Inspection?',
-    mainKeyword: 'New construction home inspection',
+    slug: 'attic-mold-winter-condensation-ice-dams',
+    title: 'Preventing and Remediating Attic Mold from Winter Ice Dams',
+    mainKeyword: 'Attic mold ice dam remediation Wisconsin',
     metaDescription:
-      'Why new construction homes need independent third-party inspections in Wisconsin. Understanding municipal code limits and construction phases.',
-    publishDate: '2026-11-14',
-    readTime: '5 min read',
-    targetServiceSlug: 'warranty-inspection',
-    targetServiceAnchor: 'New Construction & Warranty Inspections',
+      'How harsh Wisconsin winters trigger severe attic mold through roof ice dams and bypass condensation. Learn safe remediation and ventilation solutions.',
+    publishDate: '2026-11-24',
+    readTime: '6 min read',
+    targetServiceSlug: 'attic-mold-remediation',
+    targetServiceAnchor: 'Attic Mold Remediation & Roof Leak Cleanup',
     summary:
-      'Brand new homes are built by dozens of subcontractors working on fast deadlines. An independent inspection catches builder oversights before drywall goes up and before final walkthrough closings.',
+      'Attic mold is a widespread winter phenomenon in Southern Wisconsin caused by ice dams and warm air bypasses. Discover how to remediate roof sheathing and restore attic air quality.',
     sections: [
       {
-        heading: 'Why New Builds Need an Independent Inspector',
+        heading: 'Why Wisconsin Attics Breed Winter Mold',
         paragraphs: [
-          'Many homebuyers assume that a brand-new home is defect-free and that city municipal inspectors have verified every detail. However, municipal building inspectors often spend less than 15 minutes on site, verifying only minimum building codes.',
-          'An independent inspector reviews the quality of workmanship, HVAC balancing, attic insulation coverage, exterior grading, and plumbing connections that municipal inspectors routinely overlook.',
+          'Wisconsin winters feature prolonged sub-zero temperatures followed by heavy snowfalls. When heated indoor air leaks through unsealed ceiling light fixtures, plumbing stacks, and attic hatches, it warms the underside of the roof decking.',
+          'Snow on the roof melts, runs down to cold unheated eaves, and refreezes into massive ice dams. Trapped meltwater backs up under shingles, soaking roof sheathing and attic insulation, creating prime conditions for rampant fungal growth.',
+        ],
+      },
+      {
+        heading: 'Professional Attic Remediation Process',
+        paragraphs: [
+          'Remediating attic mold safely requires specialized techniques:',
         ],
         checklist: [
-          'Pre-Drywall Rough-In Inspection: Performed before insulation and sheetrock conceal plumbing lines, wiring runs, framing trusses, and ductwork.',
-          'Final Pre-Closing Inspection: Conducted 3 to 5 days before your final builder walkthrough to compile an itemized punch-list of cosmetic and functional defects.',
-          '11-Month Builder Warranty Inspection: Completed at month 10 or 11 before your standard 1-year builder warranty expires.',
+          'Containment of Attic Access: Prevents thousands of disturbed spores from showering into second-floor bedrooms.',
+          'Abrasive or Dry-Ice Blasting of Sheathing: Removes fungal staining down to clean structural timber.',
+          'Antimicrobial Fungicidal Sealing: Application of commercial protective coatings that permanently inhibit future fungal growth.',
+          'Exhaust Duct Correction: Ensuring all bathroom fans vent through roof caps rather than blowing moist air into the attic.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Will builders fix defects found by an independent inspector?',
+        question: 'Does attic mold affect the living space downstairs?',
         answer:
-          'Yes. Reputable Wisconsin builders welcome clear, photo-documented independent reports because they clarify legitimate punch-list items for subcontractors to repair.',
+          'Yes. Due to stack effect and HVAC pressure differentials, air from the attic frequently migrates down through ceiling drywall joints and light fixtures into bedrooms and living areas.',
       },
     ],
   },
   {
-    slug: 'what-is-an-11-month-warranty-inspection',
-    title: 'What Is an 11-Month Builder Warranty Inspection?',
-    mainKeyword: '11-month warranty inspection',
+    slug: 'crawl-space-encapsulation-moisture-control',
+    title: 'Crawl Space Encapsulation and Fungal Mitigation for Wisconsin Homes',
+    mainKeyword: 'Crawl space mold encapsulation Wisconsin',
     metaDescription:
-      'Learn why Wisconsin homeowners schedule an 11-month warranty inspection before their 1-year builder warranty expires. Catch drywall cracks, nail pops, and settlement.',
-    publishDate: '2026-11-14',
-    readTime: '5 min read',
-    targetServiceSlug: 'warranty-inspection',
-    targetServiceAnchor: '11-Month Builder Warranty Inspection',
+      'Protect your home’s foundation and indoor air quality with crawl space mold remediation and heavy-duty vapor barrier encapsulation in Wisconsin.',
+    publishDate: '2026-11-24',
+    readTime: '6 min read',
+    targetServiceSlug: 'crawl-space-moisture-mold',
+    targetServiceAnchor: 'Crawl Space Mold & Moisture Mitigation',
     summary:
-      'Most newly built Wisconsin homes include a 1-year builder warranty. An 11-month warranty inspection uncovers lumber shrinkage, truss uplift, and mechanical settlement before your protection ends.',
+      'Dirt crawl spaces emit constant moisture that rots floor joists and fuels toxic mold. Learn how crawl space encapsulation transforms damp foundations into clean, dry spaces.',
     sections: [
       {
-        heading: 'Protect Your Warranty Rights Before Time Runs Out',
+        heading: 'The Dangers of an Unsealed Dirt Crawl Space',
         paragraphs: [
-          'During your first four seasons in a new home, framing lumber dries out, concrete foundation walls cure, and the house settles under seasonal snow and rain loads. This natural shifting frequently causes ceiling drywall cracks, nail pops, sticking exterior doors, displaced attic insulation, and loose roof flashing.',
-          'An 11-month warranty inspection provides an expert, photo-annotated punch list that you can submit directly to your builder’s warranty department, requiring them to make necessary repairs at their expense rather than yours.',
+          'In Wisconsin’s humid summers and rainy springs, unsealed dirt crawl spaces act like giant evaporation sponge basins. Gallons of groundwater vapor rise continuously into subfloor framing, rotting wooden joists, inviting carpenter ants, and producing heavy mold growth.',
+          'Because warm air rises through your home (the stack effect), up to 50% of the air you breathe on the first floor originates in your crawl space, bringing mold spores and humidity directly into your living room.',
+        ],
+      },
+      {
+        heading: 'The Encapsulation Solution',
+        paragraphs: [
+          'Complete crawl space mitigation involves:',
         ],
         checklist: [
-          'Truss uplift and ceiling/wall intersection cracking.',
-          'Exterior soil settlement around the foundation causing negative grading.',
-          'Displaced or missing blown-in attic insulation around recessed lights.',
-          'HVAC ductwork separations and register airflow imbalances.',
-          'Plumbing drain leaks under sinks, tubs, and disposals.',
-          'Window and door weatherstripping gaps allowing winter drafts.',
+          'Mold Remediation on Subflooring: Cleaning and treating all floor joists, beams, and subfloor plywood with antimicrobials.',
+          'Grading and Standing Water Removal: Pumping out water and leveling dirt surfaces.',
+          'Heavy-Duty Vapor Barrier Installation: Sealing floors and foundation walls with 12 to 20-mil puncture-resistant reinforced liners.',
+          'Crawl Space Dehumidification: Installing dedicated low-temperature dehumidifiers that keep humidity below 50% year-round.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'When is the best time to schedule an 11-month inspection?',
+        question: 'What are the benefits of crawl space encapsulation?',
         answer:
-          'Schedule around month 10 or 11 of your ownership so your builder has ample time to schedule subcontractors and complete repairs before your 365-day deadline expires.',
+          'Benefits include permanent elimination of musty odors, prevention of floor joist wood rot, improved indoor air quality, warmer floors in winter, and lower monthly heating and cooling bills.',
       },
     ],
   },
 ];
 
-export const ARTICLE_BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
+export const ARTICLE_BY_SLUG = ARTICLES.reduce<Record<string, Article>>((acc, art) => {
+  acc[art.slug] = art;
+  return acc;
+}, {});

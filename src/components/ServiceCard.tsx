@@ -52,7 +52,7 @@ export default function ServiceCard({
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
           </span>
         </div>
-        <CallButton variant="navy" size="md" className="relative z-10 mt-5 w-full" label="Call to Discuss Your Inspection" />
+        <CallButton variant="navy" size="md" className="relative z-10 mt-5 w-full" label="Call for 24/7 Emergency Service" />
       </div>
     </article>
   );

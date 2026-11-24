@@ -1,15 +1,17 @@
 export const SITE_URL = 'https://www.wiscoinspections.com';
 
 export const BUSINESS = {
-  name: 'WISCo Inspections, LLC',
-  shortName: 'WISCo Inspections',
+  name: 'WISCo Mold & Water Damage, LLC',
+  shortName: 'WISCo Mold & Water Damage',
   phoneDisplay: '(608) 642-1112',
   phoneHref: 'tel:+16086421112',
+  emergencyAvailability: '24/7 Emergency Flood & Water Extraction',
+  hours: 'Open 24/7 for Water Emergencies | Mon–Sat 7:00 AM – 7:00 PM for Mold Remediation',
   mapsUrl: 'https://maps.app.goo.gl/Q5MwGDQZFwL4dyME9',
   websiteUrl: 'https://www.wiscoinspections.com/',
   state: 'Wisconsin',
-  inspector: 'Phil Jackson',
-  license: 'WI License #3302-106',
+  specialist: 'Phil Jackson',
+  license: 'Certified Mold Remediation & Water Damage Restoration Specialist',
   addressCity: 'Edgerton',
   addressState: 'WI',
   addressZip: '53534',
@@ -18,33 +20,31 @@ export const BUSINESS = {
 };
 
 export const MAPS_EMBED_SRC =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.7800611555335!2d-89.06756419999999!3d42.8352595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88064e279e2224a7%3A0xe37b38bcea7eb686!2sWISCo%20Inspections%2C%20LLC!5e0!3m2!1sen!2sin!4v1794643091037!5m2!1sen!2sin';
+  'https://maps.google.com/maps?q=Edgerton,+WI+53534&t=&z=12&ie=UTF8&iwloc=&output=embed';
 
 export const PHOTOS = {
-  heroInspector:
-    'https://images.pexels.com/photos/8293678/pexels-photo-8293678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  outdoorInspector:
-    'https://images.pexels.com/photos/8293667/pexels-photo-8293667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  crawlSpace:
-    'https://images.pexels.com/photos/32497163/pexels-photo-32497163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  doorframe:
-    'https://images.pexels.com/photos/8293673/pexels-photo-8293673.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  electrical:
-    'https://images.pexels.com/photos/8293640/pexels-photo-8293640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  fuseBox:
-    'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  attic:
-    'https://images.pexels.com/photos/1628417/pexels-photo-1628417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  basement:
-    'https://images.pexels.com/photos/4092026/pexels-photo-4092026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  checklist:
-    'https://images.pexels.com/photos/8293635/pexels-photo-8293635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  buyerKeys:
-    'https://images.pexels.com/photos/7415055/pexels-photo-7415055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  safetyDevices:
-    'https://images.pexels.com/photos/25020272/pexels-photo-25020272.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  wallMoisture:
+  heroWaterDamage:
     'https://images.pexels.com/photos/9127236/pexels-photo-9127236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  moldSpores:
+  moldRemediation:
     'https://images.pexels.com/photos/18063447/pexels-photo-18063447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  waterExtraction:
+    'https://images.pexels.com/photos/4092026/pexels-photo-4092026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  crawlSpaceEncapsulation:
+    'https://images.pexels.com/photos/32497163/pexels-photo-32497163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  thermalImaging:
+    'https://images.pexels.com/photos/8293640/pexels-photo-8293640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  basementFlooding:
+    'https://images.pexels.com/photos/4092026/pexels-photo-4092026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  atticMold:
+    'https://images.pexels.com/photos/1628417/pexels-photo-1628417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  dehumidificationEquipment:
+    'https://images.pexels.com/photos/8293678/pexels-photo-8293678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  inspectionEquipment:
+    'https://images.pexels.com/photos/8293635/pexels-photo-8293635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  technicianOnSite:
+    'https://images.pexels.com/photos/8293667/pexels-photo-8293667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  sewageCleanup:
+    'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  airFiltration:
+    'https://images.pexels.com/photos/25020272/pexels-photo-25020272.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 };
