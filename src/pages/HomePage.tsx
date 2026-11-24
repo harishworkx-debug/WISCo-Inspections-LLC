@@ -1,4 +1,5 @@
 import {
+  ArrowRight,
   CheckCircle2,
   Clock,
   Droplets,
