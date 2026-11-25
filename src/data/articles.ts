@@ -56,7 +56,7 @@ export const ARTICLES: Article[] = [
         heading: 'Why Household Fans Are Not Enough',
         paragraphs: [
           'Many homeowners mistakenly believe placing standard box fans and running a small dehumidifier will dry a water-damaged room. Unfortunately, surface moisture is only 20% of the problem. Up to 80% of water absorbs deep into sill plates, subflooring, and interior wall studs.',
-          'Professional structural drying requires commercial Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers that create low vapor pressure differentials, literally pulling bound moisture out of the pores of building materials.',
+          'Professional structural drying requires high-capacity Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers that create low vapor pressure differentials, literally pulling bound moisture out of the pores of building materials.',
         ],
       },
     ],
@@ -194,7 +194,7 @@ export const ARTICLES: Article[] = [
           '2. Turn off the water heater breaker so the heating elements do not burn out when the tank drains.',
           '3. Open faucets on lower levels to relieve residual line pressure.',
           '4. Call a licensed plumber to repair the ruptured pipe.',
-          '5. Call WISCo Mold & Water Damage at (608) 642-1112 for immediate commercial water extraction and drying.',
+          '5. Call WISCo Mold & Water Damage at (608) 642-1112 for immediate residential water extraction and drying.',
         ],
       },
     ],
@@ -272,10 +272,10 @@ export const ARTICLES: Article[] = [
           'Follow these restoration phases:',
         ],
         checklist: [
-          'Rapid Water Extraction: Commercial pumps remove standing water down to the concrete slab.',
+          'Rapid Water Extraction: Submersible pumps remove standing water down to the concrete slab.',
           'Tear-Out of Contaminated Porous Materials: Wet carpet pad, lower drywall (flood cut), and baseboards are removed.',
           'Antimicrobial Sanitizing: EPA-approved disinfectants are applied to concrete floors and foundation walls.',
-          'Commercial Structural Drying: Dehumidifiers and air movers run continuously for 3 to 5 days to dry out framing and masonry.',
+          'Whole-Home Structural Drying: Dehumidifiers and air movers run continuously for 3 to 5 days to dry out framing and masonry.',
         ],
       },
     ],
@@ -313,7 +313,7 @@ export const ARTICLES: Article[] = [
           'Common health impacts include chronic respiratory distress, severe headaches, coughing, persistent fatigue, skin rashes, and heightened asthma attacks, especially in children and elderly residents.',
         ],
         checklist: [
-          'Negative Air Containment: Heavy plastic sheeting and industrial air filtration units prevent mycotoxins from escaping into unaffected rooms.',
+          'Negative Air Containment: Heavy plastic sheeting and certified HEPA air filtration units prevent mycotoxins from escaping into unaffected rooms.',
           'HEPA Vacuuming: Specialized vacuums capture 99.97% of micro-particles down to 0.3 microns.',
           'Controlled Material Disposal: Contaminated materials are bagged in heavy-duty 6-mil poly bags inside the containment zone.',
         ],
@@ -332,19 +332,19 @@ export const ARTICLES: Article[] = [
     title: 'How Long Does Structural Drying Take After a Water Leak?',
     mainKeyword: 'Structural drying time water damage',
     metaDescription:
-      'Find out how many days commercial dehumidification and structural drying take after a flood or pipe leak in Wisconsin, and what factors control the timeline.',
+      'Find out how many days residential dehumidification and structural drying take after a flood or pipe leak in Wisconsin, and what factors control the timeline.',
     publishDate: '2026-11-23',
     readTime: '5 min read',
     targetServiceSlug: 'structural-drying-dehumidification',
     targetServiceAnchor: 'Structural Drying & Dehumidification Services',
     summary:
-      'Standard residential structural drying takes between 3 to 5 days using commercial equipment. Learn what factors influence drying speed and how technicians measure equilibrium moisture content.',
+      'Standard residential structural drying takes between 3 to 5 days using professional-grade restoration equipment. Learn what factors influence drying speed and how technicians measure equilibrium moisture content.',
     sections: [
       {
         heading: 'The Science of Psychrometric Drying',
         paragraphs: [
           'Structural drying is not a guessing game. Certified restoration specialists use psychrometry—the science of the relationship between temperature, humidity, and vapor pressure—to calculate the exact drying rate of wet building assemblies.',
-          'By maintaining optimal specific humidity (grains per pound) and continuous high-velocity airflow across wet surfaces, water is systematically drawn from the core of dense materials into the air, where commercial dehumidifiers condense and pump it away.',
+          'By maintaining optimal specific humidity (grains per pound) and continuous high-velocity airflow across wet surfaces, water is systematically drawn from the core of dense materials into the air, where high-capacity LGR dehumidifiers condense and pump it away.',
         ],
       },
       {
@@ -395,7 +395,7 @@ export const ARTICLES: Article[] = [
         checklist: [
           'Containment of Attic Access: Prevents thousands of disturbed spores from showering into second-floor bedrooms.',
           'Abrasive or Dry-Ice Blasting of Sheathing: Removes fungal staining down to clean structural timber.',
-          'Antimicrobial Fungicidal Sealing: Application of commercial protective coatings that permanently inhibit future fungal growth.',
+          'Antimicrobial Fungicidal Sealing: Application of EPA-registered protective coatings that permanently inhibit future fungal growth.',
           'Exhaust Duct Correction: Ensuring all bathroom fans vent through roof caps rather than blowing moist air into the attic.',
         ],
       },

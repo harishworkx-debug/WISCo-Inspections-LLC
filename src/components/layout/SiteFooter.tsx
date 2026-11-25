@@ -163,6 +163,15 @@ export default function SiteFooter() {
         </div>
       </div>
 
+      {/* Residential Exclusivity Disclaimer */}
+      <div className="border-t border-white/10 bg-black/20 py-4 px-4 text-center text-xs text-white/70">
+        <div className="max-w-5xl mx-auto">
+          <p>
+            <strong className="text-white">Residential Homeowners Exclusivity:</strong> WISCo Mold &amp; Water Damage provides 24/7 emergency water extraction, structural drying, and mold remediation exclusively for private residential properties (single-family homes, townhouses, condominiums, and lakefront cottages).
+          </p>
+        </div>
+      </div>
+
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-xs text-white/65 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
           <p>© {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.</p>

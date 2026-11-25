@@ -13,24 +13,23 @@ export default function TermsPage() {
     <LegalDocument
       eyebrow="Legal"
       title="Terms and Conditions"
-      updated="November 14, 2026"
+      updated="November 25, 2026"
       sections={[
         {
           heading: 'Use of this website',
           body: (
             <p>
-              This website provides general information about the home inspection services offered by {BUSINESS.name}. By
+              This website provides general information about residential water damage mitigation and certified mold remediation services offered by {BUSINESS.name}. By
               using this website, you agree to use it lawfully and for its intended purpose.
             </p>
           ),
         },
         {
-          heading: 'Inspection services',
+          heading: 'Restoration & remediation services',
           body: (
             <p>
-              Home inspections are visual evaluations of accessible components at the time of inspection. Inspection scope,
-              exclusions, fees, and report details are confirmed directly with us by phone and may be documented separately
-              before any inspection takes place.
+              Our emergency water extraction, drying, and mold remediation services are exclusively dedicated to residential homeowners and private properties. Service scope,
+              drying protocols, equipment placement, and insurance claim coordination details are confirmed directly with you by our on-site certified technicians.
             </p>
           ),
         },

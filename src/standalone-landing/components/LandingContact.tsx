@@ -257,7 +257,7 @@ export default function LandingContact() {
                     </div>
                     <div>
                       <label className="block text-xs font-bold text-navy mb-1">
-                        Preferred Inspection Date
+                        Preferred Service / Emergency Date
                       </label>
                       <input
                         type="date"

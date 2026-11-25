@@ -1,13 +1,13 @@
 /**
  * Verified data for the Standalone Local Service Landing Page
  *
- * STRICT PRIVACY & LOCAL BRANDING RULE:
- * This file contains strictly niche and location terms ("Home Inspector in Edgerton, WI").
- * NO company names, parent branding, or fabricated names.
+ * STRICT RESIDENTIAL HOMEOWNER RULE:
+ * This landing page targets Wisconsin homeowners and residential properties exclusively.
+ * ZERO commercial, office, retail, or warehouse mentions.
  */
 
 export const LANDING_CONFIG = {
-  nicheTitle: 'Home Inspector',
+  nicheTitle: 'Residential Mold & Water Damage Restoration',
   locationCity: 'Edgerton',
   locationState: 'WI',
   locationFull: 'Edgerton, WI',
@@ -15,31 +15,30 @@ export const LANDING_CONFIG = {
   serviceRegion: 'Southern Wisconsin',
   phoneDisplay: '(608) 642-1112',
   phoneHref: 'tel:+16086421112',
-  licenseDisplay: 'WI License #3302-106',
-  standardsBody: 'InterNACHI Standards of Practice & Wisconsin DSPS Guidelines',
-  hours: 'Mon – Sat: 7:00 AM – 7:00 PM | Sun: By Appointment',
+  licenseDisplay: 'IICRC Certified & Insured',
+  standardsBody: 'IICRC S500 Water Damage & S520 Mold Remediation Standards',
+  hours: '24/7 Emergency Dispatch — Day & Night',
   reviewSummary: {
     rating: '4.9',
-    count: '87 verified local reviews',
+    count: '87 verified local homeowner reviews',
   },
   coordinates: {
     lat: 42.8352,
     lng: -89.0675,
   },
-  // Clean geographic map embed centered on Edgerton, WI with NO business entity parameters
+  // Clean geographic map embed centered on Edgerton, WI
   mapEmbedUrl:
     'https://maps.google.com/maps?q=Edgerton,+WI+53534&t=&z=12&ie=UTF8&iwloc=&output=embed',
 };
 
 export const LANDING_PHOTOS = {
-  hero: 'https://images.pexels.com/photos/8293678/pexels-photo-8293678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  inspectorRoof: 'https://images.pexels.com/photos/8293667/pexels-photo-8293667.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  electrical: 'https://images.pexels.com/photos/8293640/pexels-photo-8293640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  crawlSpace: 'https://images.pexels.com/photos/32497163/pexels-photo-32497163.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  attic: 'https://images.pexels.com/photos/1628417/pexels-photo-1628417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  basement: 'https://images.pexels.com/photos/4092026/pexels-photo-4092026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  moistureTesting: 'https://images.pexels.com/photos/9127236/pexels-photo-9127236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  checklist: 'https://images.pexels.com/photos/8293635/pexels-photo-8293635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  hero: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+  waterExtraction: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80',
+  moldRemediation: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80',
+  thermalImaging: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80',
+  basementFlood: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80',
+  crawlSpace: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=900&q=80',
+  dryingEquipment: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80',
 };
 
 export interface LandingServiceItem {
@@ -53,94 +52,93 @@ export interface LandingServiceItem {
 
 export const LANDING_SERVICES: LandingServiceItem[] = [
   {
-    id: 'buyer-inspection',
-    title: 'Pre-Purchase Buyer Home Inspection',
-    badge: 'Most Requested',
+    id: 'emergency-water-extraction',
+    title: '24/7 Emergency Water Extraction',
+    badge: 'Immediate Dispatch',
     shortDesc:
-      'Comprehensive 400+ point visual evaluation of all major residential structural and mechanical systems before closing your purchase.',
+      'High-capacity standing water extraction from flooded basements, living areas, and crawl spaces using truck-mounted vacuum pumps.',
+    image: LANDING_PHOTOS.waterExtraction,
+    checkpoints: [
+      'Rapid 45–60 minute on-site emergency response',
+      'High-power submersible trash pumps and vacuum claws',
+      'Removal of standing floodwater before foundation absorption',
+      'Emergency main water shut-off and loss mitigation',
+      'Direct insurance claims billing and digital documentation',
+    ],
+  },
+  {
+    id: 'mold-remediation',
+    title: 'Certified Residential Mold Remediation',
+    badge: 'IICRC S520 Certified',
+    shortDesc:
+      'Safe containment, toxic spore filtration, and EPA-registered antimicrobial treatment to eradicate black mold and protect indoor air quality.',
+    image: LANDING_PHOTOS.moldRemediation,
+    checkpoints: [
+      'Negative-air containment chambers preventing spore spread',
+      'Hospital-grade HEPA air filtration capturing 99.97% of spores',
+      'Safe removal of contaminated drywall, insulation & trim',
+      'EPA-registered antimicrobial timber washdown & sealing',
+      'Post-remediation air quality clearance verification',
+    ],
+  },
+  {
+    id: 'basement-flood',
+    title: 'Basement Flood & Sump Pump Mitigation',
+    badge: 'Homeowner Protection',
+    shortDesc:
+      'Immediate extraction of storm runoff and sump failure water, contaminated carpet tear-out, and deep masonry slab disinfection.',
+    image: LANDING_PHOTOS.basementFlood,
+    checkpoints: [
+      'Emergency pumping of several inches or feet of standing water',
+      'Sump pump failure cleanup and overflow mitigation',
+      'Tear-out of waterlogged carpet, pad, and flood-cut drywall',
+      'Antimicrobial disinfection of concrete foundation walls',
+      'High-capacity dehumidification to dry dense masonry',
+    ],
+  },
+  {
+    id: 'structural-drying',
+    title: 'Residential Structural Drying & Dehumidification',
+    badge: 'Psychrometric Science',
+    shortDesc:
+      'High-capacity LGR dehumidifiers and directed air movers to extract bound moisture from wood framing, drywall, and hardwood floors.',
+    image: LANDING_PHOTOS.dryingEquipment,
+    checkpoints: [
+      'High-capacity Low Grain Refrigerant (LGR) dehumidifiers',
+      'High-velocity axial air movers creating circular vortex airflow',
+      'Hardwood floor rescue mat systems that draw water through floor seams',
+      'Cabinet and wall cavity injection drying setups',
+      'Daily digital psychrometric moisture logs until dry standard is met',
+    ],
+  },
+  {
+    id: 'burst-pipe',
+    title: 'Frozen & Burst Pipe Water Extraction',
+    badge: 'Winter Disaster Response',
+    shortDesc:
+      'Urgent response for catastrophic winter copper or PEX pipe ruptures, ceiling collapses, and multi-level living area water mitigation.',
     image: LANDING_PHOTOS.hero,
     checkpoints: [
-      'Foundation, framing, basement slab & weeping walls',
-      'Main electrical service panel, branch wiring & GFCI/AFCI safety',
-      'Furnace, boiler, heat exchanger & central A/C testing',
-      'Water supply lines, drain lines, water heater & fixtures',
-      'Roofing materials, chimney flashing, gutters & downspouts',
-      'Attic insulation depth, roof ventilation & moisture checks',
+      'Emergency water shut-off and containment across all floors',
+      'Extraction of pressurized burst pipe water from ceilings and floors',
+      'Thermal imaging leak tracing behind finished walls',
+      'Continuous drying to prevent toxic fungal spore germination',
+      'Itemized Xactimate loss records for your insurance adjuster',
     ],
   },
   {
-    id: 'seller-inspection',
-    title: 'Pre-Listing Seller Inspection',
-    badge: 'Smooth Transactions',
+    id: 'crawlspace-mitigation',
+    title: 'Crawl Space Mold & Moisture Mitigation',
+    badge: 'Foundation Defense',
     shortDesc:
-      'Proactive property inspection before listing on the MLS to discover hidden defects, avoid renegotiation hurdles, and protect asking price.',
-    image: LANDING_PHOTOS.checklist,
-    checkpoints: [
-      'Uncover issues before prospective buyers and their inspectors do',
-      'Prevent unexpected deal cancellations during contingency periods',
-      'Prioritize cost-effective repairs on your own schedule',
-      'Provide verified transparency to serious prospective buyers',
-      'Strengthen your negotiating position with clean documentation',
-    ],
-  },
-  {
-    id: 'radon-testing',
-    title: 'Continuous Digital Radon Testing',
-    badge: 'EPA Calibrated',
-    shortDesc:
-      'Precision 48-hour continuous digital radon monitoring in lowest livable areas to measure radioactive gas levels against the EPA 4.0 pCi/L action limit.',
-    image: LANDING_PHOTOS.basement,
-    checkpoints: [
-      'Continuous hourly monitoring detecting environmental fluctuation',
-      'Calibrated electronic sensors meeting Wisconsin safety standards',
-      'Essential for Southern Wisconsin glacial drift & bedrock soils',
-      'Clear digital graph report with hourly averages and action limits',
-      'Tamper-resistant testing protocols ensuring closing compliance',
-    ],
-  },
-  {
-    id: 'mold-moisture',
-    title: 'Mold & Moisture Diagnostic Assessment',
-    badge: 'Diagnostic Testing',
-    shortDesc:
-      'Targeted visual inspection paired with thermal imaging and pinless moisture meters to detect moisture intrusion, condensation, and microbial growth.',
-    image: LANDING_PHOTOS.moistureTesting,
-    checkpoints: [
-      'Infrared thermal imaging to detect hidden wall & ceiling leaks',
-      'Pinless and penetrating moisture meter mapping in high-risk zones',
-      'Basement perimeter, crawl space, and window well evaluation',
-      'Certified laboratory air cassette and surface tape sampling available',
-      'Clear, unbiased diagnostics with zero repair upsell conflicts',
-    ],
-  },
-  {
-    id: 'basement-crawlspace',
-    title: 'Basement & Foundation Inspection',
-    badge: 'Freeze-Thaw Defense',
-    shortDesc:
-      'In-depth assessment of concrete block, poured concrete, and historic stone foundations subject to Wisconsin freeze-thaw hydrostatic pressure.',
+      'Eradication of crawl space wood rot and mold colonies, standing water drainage, and heavy-duty vapor barrier encapsulation.',
     image: LANDING_PHOTOS.crawlSpace,
     checkpoints: [
-      'Foundation wall deflection, shear cracking, and step cracks',
-      'Efflorescence, groundwater seepage, and weeping mortar joints',
-      'Sump basin inspection, pump operation, and check valve testing',
-      'Perimeter exterior grading, swales, and roof runoff drainage',
-      'Crawl space vapor barriers, ventilation, and sill plate integrity',
-    ],
-  },
-  {
-    id: 'attic-roof',
-    title: 'Attic, Roof & Thermal Envelope Inspection',
-    badge: 'Energy & Weather',
-    shortDesc:
-      'Detailed inspection of roofing surfaces, attic insulation levels, and thermal bypasses to prevent damaging winter ice dams and energy loss.',
-    image: LANDING_PHOTOS.attic,
-    checkpoints: [
-      'Shingle condition, valley flashing, plumbing stack boots & drip edges',
-      'Attic ventilation baffles, ridge vents, and soffit intake clearance',
-      'Blown-in or batts insulation depth evaluation against R-value targets',
-      'Bathroom and dryer exhaust duct routing directly to the exterior',
-      'Identification of warm air bypasses causing winter roof ice dams',
+      'Mold eradication on wooden floor joists, subfloors, and sill plates',
+      'Removal of wet, contaminated, sagging fiberglass insulation',
+      'Pumping out standing water and leveling crawl space dirt floors',
+      'Heavy-duty 12–20 mil reinforced puncture-resistant vapor barrier lining',
+      'Dedicated low-temperature crawl space dehumidification',
     ],
   },
 ];
@@ -157,115 +155,115 @@ export const SERVED_COMMUNITIES: ServedCommunity[] = [
     city: 'Edgerton',
     county: 'Rock / Dane County',
     zip: '53534',
-    notes: 'Home Base — Downtown historic homes, Lake Koshkonong cottages, and new neighborhoods.',
+    notes: 'Home Base — Downtown historic residences, Lake Koshkonong waterfront cottages, and suburban neighborhoods.',
   },
   {
     city: 'Janesville',
     county: 'Rock County',
     zip: '53545, 53546',
-    notes: 'Riverfront historic properties, mid-century ranch homes, and expanding subdivisions.',
+    notes: 'Rock River waterfront homes, mid-century ranches with finished basements, and residential subdivisions.',
   },
   {
     city: 'Madison',
     county: 'Dane County',
     zip: '53703, 53704, 53711',
-    notes: 'Classic craftsman bungalows, lakeside properties, and fast-paced residential sales.',
+    notes: 'Craftsman homes on the isthmus, lakeside single-family properties, and residential townhomes.',
   },
   {
     city: 'Beloit',
     county: 'Rock County',
     zip: '53511',
-    notes: 'Historic brick colonials, college-area residences, and revitalized river corridors.',
+    notes: 'Historic brick colonials, riverfront neighborhoods, and single-family residential properties.',
   },
   {
     city: 'Stoughton',
     county: 'Dane County',
     zip: '53589',
-    notes: 'Yahara River character homes, Norwegian heritage properties, and modern additions.',
+    notes: 'Yahara River character homes, historic properties, and modern residential additions.',
   },
   {
     city: 'Sun Prairie',
     county: 'Dane County',
     zip: '53590',
-    notes: 'Fast-growing community with contemporary builds, finished basements, and older farmsteads.',
+    notes: 'Suburban single-family homes with finished basements and surrounding residential properties.',
   },
   {
     city: 'Fitchburg',
     county: 'Dane County',
     zip: '53711',
-    notes: 'Suburban single-family homes, multi-level walkouts, and modern energy-efficient designs.',
+    notes: 'Single-family homes with walkout basements, master-planned neighborhoods, and residential communities.',
   },
   {
     city: 'Verona',
     county: 'Dane County',
     zip: '53593',
-    notes: 'High-demand residential neighborhoods, custom walkout basements, and new construction.',
+    notes: 'High-demand residential neighborhoods, custom walkout basements, and contemporary family homes.',
   },
   {
     city: 'Milton',
     county: 'Rock County',
     zip: '53563',
-    notes: 'Established community homes, rural residences, and agricultural boundary properties.',
+    notes: 'Established community homes, rural single-family residences, and lake-adjacent properties.',
   },
   {
     city: 'Fort Atkinson',
     county: 'Jefferson County',
     zip: '53538',
-    notes: 'Rock River valley residences, historic districts, and rural single-family properties.',
+    notes: 'Rock River valley homes, historic residential districts, and single-family properties.',
   },
 ];
 
 export const TRUST_PILLARS = [
   {
-    title: 'State Licensed & Certified',
-    subtitle: 'Wisconsin License #3302-106',
+    title: '100% Residential Homeowner Focus',
+    subtitle: 'Homeowners Exclusively',
     description:
-      'Fully credentialed Wisconsin home inspector adhering strictly to InterNACHI Standards of Practice and state Department of Safety and Professional Services (DSPS) regulations.',
+      'We are strictly dedicated to private residential homeowners (single-family homes, townhouses, and condos). We do NOT accept commercial, retail, or warehouse projects.',
   },
   {
-    title: 'Local Southern WI Expertise',
-    subtitle: 'Climate-Specific Property Knowledge',
+    title: '24/7 Rapid Emergency Response',
+    subtitle: '45–60 Min Response Across Southern WI',
     description:
-      'We understand how severe Wisconsin winters, freeze-thaw cycles, Lake Koshkonong moisture, and glacial drift soil radon specifically impact local residential foundations and roofs.',
+      'Water damage escalates every hour. Our certified emergency crews arrive promptly with high-power truck-mounted extraction units to stop damage in its tracks.',
   },
   {
-    title: '100% Diagnostic Integrity',
-    subtitle: 'Zero Repair Conflicts of Interest',
+    title: 'IICRC Certified Remediation',
+    subtitle: 'S500 & S520 Standards of Practice',
     description:
-      'We exclusively provide objective evaluations and testing. We do NOT perform remediation, repairs, or contracting work, ensuring our recommendations are 100% impartial.',
+      'We follow strict industry protocols: hospital-grade HEPA air scrubbers, negative-pressure containment barriers, and EPA-registered antimicrobial timber washes.',
   },
   {
-    title: '400+ Point Rapid Digital Report',
-    subtitle: 'Delivered Within 24 Hours',
+    title: 'Direct Insurance Claims Billing',
+    subtitle: 'Itemized Xactimate Documentation',
     description:
-      'Receive a clear, mobile-friendly digital report featuring high-definition annotated photography, color-coded severity tags, and a summary table built for quick contract decisions.',
+      'We document every stage of your loss with digital moisture maps and thermal images, billing your homeowners insurance provider directly to minimize your out-of-pocket stress.',
   },
 ];
 
 export const LANDING_FAQS = [
   {
-    question: 'What is included in a residential property inspection?',
+    question: 'Do you service commercial properties, retail stores, or warehouses?',
     answer:
-      'A thorough visual inspection evaluates accessible systems from foundation to roof: structural foundation walls, basement slab, roof coverings, flashing, gutters, exterior siding, grading, electrical service panel and wiring, heating and cooling equipment, plumbing lines, water heaters, attic insulation, roof ventilation, windows, doors, and built-in appliances. Over 400 specific checkpoints are examined.',
+      'No. Our emergency restoration services are exclusively dedicated to residential homeowners. We specialize 100% in single-family homes, townhouses, condominiums, and private residential properties. We do not accept commercial buildings, offices, retail stores, or industrial warehouses.',
   },
   {
-    question: 'Why is radon testing strongly recommended in Southern Wisconsin?',
+    question: 'Who qualifies for your emergency water damage and mold services?',
     answer:
-      'Southern Wisconsin (including Rock and Dane counties) is designated as EPA Zone 1 for elevated radon potential due to regional glacial drift soils and bedrock. Radon is an invisible, odorless radioactive gas that seeps through foundation cracks and sump pits. Continuous digital radon testing over 48 hours provides accurate, certified hourly readings to determine if levels exceed the EPA 4.0 pCi/L action limit.',
+      'We exclusively serve Wisconsin homeowners and residential property owners facing sudden water leaks, basement flooding, plumbing freeze bursts, sewage backups, or toxic mold outbreaks.',
   },
   {
-    question: 'How quickly will I receive my completed inspection report?',
+    question: 'Does homeowners insurance cover emergency water damage and mold remediation?',
     answer:
-      'You receive your detailed digital inspection report within 24 hours of inspection completion (often the exact same evening). The report is interactive, mobile-optimized, includes high-resolution annotated photographs, and features an organized executive summary you can easily forward to your real estate agent or seller.',
+      'Yes, most homeowners insurance policies cover sudden and accidental water losses (such as frozen pipe bursts, water heater failures, or appliance leaks) as well as the resulting mold remediation. We work directly with your insurance adjuster and submit itemized Xactimate claims.',
   },
   {
-    question: 'Do you offer home repair, remodeling, or radon mitigation services?',
+    question: 'How fast can your emergency team arrive?',
     answer:
-      'No. In strict accordance with Wisconsin administrative code and the InterNACHI Code of Ethics, we maintain complete diagnostic independence. We never bid on repairs, remodeling, mold remediation, or radon mitigation. This ethical firewall guarantees our findings are completely objective, unbiased, and focused solely on your protection.',
+      'We maintain 24/7 emergency dispatch across Southern Wisconsin, including Edgerton, Janesville, Madison, Beloit, Stoughton, Sun Prairie, Fitchburg, and surrounding communities. Typical on-site arrival is 45 to 60 minutes.',
   },
   {
-    question: 'Should I attend the inspection walkthrough in person?',
+    question: 'How long does structural drying take?',
     answer:
-      'Yes! We strongly encourage clients to attend, especially during the final 30 to 45 minutes of the inspection. The inspector will walk you through major findings, demonstrate the operation of mechanical systems, point out emergency shut-off valves (water, gas, electrical main), and share practical seasonal maintenance advice.',
+      'Standard residential structural drying takes between 3 to 5 days using professional-grade LGR dehumidifiers and high-velocity axial air movers. Our technicians perform daily moisture checks to ensure every structural framing member has returned to normal equilibrium moisture content.',
   },
 ];

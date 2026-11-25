@@ -18,19 +18,19 @@ export default function LandingFooter() {
                 <span className="text-lg font-bold text-white tracking-tight">
                   {LANDING_CONFIG.nicheTitle} in {LANDING_CONFIG.locationCity}, {LANDING_CONFIG.locationState}
                 </span>
-                <span className="text-xs text-slate-400">
-                  State Licensed Residential Inspection Services
+                <span className="text-xs text-emerald-400 font-semibold">
+                  100% Residential Homeowner Restoration Services
                 </span>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
-              Providing independent residential property inspections, continuous digital radon testing, and diagnostic moisture assessments in {LANDING_CONFIG.locationFull} and surrounding Southern Wisconsin communities.
+              Providing 24/7 emergency water extraction, structural drying, and certified mold remediation exclusively for residential homeowners in {LANDING_CONFIG.locationFull} and surrounding Southern Wisconsin communities.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-emerald-400 font-semibold pt-1">
               <ShieldCheck className="h-4 w-4" />
-              <span>{LANDING_CONFIG.licenseDisplay} • InterNACHI Standards</span>
+              <span>{LANDING_CONFIG.licenseDisplay} • IICRC Standards</span>
             </div>
           </div>
 
@@ -40,12 +40,12 @@ export default function LandingFooter() {
             <ul className="space-y-2 text-xs sm:text-sm text-slate-300">
               <li>
                 <a href="#services" className="hover:text-amber-400 transition-colors">
-                  Inspection Services
+                  Restoration Services
                 </a>
               </li>
               <li>
                 <a href="#about" className="hover:text-amber-400 transition-colors">
-                  About Local Craftsmanship
+                  About Homeowner Restoration
                 </a>
               </li>
               <li>
@@ -58,6 +58,18 @@ export default function LandingFooter() {
                   Why Choose Us
                 </a>
               </li>
+              <li>
+                <a href="#faq" className="hover:text-amber-400 transition-colors">
+                  Frequently Asked Questions
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-amber-400 transition-colors">
+                  Emergency Dispatch
+                </a>
+              </li>
+            </ul>
+          </div>
               <li>
                 <a href="#faq" className="hover:text-amber-400 transition-colors">
                   Frequently Asked Questions
@@ -99,8 +111,15 @@ export default function LandingFooter() {
           </div>
         </div>
 
+        {/* Residential Exclusivity Notice */}
+        <div className="mt-8 pt-6 border-t border-white/10 text-center text-xs text-slate-300">
+          <p>
+            <strong className="text-white">Residential Homeowners Exclusivity:</strong> Emergency water damage restoration and mold remediation services are provided exclusively to residential homeowners and private properties (single-family homes, townhouses, and condos). We do not service commercial facilities, offices, retail stores, or warehouses.
+          </p>
+        </div>
+
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
             © {currentYear} {LANDING_CONFIG.nicheTitle} in {LANDING_CONFIG.locationCity}, {LANDING_CONFIG.locationState}. All rights reserved.
           </div>

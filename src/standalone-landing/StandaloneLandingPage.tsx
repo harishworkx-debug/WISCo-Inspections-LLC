@@ -14,8 +14,8 @@ import { LANDING_CONFIG, SERVED_COMMUNITIES } from './data/landingData';
 export default function StandaloneLandingPage() {
   useEffect(() => {
     // Isolated SEO configuration
-    const pageTitle = `${LANDING_CONFIG.nicheTitle} in ${LANDING_CONFIG.locationCity}, ${LANDING_CONFIG.locationState} | Professional Home Inspection Services`;
-    const pageDescription = `State-licensed home inspector in ${LANDING_CONFIG.locationFull} (${LANDING_CONFIG.licenseDisplay}). Comprehensive 400+ point residential inspections, continuous digital radon testing, and mold diagnostics in Southern Wisconsin. Call ${LANDING_CONFIG.phoneDisplay}.`;
+    const pageTitle = `${LANDING_CONFIG.nicheTitle} in ${LANDING_CONFIG.locationCity}, ${LANDING_CONFIG.locationState} | 24/7 Emergency Restoration`;
+    const pageDescription = `Certified residential mold remediation and emergency water damage restoration in ${LANDING_CONFIG.locationFull}. 24/7 rapid water extraction, structural drying, and direct insurance billing for Wisconsin homeowners. Call ${LANDING_CONFIG.phoneDisplay}.`;
 
     const previousTitle = document.title;
     document.title = pageTitle;
@@ -51,12 +51,12 @@ export default function StandaloneLandingPage() {
     // Dynamic JSON-LD Schema (Isolated, zero company name)
     const schemaData = {
       '@context': 'https://schema.org',
-      '@type': 'HomeInspector',
+      '@type': 'WaterDamageRestorationService',
       name: `${LANDING_CONFIG.nicheTitle} in ${LANDING_CONFIG.locationCity}, ${LANDING_CONFIG.locationState}`,
-      image: 'https://images.pexels.com/photos/8293678/pexels-photo-8293678.jpeg',
+      image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952',
       telephone: '+1-608-642-1112',
       url: window.location.origin + '/',
-      priceRange: '$$$',
+      priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
         addressLocality: LANDING_CONFIG.locationCity,

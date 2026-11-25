@@ -54,7 +54,7 @@ export default function ServiceAreasPage() {
         eyebrow="Southern Wisconsin Coverage"
         title="24/7 Water Damage & Mold Remediation Across 10 Communities"
         lead="WISCo Mold & Water Damage is based in Edgerton and actively dispatches emergency mitigation teams throughout Rock, Dane, and Jefferson counties. Select your community below for localized service details and emergency response times."
-        image={{ src: PHOTOS.waterExtraction, alt: 'Commercial flood restoration and water extraction equipment' }}
+        image={{ src: PHOTOS.waterExtraction, alt: 'Residential flood restoration and water extraction equipment' }}
       />
 
       <section className="bg-white py-20 lg:py-28">

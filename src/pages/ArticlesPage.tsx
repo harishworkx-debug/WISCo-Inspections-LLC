@@ -32,7 +32,7 @@ export default function ArticlesPage() {
         eyebrow="Homeowner Knowledge Center"
         title="Wisconsin Water Damage & Mold Remediation Guides"
         lead="Actionable, practical guides written from actual restoration field experience across Madison, Janesville, Edgerton, and Southern Wisconsin."
-        image={{ src: PHOTOS.heroWaterDamage, alt: 'Commercial water damage and mold remediation equipment' }}
+        image={{ src: PHOTOS.heroWaterDamage, alt: 'Residential water damage and mold remediation equipment' }}
       />
 
       <section className="bg-mist py-20 lg:py-28">

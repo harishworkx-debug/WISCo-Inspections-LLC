@@ -25,7 +25,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'Edgerton is the central headquarters for WISCo Mold & Water Damage. Bordering Lake Koshkonong and the Yahara River, we provide 24/7 emergency water extraction, flood cleanup, certified mold remediation, and moisture mitigation across Edgerton and surrounding lake communities.',
     primaryKeyword: 'Mold Remediation & Water Damage Edgerton WI',
     contentAngle:
-      'Immediate 24/7 water damage mitigation, basement flood extraction, and certified mold removal for Edgerton homeowners, businesses, and lakefront properties.',
+      'Immediate 24/7 water damage mitigation, basement flood extraction, and certified mold removal for Edgerton homeowners, cottages, and lakefront residences.',
     housingProfile:
       'Lake Koshkonong waterfront cottages, historic brick residences near downtown Edgerton, and established single-family homes with high seasonal water tables.',
     keyConcerns: [
@@ -48,7 +48,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'Janesville is Rock County’s largest city. Featuring classic historic districts along the Rock River, mid-century ranch homes, and expanding suburban developments, WISCo Mold & Water Damage provides rapid emergency water extraction and certified mold remediation throughout Janesville.',
     primaryKeyword: 'Water Damage Restoration & Mold Remediation Janesville WI',
     contentAngle:
-      '24/7 emergency flood response, commercial structural drying, and certified mold eradication for Janesville homes and commercial properties.',
+      '24/7 emergency flood response, residential structural drying, and certified mold eradication for Janesville homeowners and private residences.',
     housingProfile:
       'Turn-of-the-century riverfront homes, mid-century ranch subdivisions with finished basements, and modern residential developments subject to storm runoff.',
     keyConcerns: [
@@ -56,7 +56,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'Aging plumbing pipes bursting during severe winter freezes',
       'Hidden mold colonies behind basement paneling, drywall, and wet carpeting',
       'Sump pump burnouts during heavy thunderstorm power outages',
-      'Commercial and residential sewer backups requiring biohazard extraction',
+      'Basement drain and residential sewer backups requiring biohazard extraction',
     ],
     nearbySlugs: ['edgerton-wi', 'beloit-wi', 'milton-wi', 'stoughton-wi'],
   },
@@ -71,7 +71,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'As Wisconsin’s capital city, Greater Madison features a dense mix of vintage craftsman homes, lakeside residences, and multi-story apartment communities. WISCo Mold & Water Damage delivers 24/7 emergency water removal and certified mold remediation across Madison.',
     primaryKeyword: 'Mold Remediation & Water Damage Madison WI',
     contentAngle:
-      'Rapid emergency water extraction, structural drying, and certified toxic mold removal for Madison homeowners, property managers, and businesses.',
+      'Rapid emergency water extraction, structural drying, and certified toxic mold removal for Madison homeowners, condo owners, and residential properties.',
     housingProfile:
       'Historic craftsman bungalows on the Near East/West sides, Lake Mendota and Monona properties, and active residential rental and condominium markets.',
     keyConcerns: [
@@ -91,10 +91,10 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
     county: 'Rock County',
     isPrimary: false,
     intro:
-      'Located in southern Rock County along the Illinois border, Beloit features stately historic residences, vibrant neighborhoods along the Rock River, and commercial corridors. We provide 24/7 emergency water extraction and certified mold cleanup throughout Beloit.',
+      'Located in southern Rock County along the Illinois border, Beloit features stately historic residences, vibrant neighborhoods along the Rock River, and charming residential streets. We provide 24/7 emergency water extraction and certified mold cleanup throughout Beloit.',
     primaryKeyword: 'Water Damage Restoration & Mold Removal Beloit WI',
     contentAngle:
-      'Professional water extraction, sewage cleanup, and comprehensive mold remediation for Beloit residential and commercial properties.',
+      'Professional water extraction, sewage cleanup, and comprehensive mold remediation for Beloit homeowners and residential properties.',
     housingProfile:
       'Stately historic brick colonials, college-area residential homes, and single-family river corridor neighborhoods.',
     keyConcerns: [
@@ -140,7 +140,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'One of Dane County’s fastest-growing communities, Sun Prairie features extensive modern housing subdivisions, finished multi-level basements, and historic downtown homes. We provide 24/7 water damage mitigation and certified mold remediation in Sun Prairie.',
     primaryKeyword: 'Water Damage Restoration & Mold Remediation Sun Prairie WI',
     contentAngle:
-      '24/7 emergency flood drying, water extraction, and certified mold removal for Sun Prairie homes and businesses.',
+      '24/7 emergency flood drying, water extraction, and certified mold removal for Sun Prairie homeowners and residential communities.',
     housingProfile:
       'Modern suburban developments with large finished basements, multi-level homes, and surrounding rural agricultural residences.',
     keyConcerns: [
@@ -163,7 +163,7 @@ export const SERVICE_LOCATIONS: ServiceLocation[] = [
       'Bordering Madison’s southern edge, Fitchburg features a mix of suburban neighborhoods, walkout basement homes, and multi-family developments. WISCo Mold & Water Damage responds 24/7 for emergency water extraction and certified mold cleanup in Fitchburg.',
     primaryKeyword: 'Mold Remediation & Water Damage Restoration Fitchburg WI',
     contentAngle:
-      'Rapid response water extraction, thermal leak detection, and certified mold removal for Fitchburg residential and commercial properties.',
+      'Rapid response water extraction, thermal leak detection, and certified mold removal for Fitchburg homeowners and residential neighborhoods.',
     housingProfile:
       'Modern single-family homes with walkout basements, master-planned developments, and contemporary multi-family complexes.',
     keyConcerns: [

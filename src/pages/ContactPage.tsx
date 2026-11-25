@@ -110,7 +110,7 @@ export default function ContactPage() {
               </p>
               <div className="rounded-xl overflow-hidden border border-slate-200 h-80 sm:h-96 w-full relative bg-slate-100 shadow-inner">
                 <iframe
-                  title="WISCo Mold & Water Damage Office Location"
+                  title="WISCo Mold & Water Damage Headquarters Location"
                   src={MAPS_EMBED_SRC}
                   className="w-full h-full border-0"
                   loading="lazy"

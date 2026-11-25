@@ -52,8 +52,8 @@ export default function LandingHeader() {
               <span className="text-base sm:text-lg font-bold text-navy group-hover:text-brand transition-colors tracking-tight leading-tight">
                 {LANDING_CONFIG.nicheTitle} in {LANDING_CONFIG.locationCity}, {LANDING_CONFIG.locationState}
               </span>
-              <span className="text-xs text-slate-700 font-medium">
-                Licensed Residential Property Inspections
+              <span className="text-xs text-emerald-700 font-bold">
+                100% Residential Homeowner Services Only
               </span>
             </div>
           </a>

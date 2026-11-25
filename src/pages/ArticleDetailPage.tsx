@@ -130,7 +130,7 @@ export default function ArticleDetailPage({ article }: { article: Article }) {
               Get 24/7 Emergency Assistance from WISCo Mold &amp; Water Damage
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/80">
-              WISCo Mold &amp; Water Damage provides 24/7 emergency water extraction, commercial structural drying,
+              WISCo Mold &amp; Water Damage provides 24/7 emergency water extraction, residential structural drying,
               and certified mold remediation across Madison, Janesville, Edgerton, and surrounding Southern Wisconsin communities.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4">

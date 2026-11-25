@@ -25,7 +25,7 @@ const PRINCIPLES = [
   {
     icon: Zap,
     title: 'Advanced Diagnostic Technology',
-    body: 'From FLIR infrared thermal cameras to commercial LGR dehumidifiers and air movers, we use state-of-the-art restoration technology to guarantee complete structural drying.',
+    body: 'From FLIR infrared thermal cameras to high-capacity LGR dehumidifiers and air movers, we use state-of-the-art restoration technology to guarantee complete structural drying.',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
         eyebrow="About WISCo Mold & Water Damage"
         title="Restoring Wisconsin Homes & Peace of Mind"
         lead="A dedicated, certified team delivering 24/7 emergency flood water extraction, structural drying, and safe mold remediation across Southern Wisconsin."
-        image={{ src: PHOTOS.waterExtraction, alt: 'Technician managing commercial water damage restoration and drying equipment' }}
+        image={{ src: PHOTOS.waterExtraction, alt: 'Technician managing residential water damage restoration and drying equipment' }}
       >
         <CallButton size="lg" label="24/7 Emergency Call: (608) 642-1112" />
         <a
@@ -103,10 +103,10 @@ export default function AboutPage() {
                 When a pipe bursts during a sub-zero Wisconsin winter, a sump pump fails during a severe summer thunderstorm, or toxic black mold is discovered behind finished walls, homeowners need immediate, reliable assistance.
               </p>
               <p>
-                Founded and directed by restoration specialist <strong>Phil Jackson</strong>, <strong>WISCo Mold &amp; Water Damage, LLC</strong> was established to provide homeowners, property managers, and businesses with fast, compassionate, and certified disaster mitigation.
+                Founded and directed by restoration specialist <strong>Phil Jackson</strong>, <strong>WISCo Mold &amp; Water Damage, LLC</strong> was established to provide Wisconsin homeowners and residential property owners with fast, compassionate, and certified disaster mitigation.
               </p>
               <p>
-                Based centrally in Edgerton, Wisconsin, our crews arrive fully equipped with truck-mounted water extraction pumps, commercial LGR dehumidifiers, negative-air containment barriers, and infrared thermal imaging cameras. We treat your home with the utmost care, preventing secondary microbial growth and restoring healthy indoor air quality.
+                Based centrally in Edgerton, Wisconsin, our crews arrive fully equipped with truck-mounted water extraction pumps, professional LGR dehumidifiers, negative-air containment barriers, and infrared thermal imaging cameras. We specialize exclusively in residential homes, treating your property with the utmost care, preventing secondary microbial growth and restoring healthy indoor air quality.
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold/20 text-navy font-bold">

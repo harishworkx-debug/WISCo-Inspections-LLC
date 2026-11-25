@@ -66,9 +66,9 @@ export default function ServicesPage() {
 
       <PageHero
         eyebrow="WISCo Restoration Catalog"
-        title="Professional Mold Remediation & Water Damage Services"
-        lead="Comprehensive emergency flood water extraction, certified mold abatement, and industrial structural drying across South Central Wisconsin. Fast 24/7 dispatch."
-        image={{ src: PHOTOS.heroWaterDamage, alt: 'Commercial water damage restoration and mold remediation equipment' }}
+        title="Residential Mold Remediation & Water Damage Services"
+        lead="Comprehensive emergency flood water extraction, certified mold abatement, and residential structural drying across South Central Wisconsin. Fast 24/7 dispatch."
+        image={{ src: PHOTOS.heroWaterDamage, alt: 'Residential water damage restoration and mold remediation equipment' }}
       />
 
       {/* Main Services Grid */}

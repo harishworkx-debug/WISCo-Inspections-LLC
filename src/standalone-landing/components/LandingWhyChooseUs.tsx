@@ -13,10 +13,10 @@ export default function LandingWhyChooseUs() {
             Verified Standards
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight">
-            Why Homebuyers & Sellers Choose Us in {LANDING_CONFIG.locationFull}
+            Why Wisconsin Homeowners Trust Us in {LANDING_CONFIG.locationFull}
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-700">
-            Professional qualifications, unbiased diagnostics, and thorough on-site evaluations designed to protect your investment.
+            24/7 Rapid emergency response, certified IICRC mitigation protocols, and direct homeowners insurance claims billing.
           </p>
         </div>
 
@@ -50,15 +50,15 @@ export default function LandingWhyChooseUs() {
               <Thermometer className="h-6 w-6" />
             </div>
             <div>
-              <h4 className="font-bold text-lg">Advanced Diagnostic Tools on Every Call</h4>
+              <h4 className="font-bold text-lg">Hospital-Grade Restoration Equipment on Every Call</h4>
               <p className="text-xs sm:text-sm text-slate-300 mt-0.5">
-                Thermal infrared cameras, calibrated pinless moisture meters, and digital radon monitors used for non-invasive detection.
+                High-capacity truck-mounted vacuum extractors, hospital-grade HEPA air scrubbers, LGR dehumidifiers, and FLIR thermal cameras.
               </p>
             </div>
           </div>
           <div className="shrink-0 flex items-center gap-3">
             <span className="text-xs font-semibold text-emerald-400 border border-emerald-400/30 px-3 py-1.5 rounded-full bg-emerald-950/40">
-              InterNACHI Standards Compliant
+              IICRC Standards Compliant
             </span>
           </div>
         </div>

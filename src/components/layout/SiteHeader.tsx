@@ -120,7 +120,7 @@ export default function SiteHeader() {
           </span>
           <span className="min-w-0 leading-tight">
             <span className="block truncate text-base font-bold tracking-tight">WISCo Mold &amp; Water Damage</span>
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">LLC · Wisconsin</span>
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.15em] text-gold-400">Residential Restoration · Wisconsin</span>
           </span>
         </Link>
 

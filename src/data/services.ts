@@ -50,13 +50,13 @@ export const SERVICES: ServiceContent[] = [
       'Comprehensive containment, safe removal of contaminated materials, and EPA-registered antimicrobial treatment to eradicate toxic mold colonies and restore indoor air quality.',
     overview: [
       'Mold growth can spread behind walls, under floorboards, and across framing within 24 to 48 hours of water intrusion. Unchecked mold releases millions of airborne mycotoxins and spores that degrade structural wood and cause chronic respiratory illness.',
-      'WISCo Mold & Water Damage uses strict IICRC S520 remediation protocols. We establish negative air pressure containment chambers, operate industrial HEPA air scrubbers, safely remove unsalvageable porous materials, and fog framing with botanical antimicrobial sanitizers.',
+      'WISCo Mold & Water Damage uses strict IICRC S520 remediation protocols. We establish negative air pressure containment chambers, operate hospital-grade HEPA air scrubbers, safely remove unsalvageable porous materials, and fog framing with botanical antimicrobial sanitizers.',
     ],
     localIntro:
       'Wisconsin homes in Edgerton, Janesville, Madison, and surrounding counties experience frequent mold from winter condensation, humid basements, and spring thaw seepage. Contact WISCo Mold & Water Damage for prompt, certified mold removal.',
     covers: [
       'Containment chamber setup with plastic sheeting and negative air pressure machines',
-      'Industrial HEPA air scrubbing (filtering 99.97% of airborne spores down to 0.3 microns)',
+      'Hospital-grade HEPA air scrubbing (filtering 99.97% of airborne spores down to 0.3 microns)',
       'Safe removal and disposal of contaminated drywall, insulation, and carpeting',
       'HEPA vacuuming and antimicrobial sanitizing of structural wood framing and concrete',
       'Air duct and ventilation system decontamination',
@@ -103,12 +103,12 @@ export const SERVICES: ServiceContent[] = [
     primaryKeyword: 'Water damage restoration',
     supportingKeywords: ['Water mitigation company', 'Home water damage repair', 'Flood damage restoration'],
     icon: Droplets,
-    image: { src: PHOTOS.heroWaterDamage, alt: 'Commercial water damage restoration equipment and drying fans in a flooded home' },
+    image: { src: PHOTOS.heroWaterDamage, alt: 'Residential water damage restoration equipment and drying fans in a flooded home' },
     seoTitle: 'Water Damage Restoration & Mitigation | WISCo Mold & Water Damage',
     metaDescription:
       'Fast 24/7 water damage restoration and flood mitigation in Wisconsin. Rapid extraction, thermal moisture mapping, and structural drying. Call (608) 642-1112.',
     summary:
-      'Rapid emergency water extraction, thermal imaging moisture tracking, and commercial structural dehumidification to stop water damage before mold sets in.',
+      'Rapid emergency water extraction, thermal imaging moisture tracking, and whole-home structural dehumidification to stop water damage before mold sets in.',
     overview: [
       'Water damage worsens by the hour. Within minutes, water saturates drywall, swells wood trim, and seeps into subflooring. Within 24 hours, secondary damage begins as high humidity warps framing and triggers hazardous mold growth.',
       'WISCo Mold & Water Damage provides prompt emergency water damage restoration across Southern Wisconsin. We extract standing water, deploy high-velocity air movers and low-grain refrigerant (LGR) dehumidifiers, and monitor drying progress with calibrated psychrometric meters until your home reaches dry standard.',
@@ -118,7 +118,7 @@ export const SERVICES: ServiceContent[] = [
     covers: [
       '24/7 Emergency response and rapid water extraction with truck-mounted pumps',
       'Infrared thermal imaging inspection to detect water trapped behind walls and beneath flooring',
-      'Strategic structural drying utilizing industrial LGR dehumidifiers and axial air movers',
+      'Strategic structural drying utilizing high-capacity LGR dehumidifiers and axial air movers',
       'Antimicrobial application to prevent bacterial contamination and mold spore germination',
       'Direct insurance claims assistance, itemized billing, and Xactimate documentation',
       'Hardwood floor and subfloor specialty drying mats',
@@ -130,7 +130,7 @@ export const SERVICES: ServiceContent[] = [
       'Anyone with water saturated carpeting, swollen drywall, or buckled floorboards',
     ],
     whatToExpect: [
-      'Arrival of certified technicians equipped with commercial extraction and drying units',
+      'Arrival of certified technicians equipped with professional extraction and drying units',
       'Comprehensive moisture readings establishing baseline moisture levels in all affected materials',
       'Daily equipment check-ins and moisture mapping until dry standard is achieved',
       'Complete clearance documentation for your peace of mind and insurance file',
@@ -147,7 +147,7 @@ export const SERVICES: ServiceContent[] = [
       {
         question: 'How long do drying fans and dehumidifiers need to run?',
         answer:
-          'Commercial drying equipment typically runs for 3 to 5 days. Our technicians perform daily moisture checks to ensure every structural stud, joist, and subfloor has returned to normal equilibrium moisture content (EMC).',
+          'Professional drying equipment typically runs for 3 to 5 days. Our technicians perform daily moisture checks to ensure every structural stud, joist, and subfloor has returned to normal equilibrium moisture content (EMC).',
       },
       {
         question: 'Will water damage cause mold?',
@@ -168,7 +168,7 @@ export const SERVICES: ServiceContent[] = [
     metaDescription:
       '24/7 Emergency water extraction and standing flood water pumping in Wisconsin. Fast arrival for burst pipes and storm floods. Call (608) 642-1112 immediately.',
     summary:
-      'Immediate 24/7 extraction of standing flood water and pipe burst runoff using powerful commercial truck-mounted and submersible extraction pumps.',
+      'Immediate 24/7 extraction of standing flood water and pipe burst runoff using powerful high-capacity truck-mounted and submersible extraction pumps.',
     overview: [
       'When thousands of gallons of water inundate your living space or basement, every minute counts. Standing water puts immense hydrostatic pressure on floors and foundations while soaking upward into walls through capillary action.',
       'Our emergency response team arrives with heavy-duty submersible pumps, ride-on weighted extraction rovers, and truck-mounted vacuum systems capable of removing thousands of gallons per hour, saving your valuable property from total loss.',
@@ -180,7 +180,7 @@ export const SERVICES: ServiceContent[] = [
       'Heavy-duty submersible trash pumps for deep basement floodwaters',
       'Weighted surface extraction claws that pull water from carpet pad without tearing carpets',
       'Rapid removal of Category 1 (clean), Category 2 (gray), and Category 3 (black) water',
-      'Emergency containment and placement of initial commercial drying equipment',
+      'Emergency containment and placement of initial structural drying equipment',
       'Emergency shut-off assistance for broken main water valves',
     ],
     whoNeedsIt: [
@@ -189,7 +189,7 @@ export const SERVICES: ServiceContent[] = [
       'Catastrophic plumbing failures, fire sprinkler activations, or cracked water supply lines',
     ],
     whatToExpect: [
-      'Rapid arrival of emergency dispatch technicians with commercial extraction gear',
+      'Rapid arrival of emergency dispatch technicians with high-capacity extraction gear',
       'Systematic pumping of standing water directly to authorized sanitary sewer drainage',
       'Immediate moisture assessment to initiate drying phase without delay',
     ],
@@ -297,7 +297,7 @@ export const SERVICES: ServiceContent[] = [
       'Sump pump failure water removal and emergency backup equipment advice',
       'Removal of saturated drywall, trim, carpeting, and wet fiberglass insulation',
       'Antimicrobial disinfection of concrete slab and masonry foundation walls',
-      'Commercial desiccant and LGR dehumidification to dry out moisture-laden concrete',
+      'High-capacity desiccant and LGR dehumidification to dry out moisture-laden concrete',
       'Elimination of lingering damp, sour basement flood odors',
     ],
     whoNeedsIt: [
@@ -356,7 +356,7 @@ export const SERVICES: ServiceContent[] = [
       'Removal of wet, contaminated, sagging fiberglass insulation batts',
       'Pumping out standing water and grading crawl space dirt floors',
       'Installation of heavy-duty puncture-resistant vapor barrier liners',
-      'Placement of low-temperature commercial crawl space dehumidification units',
+      'Placement of low-temperature crawl space dehumidification units',
     ],
     whoNeedsIt: [
       'Homeowners with cold, damp, or sagging first-floor rooms',
@@ -385,7 +385,7 @@ export const SERVICES: ServiceContent[] = [
       {
         question: 'What is crawl space encapsulation?',
         answer:
-          'Encapsulation involves lining the entire crawl space floor and foundation walls with heavy-duty, commercial-grade polyethylene vapor barriers, sealing vents, and adding dehumidification to create a completely dry, clean, conditioned space.',
+          'Encapsulation involves lining the entire crawl space floor and foundation walls with heavy-duty, reinforced 12-to-20 mil polyethylene vapor barriers, sealing vents, and adding dehumidification to create a completely dry, clean, conditioned space.',
       },
     ],
     related: ['mold-remediation', 'basement-water-damage', 'structural-drying-dehumidification', 'mold-testing'],
@@ -409,7 +409,7 @@ export const SERVICES: ServiceContent[] = [
     localIntro:
       'Municipal sewer line surcharges and tree root blockages can trigger violent toilet or basement floor drain overflows in Edgerton, Janesville, and Madison. Call for emergency biohazard cleanup.',
     covers: [
-      '24/7 rapid response for residential and commercial sewer backups',
+      '24/7 rapid response for residential home sewer backups and drain overflows',
       'Full personal protective equipment (PPE) and containment to prevent cross-contamination',
       'Safe extraction and biohazard disposal of sewage water and solids',
       'Removal of non-salvageable materials (drywall, carpet, baseboards, insulation)',
@@ -443,7 +443,7 @@ export const SERVICES: ServiceContent[] = [
       {
         question: 'How do you eliminate the persistent sewer smell after cleanup?',
         answer:
-          'We use industrial-strength antimicrobial washes and hydroxyl air generators. Hydroxyl radicals dismantle organic odor molecules at the molecular level without leaving toxic residues.',
+          'We use hospital-grade antimicrobial washes and hydroxyl air generators. Hydroxyl radicals dismantle organic odor molecules at the molecular level without leaving toxic residues.',
       },
     ],
     related: ['emergency-water-extraction', 'water-damage-restoration', 'basement-water-damage', 'structural-drying-dehumidification'],
@@ -520,7 +520,7 @@ export const SERVICES: ServiceContent[] = [
       'Safe removal of mold from attic roof decking and rafters, removal of damp compressed insulation, and antimicrobial sealing following roof leaks or winter ice dams.',
     overview: [
       'Attic mold is exceptionally common in Wisconsin due to extreme winter temperature contrasts. When warm, humid indoor air escapes into a cold attic through unsealed ceiling penetrations, it condenses against freezing plywood roof sheathing, feeding black and white mold colonies.',
-      'Additionally, winter ice dams force water backward under shingles, saturating roof framing and insulation. WISCo Mold & Water Damage remediates attic fungal growth, treats roof decking with commercial fungicidal coatings, and extracts contaminated insulation to restore healthy airflow.',
+      'Additionally, winter ice dams force water backward under shingles, saturating roof framing and insulation. WISCo Mold & Water Damage remediates attic fungal growth, treats roof decking with hospital-grade fungicidal coatings, and extracts contaminated insulation to restore healthy airflow.',
     ],
     localIntro:
       'Wisconsin winters take a heavy toll on attics in Edgerton, Janesville, Sun Prairie, and Madison. We eliminate attic mold and seal your roof decking safely.',
@@ -569,22 +569,22 @@ export const SERVICES: ServiceContent[] = [
     slug: 'structural-drying-dehumidification',
     name: 'Structural Drying & Dehumidification',
     primaryKeyword: 'Structural drying',
-    supportingKeywords: ['Commercial dehumidification', 'Hardwood floor drying', 'Industrial air movers water damage'],
+    supportingKeywords: ['Whole-home dehumidification', 'Hardwood floor drying', 'High-velocity air movers water damage'],
     icon: Zap,
-    image: { src: PHOTOS.dehumidificationEquipment, alt: 'High capacity commercial LGR dehumidifiers and high velocity air movers drying structural floor joists' },
-    seoTitle: 'Structural Drying & Dehumidification | WISCo Mold & Water Damage',
+    image: { src: PHOTOS.dehumidificationEquipment, alt: 'High capacity residential LGR dehumidifiers and high velocity air movers drying structural floor joists' },
+    seoTitle: 'Residential Structural Drying & Dehumidification | WISCo Mold & Water Damage',
     metaDescription:
-      'Commercial structural drying and industrial dehumidification in Wisconsin. Extract deep moisture from wall studs, concrete, and hardwood. Call (608) 642-1112.',
+      'Residential structural drying and whole-home dehumidification in Wisconsin. Extract deep moisture from wall studs, concrete, and hardwood. Call (608) 642-1112.',
     summary:
-      'High-capacity commercial LGR dehumidifiers and directed industrial air movers to extract deep, bound moisture from structural framing, drywall, and hardwood floors.',
+      'High-capacity LGR dehumidifiers and directed air movers to extract deep, bound moisture from residential framing, drywall, and hardwood floors.',
     overview: [
       'Moisture doesn’t just sit on the surface—it absorbs deep into structural wood framing, concrete foundation slabs, and subfloors. Standard household fans and portable dehumidifiers simply cannot extract deep bound moisture before mold growth begins.',
-      'WISCo Mold & Water Damage deploys commercial Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers. By controlling temperature, airflow, and specific vapor pressure differentials, we draw moisture out of dense materials and exhaust dry, conditioned air until structural materials return to industry-standard dry thresholds.',
+      'WISCo Mold & Water Damage deploys high-capacity Low Grain Refrigerant (LGR) dehumidifiers and high-velocity axial air movers. By controlling temperature, airflow, and specific vapor pressure differentials, we draw moisture out of dense materials and exhaust dry, conditioned air until structural materials return to industry-standard dry thresholds.',
     ],
     localIntro:
-      'Serving Edgerton, Dane County, Rock County, and Jefferson County with industrial drying equipment capable of handling any size residential or commercial water loss.',
+      'Serving Edgerton, Dane County, Rock County, and Jefferson County with professional drying equipment dedicated to residential homeowners.',
     covers: [
-      'Commercial LGR and desiccant dehumidifiers capable of removing 150+ pints per day per unit',
+      'High-capacity LGR and desiccant dehumidifiers capable of removing 150+ pints per day per unit',
       'High-velocity axial and centrifugal air movers creating circular vortex airflow',
       'Specialty injector drying systems for cabinets, wall cavities, and finished ceilings',
       'Hardwood floor rescue mat systems that draw water directly through wood pores',
@@ -594,10 +594,10 @@ export const SERVICES: ServiceContent[] = [
     whoNeedsIt: [
       'Properties where water soaked into hardwood floors, custom cabinetry, or concrete',
       'Buildings with wet insulation or water trapped inside wall cavities',
-      'Commercial and residential properties following major fire hose operations or flood events',
+      'Homes and residential properties following major pipe bursts or flood events',
     ],
     whatToExpect: [
-      'Strategic layout of commercial drying equipment maximizing airflow across wet surfaces',
+      'Strategic layout of structural drying equipment maximizing airflow across wet surfaces',
       'Continuous extraction of moisture from both materials and indoor ambient air',
       'Daily technician visits to adjust equipment positioning and record psychrometric drying curves',
     ],
@@ -635,7 +635,7 @@ export const HOME_PROCESS = [
     step: '01',
     title: '24/7 Rapid Emergency Dispatch',
     description:
-      'Call (608) 642-1112 anytime. Our certified restoration technicians mobilize immediately across Southern Wisconsin with commercial water extraction and containment equipment.',
+      'Call (608) 642-1112 anytime. Our certified restoration technicians mobilize immediately across Southern Wisconsin with emergency water extraction and containment equipment.',
   },
   {
     step: '02',
@@ -647,13 +647,13 @@ export const HOME_PROCESS = [
     step: '03',
     title: 'Extraction, Containment & Air Filtration',
     description:
-      'We extract standing water with commercial truck-mounted pumps, establish containment barriers to isolate mold, and run HEPA air scrubbers to clean the air.',
+      'We extract standing water with high-capacity truck-mounted pumps, establish containment barriers to isolate mold, and run HEPA air scrubbers to clean the air.',
   },
   {
     step: '04',
     title: 'Antimicrobial Treatment & Structural Drying',
     description:
-      'We treat framing with EPA-registered botanical antimicrobials to destroy mold colonies and run commercial LGR dehumidifiers until materials reach dry standard.',
+      'We treat framing with EPA-registered botanical antimicrobials to destroy mold colonies and run professional LGR dehumidifiers until materials reach dry standard.',
   },
   {
     step: '05',

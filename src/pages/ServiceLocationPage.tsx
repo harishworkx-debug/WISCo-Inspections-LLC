@@ -149,8 +149,8 @@ export default function ServiceLocationPage({ service, location }: ServiceLocati
             </p>
             <p>
               <strong>WISCo Mold &amp; Water Damage</strong> delivers 24/7 emergency response throughout {location.city} and surrounding communities.
-              Our crews arrive with truck-mounted water extraction pumps, negative-air containment chambers, commercial LGR dehumidifiers,
-              and FLIR thermal imaging cameras to restore your property quickly and thoroughly.
+              Our crews arrive with truck-mounted water extraction pumps, negative-air containment chambers, high-capacity LGR dehumidifiers,
+              and FLIR thermal imaging cameras to restore your residential property quickly and thoroughly.
             </p>
             <div className="rounded-2xl border border-navy-100 bg-mist p-6">
               <h3 className="text-base font-bold text-navy flex items-center gap-2">

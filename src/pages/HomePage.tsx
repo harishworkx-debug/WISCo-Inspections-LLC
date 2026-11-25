@@ -44,7 +44,7 @@ const VALUE_PILLARS = [
     icon: ShieldAlert,
     title: 'Certified Mold Remediation',
     description:
-      'We establish strict negative-pressure containment zones, operate commercial HEPA air scrubbers, safely remove colonized materials, and apply EPA-registered antimicrobials to permanently eradicate toxic mold colonies.',
+      'We establish strict negative-pressure containment zones, operate hospital-grade HEPA air scrubbers, safely remove colonized materials, and apply EPA-registered antimicrobials to permanently eradicate toxic mold colonies.',
   },
   {
     icon: Thermometer,
@@ -69,7 +69,7 @@ const RESTORATION_SYSTEMS = [
       'Sump pump failure cleanup & backup systems assistance',
       'Antimicrobial washdown of concrete slabs & block walls',
       'Removal of saturated carpet, pad, and flood-cut drywall',
-      'Industrial LGR dehumidifiers to dry dense masonry',
+      'High-capacity LGR dehumidifiers to dry dense masonry',
     ],
   },
   {
@@ -117,12 +117,12 @@ const RESTORATION_SYSTEMS = [
     ],
   },
   {
-    title: 'Commercial Structural Dehumidification',
+    title: 'Whole-Home Structural Dehumidification',
     icon: Zap,
     items: [
-      'Commercial Low Grain Refrigerant (LGR) dehumidifiers',
+      'High-capacity Low Grain Refrigerant (LGR) dehumidifiers',
       'High-velocity axial air movers creating circular vortex airflow',
-      'Specialty vacuum floor mat drying systems for hardwood',
+      'Specialty vacuum floor mat drying systems for residential hardwood',
       'Cabinet and wall cavity injection drying systems',
       'Daily digital psychrometric moisture logs until dry standard',
     ],
@@ -131,9 +131,19 @@ const RESTORATION_SYSTEMS = [
 
 const EXTENDED_FAQS = [
   {
+    question: 'Do you service non‑residential properties?',
+    answer:
+      'No. Our emergency restoration services are exclusively dedicated to residential homeowners. We specialize 100% in single-family homes, townhomes, condominiums, and private residential properties.'
+  },
+  {
+    question: 'Who qualifies for your emergency water and mold services?',
+    answer:
+      'We exclusively serve Wisconsin homeowners and residential property owners facing sudden water leaks, basement flooding, plumbing freeze bursts, sewage backup, or toxic mold outbreaks.',
+  },
+  {
     question: 'How fast can WISCo respond to an emergency water damage call?',
     answer:
-      'We offer 24/7 emergency dispatch across Southern Wisconsin, including Edgerton, Janesville, Madison, Beloit, Stoughton, Sun Prairie, Fitchburg, and surrounding communities. For active flooding and pipe bursts, our emergency crews mobilize immediately with commercial extraction gear.',
+      'We offer 24/7 emergency dispatch across Southern Wisconsin, including Edgerton, Janesville, Madison, Beloit, Stoughton, Sun Prairie, Fitchburg, and surrounding communities. For active flooding and pipe bursts, our emergency crews mobilize immediately with high-capacity extraction gear.',
   },
   {
     question: 'Does homeowners insurance cover water damage and mold remediation?',
@@ -143,7 +153,7 @@ const EXTENDED_FAQS = [
   {
     question: 'How long does structural drying take after a flood or water leak?',
     answer:
-      'Residential structural drying typically takes between 3 to 5 days using commercial LGR dehumidifiers and high-velocity axial air movers. Our certified technicians take daily psychrometric moisture readings to verify that framing, subflooring, and concrete have completely returned to dry standard before removing equipment.',
+      'Residential structural drying typically takes between 3 to 5 days using professional-grade LGR dehumidifiers and high-velocity axial air movers. Our certified technicians take daily psychrometric moisture readings to verify that framing, subflooring, and concrete have completely returned to dry standard before removing equipment.',
   },
   {
     question: 'Why is toxic black mold (Stachybotrys) dangerous, and how is it removed?',
@@ -220,11 +230,23 @@ export default function HomePage() {
         </a>
       </div>
 
+      {/* Residential Homeowners Exclusivity Banner */}
+      <div className="bg-emerald-800 text-white py-2.5 px-4 text-xs sm:text-sm font-semibold border-b border-emerald-700 shadow-sm">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2 text-center">
+          <span className="inline-block bg-white text-emerald-900 text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded-full tracking-wide">
+            Residential Homeowners Only
+          </span>
+          <span>
+            Exclusively serving Wisconsin homeowners (Single-Family Homes, Condos &amp; Townhomes). <em>No commercial, retail, or warehouse projects.</em>
+          </span>
+        </div>
+      </div>
+
       {/* 1. Main Service Introduction & Hero */}
       <section className="relative isolate overflow-hidden bg-navy text-white">
         <img
           src={PHOTOS.heroWaterDamage}
-          alt="Professional water damage restoration and mold remediation in Wisconsin"
+          alt="Residential water damage restoration and mold remediation in Wisconsin"
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
           fetchPriority="high"
           decoding="async"
@@ -232,6 +254,10 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-navy via-navy/95 to-brand-800/80" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
           <div className="mb-5 flex flex-wrap items-center gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-900/60 px-4 py-2 text-sm font-semibold text-emerald-300 backdrop-blur-sm">
+              <House className="h-4 w-4" aria-hidden="true" />
+              100% Residential Homeowner Services Only
+            </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-gold-400 backdrop-blur-sm">
               <MapPin className="h-4 w-4" aria-hidden="true" />
               Edgerton, Janesville, Madison &amp; Southern Wisconsin
@@ -253,19 +279,19 @@ export default function HomePage() {
           </div>
 
           <h1 className="max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Mold Remediation &amp; Water Damage Restoration in Wisconsin
+            Residential Mold Remediation &amp; Water Damage Restoration in Wisconsin
           </h1>
 
           <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-white/90">
             <p>
               When water inundates your home or toxic mold threatens your indoor air quality, every hour matters.
               <strong className="text-white font-semibold"> WISCo Mold &amp; Water Damage</strong> provides 24/7 emergency water extraction,
-              rapid structural drying, and certified mold removal across South Central Wisconsin.
+              rapid structural drying, and certified mold removal exclusively for Wisconsin homeowners and residential properties.
             </p>
             <p>
               From winter burst pipes and sump pump basement floods to hidden black mold infestations behind walls and crawl spaces,
-              our certified technicians deploy industrial HEPA air scrubbers, LGR dehumidifiers, and thermal imaging cameras
-              to restore your property cleanly and safely.
+              our certified technicians deploy hospital-grade HEPA air scrubbers, LGR dehumidifiers, and thermal imaging cameras
+              to restore your home cleanly and safely.
             </p>
             <p>
               We bill directly to your homeowners insurance company and guide you through every step of the restoration process.
